@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Design</title>
+    <!------- Bootstrap CSS Link------->  
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!------- Fontawsomee cdn link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!------- Font Family Link ------->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <!-------- Slick css cdn ------->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-------- Custom CSS Link -------->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+</head>
+<body>
+    <!------- Header start  -------->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+              <a class="navbar-brand" href="#">Odda</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto" >
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Hotels </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Search</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link position-relative" href="#">Planner
+                        <span class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                    </a>
+                  </li>
+                  <li class="nav-item ps-lg-3">
+                    <a class="nav-link" href="#" >Seaved</a>
+                  </li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hi, Daniela!
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!------- Header End ------->
+<!------- Hotel-result Check-in-out section start ------->
+<section class="check-in-out hotel-result">
+    <div class="container">
+      <div class="check-in-out-inner">
+        <h4>Hotels</h4>
+        <div class="check-in-out-form">
+          <div class="check-in-out-top">
+            <div class=" row">
+              <div class="col-lg-6 mb-2">
+                <label for="hotels"></label>
+                <div class="d-flex align-items-center search-input">
+                  <input class="form-control border-0" id="hotels" type="text" placeholder="Search Place"> 
+                  <i class="fa-solid fa-magnifying-glass pe-3"></i>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-2">
+                <label for="checkin">Check In</label>
+                <input class="form-control" id="checkin" type="date">
+              </div>
+              <div class="col-lg-3 mb-2">
+                <label for="checkout">Check Out</label>
+                <input class="form-control" id="checkout" type="date">
+              </div>
+            </div>
+          </div>
+          <div class="check-in-out-bottom">
+            <div class="row align-items-center">
+              <div class="col-lg-3 col-md-4 select-option pe-lg-0 mt-2">
+                <label>Guest</label>
+                  <select class="form-select" id="sel1" name="sellist1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+              </div>
+              <div class="col-lg-3 col-md-4 select-option pe-lg-0 mt-2">
+                <label>Room</label>
+                  <select class="form-select" id="sel1" name="sellist1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+              </div>
+                <div class="col-lg-3 col-md-4 select-option pe-lg-0 mt-2">
+                    <label >Bed</label>
+                    <select class="form-select" id="sel1" name="sellist1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="check-in-out-btn mt-3 text-end col-lg-3">
+                    <a href="#" class="btn search-btn purple">Search</a>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-------Hotel Result Check-in-out section end ------->
+  <!-------  Map Section star-------->
+    <section class="hotel-result g-map-main">
+        <div class="container ">
+            <div class="g-map-inner position-relative">
+                <div class="g-map overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463081.43252067344!2d-3.4872597865933366!3d40.31538629590688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2sin!4v1651553036245!5m2!1sen!2sin" width="1030" height="441" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </section>
+  <!------- Map Section end-------->
+  <!------- Search result Start ------->
+  <section class="hotel-result search-result pt-4">
+      <div class="container">
+          <div class="search-result-inner">
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <aside class="side-content">
+                        <span class="side-text">Viewing 350 results</span>
+                        <form class="hotel-result-form">
+                            <div class="hotels-result-search">
+                              <h5 class="search-heading">Search</h5>
+                              <div class="input-group align-items-center search-input">
+                                  <i class="fa-solid fa-magnifying-glass ps-2"></i>
+                                  <input type="text" class="form-control" placeholder="Search by name">
+                              </div>
+                              <div class="input-group align-items-center search-input mt-2">
+                                  <i class="fa-solid fa-magnifying-glass ps-2"></i>
+                                  <input type="text" class="form-control" placeholder="Search by proximity">
+                              </div>
+                            </div>
+                            <div class="hotels-result-sort">
+                              <h5 class="search-heading pt-3">Sort By</h5>
+                              <div class="form-check ">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                  <div class="search-prefe-main d-flex justify-content-between align-items-center">
+                                      <div class="search-prefe-text">
+                                          <label class="form-check-label ps-2" for="flexCheckChecked">
+                                              My preferences 
+                                          </label>
+                                      </div>
+                                      <div class="search-prefe-icon"><a href="#"><img src="assets/images/icons/h-s-pluse.png" alt=""></a></div>
+                                  </div>
+                              </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label ps-2" for="flexCheckDefault">
+                                      Price: low to high
+                                  </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Price: high to low
+                                </label>
+                            </div>
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label ps-2" for="flexCheckDefault">
+                                      Guess Review
+                                  </label>
+                              </div>  
+                              <div class="custom-filter pb-4">
+                                <a href="#"><img src="assets/images/icons/h-s-pluse.png" alt=""></a>
+                                  <span class="custom-filter-text ps-2 purple"> Add Custom Filter</span>
+                                </label>
+                              </div> 
+                            </div>
+                          <div class="hotels-filter">
+                            <div class="hotels-result-top-filter">
+                              <h5 class="search-heading">Filter By</h5>
+                              <div class="small-heading">
+                                <h6>Top filters </h6>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Final price with taxes fees
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Breakfast Included
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Flexible Check-In
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Flexible Check-Out
+                                </label>
+                              </div>
+                            </div>
+                            <div class="hotels-result-style">
+                              <div class="small-heading">
+                                <h6>Style </h6>
+                              </div>
+                              <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Modern
+                                </label>
+                              </div>  
+                              <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Historic
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Contemporary
+                                </label>
+                              </div>
+                            </div>
+                            <div class="hotels-result-budget">
+                              <div class="small-heading">
+                                <h6>Budget </h6>
+                              </div>
+                              <div class="row g-3 align-items-center pb-4">
+                                <div class="col-5">
+                                  <input type="tel"  class="form-control" placeholder="$ Min">
+                                </div>
+                                <div class="col-2 p-0 text-center">
+                                  <span class="form-text">to</span>
+                                </div>
+                                <div class="col-5">
+                                  <input type="tel"  class="form-control" placeholder="$ Max">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="hotels-result-property">
+                              <div class="small-heading">
+                                <h6>Property Class </h6>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <span class="property-class-icon ps-2"><img src="assets/images/icons/start.png"></span>
+                                <span class="property-class-icon"><img src="assets/images/icons/start.png"></span>
+                                <span class="property-class-icon "><img src="assets/images/icons/start.png"></span>
+                                <span class="property-class-icon "><img src="assets/images/icons/start.png"></span>
+                                <span class="property-class-icon "><img src="assets/images/icons/start.png"></span>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <span class="property-class-icon ps-2"><img src="assets/images/icons/start.png"></span>
+                                <span class="property-class-icon "><img src="assets/images/icons/start.png"></span>
+                                <span class="property-class-icon "><img src="assets/images/icons/start.png"></span>
+                                <span class="property-class-icon "><img src="assets/images/icons/start.png"></span>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <span class="property-class-icon ps-2"><img src="assets/images/icons/start.png"></span>
+                                <span class="property-class-icon "><img src="assets/images/icons/start.png"></span>
+                                <span class="property-class-icon "><img src="assets/images/icons/start.png"></span>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <span class="property-class-icon ps-2"><img src="assets/images/icons/start.png"></span>
+                                <span class="property-class-icon "><img src="assets/images/icons/start.png"></span>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <span class="property-class-icon ps-2"><img src="assets/images/icons/start.png"></span>
+                              </div>
+                            </div>
+                            <div class="hotels-results-neigh">
+                              <div class="small-heading">
+                                <h6>Neighborhood </h6>
+                              </div>
+                              <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Pequeña Habana
+                                </label>
+                              </div>
+                              <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Brickell
+                                </label>
+                              </div>
+                              <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Wynwood
+                                </label>
+                              </div>
+                              <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Cooconut Groove
+                                </label>
+                              </div>
+                              <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Overtown
+                                </label>
+                              </div>
+                            </div>
+                            <div class="hotels-results-menities">
+                              <div class="small-heading">
+                                <h6>Amenities </h6>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  All Amenities
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Free Wi-Fi 
+                                </label>
+                                <span class="amenities-icon"><img src="assets/images/icons/amenties-1.png" alt=""></span>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Elevator
+                                </label>
+                                <span class="amenities-icon"><img src="assets/images/icons/amenities-2.png" alt=""></span>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Breakfast
+                                </label>
+                                <span class="amenities-icon"><img src="assets/images/icons/amenities-3.png" alt=""></span>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Pool
+                                </label>
+                                <span class="amenities-icon"><img src="assets/images/icons/amenities-4.png" alt=""></span>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label ps-2" for="flexCheckDefault">
+                                  Bar
+                                </label>
+                                <span class="amenities-icon"><img src="assets/images/icons/amenities-5.png" alt=""></span>
+                              </div>
+                            </div>
+                            <div class="hotels-result-filter-btn text-center pb-4">
+                              <button class="btn bg-purple filter-btn">Filter</button>
+                            </div>
+                          </div>
+                        </form>    
+                    </aside>
+                </div>
+                <div class="col-md-9 position-relative">
+                    <main class="result-main-content">
+                      <div class="result-main-inner">
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="result-main-img overflow-hidden">
+                              <img src="assets/images/search-r-1.png"class="img-wrapper">
+                            </div>
+                          </div>
+                          <div class="col-4">
+                              <div class="result-main-middle">
+                                <div class="result-main-middle-content">
+                                    <h2 class="middle-content-heading pt-4 mb-1">First Hotel</h2>
+                                    <div class="middle-content-location">
+                                      <p class="mb-1"><img src="assets/images/icons/search-h-loaction.png"><span class="loaction-text">Madrid, Spain</span></p>
+                                      <p class="loaction-text mb-3">Las Ramblas Neighborhood</p>
+                                    </div>
+                                    <div class="middle-content-review">
+                                      <p class="m-0 review-text text-decoration-underline">1024 reviews</p>
+                                      <span><img src="assets/images/icons/start.png"></span>
+                                      <span><img src="assets/images/icons/start.png"></span>
+                                      <span><img src="assets/images/icons/start.png"></span>
+                                      <span><img src="assets/images/icons/start.png"></span>
+                                      <span><img src="assets/images/icons/start.png"></span>
+                                      <div class="total-review mt-2 mb-3">
+                                          <span class="total-review-text">8/10</span>
+                                      </div>
+                                    </div>
+                                    <div class="middle-content-box d-flex mb-3">
+                                      <div class="middle-content-box-inner me-2">
+                                         <a href="#"><img src="assets/images/icons/search-r-time.png"></a>
+                                      </div>
+                                      <div class="middle-content-box-inner me-2">
+                                        <a href="#"><img src="assets/images/icons/search-360.png"></a>
+                                      </div>
+                                      <div class="middle-content-box-inner me-2">
+                                        <a href="#"><img src="assets/images/icons/search-doller.png"></a> 
+                                      </div>
+                                      <div class="middle-content-box-inner me-2">
+                                        <a href="#"><img src="assets/images/icons/search-h-loaction.png"></a> 
+                                      </div>
+                                    </div>
+                                    <div class="middle-content-bottom">
+                                      <p class="m-0">12 Nights, 2 Guests, 2 Rooms, 4 Beds</p>
+                                      <p class="bottom-text">Tax. Included</p>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-4 border-left">
+                            <div class="result-right-content mt-3 ps-3 pe-3">
+                              <div class="result-right-inner">
+                                <div class="right-select">
+                                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <option selected>What’s nearby</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                                <div class="right-menu-main">
+                                  <div class="right-menu-inner">
+                                    <div class="right-menu mb-2">
+                                      <div class="right-menu-icon d-flex pb-1">
+                                        <div class="right-menu-icon-inner">
+                                          <img src="assets/images/icons/search-i-1.png">
+                                        </div>
+                                        <div>Fábula Taberna</div>
+                                      </div>
+                                    </div>
+                                    <div class="right-menu mb-2">
+                                      <div class="right-menu-icon d-flex pb-1">
+                                        <div class="right-menu-icon-inner">
+                                          <img src="assets/images/icons/search-i-2.png">
+                                        </div>
+                                        <div>El Albero</div>
+                                      </div>
+                                    </div>
+                                    <div class="right-menu mb-2">
+                                      <div class="right-menu-icon d-flex pb-1">
+                                        <div class="right-menu-icon-inner">
+                                          <img src="assets/images/icons/search-i-3.png">
+                                        </div>
+                                        <div>LePaste</div>
+                                      </div>
+                                    </div>
+                                    <div class="right-menu mb-2">
+                                      <div class="right-menu-icon d-flex pb-1">
+                                        <div class="right-menu-icon-inner">
+                                          <img src="assets/images/icons/search-i-4.png">
+                                        </div>
+                                        <div>Pf Changs</div>
+                                      </div>
+                                    </div>
+                                    <div class="right-menu mb-2">
+                                      <div class="right-menu-icon d-flex pb-1">
+                                        <div class="right-menu-icon-inner">
+                                          <img src="assets/images/icons/search-i-5.png">
+                                        </div>
+                                        <div>ATM Gran Via</div>
+                                      </div>
+                                    </div>
+                                    <div class="right-menu mb-2">
+                                      <div class="right-menu-icon d-flex pb-1">
+                                        <div class="right-menu-icon-inner">
+                                          <img src="assets/images/icons/search-i-6.png">
+                                        </div>
+                                        <div>Hotel V bar</div>
+                                      </div>
+                                    </div>         
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </main>
+                    <div class="search-result-price-tag ">
+                      <button class="price-btn">$1.520 for 3 Nights</button>
+                    </div>
+                    <main class="result-main-content mt-4">
+                        <div class="result-main-inner">
+                          <div class="row">
+                            <div class="col-4">
+                              <div class="result-main-img overflow-hidden">
+                                <img src="assets/images/search-r-2.png"class="img-wrapper">
+                              </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="result-main-middle">
+                                  <div class="result-main-middle-content">
+                                      <h2 class="middle-content-heading pt-4 mb-1">Hilton Hotel</h2>
+                                      <div class="middle-content-location">
+                                        <p class="mb-1"><img src="assets/images/icons/search-h-loaction.png"><span class="loaction-text">Madrid, Spain</span></p>
+                                        <p class="loaction-text mb-3">Las Ramblas Neighborhood</p>
+                                      </div>
+                                      <div class="middle-content-review">
+                                        <p class="m-0 review-text text-decoration-underline">1024 reviews</p>
+                                        <span><img src="assets/images/icons/start.png"></span>
+                                        <span><img src="assets/images/icons/start.png"></span>
+                                        <span><img src="assets/images/icons/start.png"></span>
+                                        <span><img src="assets/images/icons/start.png"></span>
+                                        <span><img src="assets/images/icons/start.png"></span>
+                                        <div class="total-review mt-2 mb-3">
+                                            <span class="total-review-text">8/10</span>
+                                        </div>
+                                      </div>
+                                      <div class="middle-content-box d-flex mb-3">
+                                        <div class="middle-content-box-inner me-2">
+                                           <a href="#"><img src="assets/images/icons/search-r-time.png"></a>
+                                        </div>
+                                        <div class="middle-content-box-inner me-2">
+                                          <a href="#"><img src="assets/images/icons/search-360.png"></a>
+                                        </div>
+                                        <div class="middle-content-box-inner me-2">
+                                          <!-- <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!"><img src="assets/images/icons/search-doller.png"></a> -->
+                                          <a href="#"><img src="assets/images/icons/search-doller.png"></a> 
+                                        </div>
+                                        <div class="middle-content-box-inner me-2">
+                                          <a href="#"><img src="assets/images/icons/search-h-loaction.png"></a> 
+                                        </div>
+                                      </div>
+                                      <div class="middle-content-bottom">
+                                        <p class="m-0">12 Nights, 2 Guests, 2 Rooms, 4 Beds</p>
+                                        <p class="bottom-text">Tax. Included</p>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-4 border-left">
+                              <div class="result-right-content mt-3 ps-3 pe-3">
+                                <div class="result-right-inner">
+                                  <div class="right-select">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                      <option selected>What’s nearby</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                  <div class="right-menu-main">
+                                    <div class="right-menu-inner">
+                                      <div class="right-menu mb-2">
+                                        <div class="right-menu-icon d-flex pb-1">
+                                          <div class="right-menu-icon-inner">
+                                            <img src="assets/images/icons/search-i-1.png">
+                                          </div>
+                                          <div>Fábula Taberna</div>
+                                        </div>
+                                      </div>
+                                      <div class="right-menu mb-2">
+                                        <div class="right-menu-icon d-flex pb-1">
+                                          <div class="right-menu-icon-inner">
+                                            <img src="assets/images/icons/search-i-2.png">
+                                          </div>
+                                          <div>El Albero</div>
+                                        </div>
+                                      </div>
+                                      <div class="right-menu mb-2">
+                                        <div class="right-menu-icon d-flex pb-1">
+                                          <div class="right-menu-icon-inner">
+                                            <img src="assets/images/icons/search-i-3.png">
+                                          </div>
+                                          <div>LePaste</div>
+                                        </div>
+                                      </div>
+                                      <div class="right-menu mb-2">
+                                        <div class="right-menu-icon d-flex pb-1">
+                                          <div class="right-menu-icon-inner">
+                                            <img src="assets/images/icons/search-i-4.png">
+                                          </div>
+                                          <div>Pf Changs</div>
+                                        </div>
+                                      </div>
+                                      <div class="right-menu mb-2">
+                                        <div class="right-menu-icon d-flex pb-1">
+                                          <div class="right-menu-icon-inner">
+                                            <img src="assets/images/icons/search-i-5.png">
+                                          </div>
+                                          <div>ATM Gran Via</div>
+                                        </div>
+                                      </div>
+                                      <div class="right-menu mb-2">
+                                        <div class="right-menu-icon d-flex pb-1">
+                                          <div class="right-menu-icon-inner">
+                                            <img src="assets/images/icons/search-i-6.png">
+                                          </div>
+                                          <div>Hotel V bar</div>
+                                        </div>
+                                      </div>         
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </main>
+                    <div class="search-result-price-tag ">
+                      <button class="price-btn">$1.260 for 3 Nights</button>
+                    </div>
+                    <main class="result-main-content mt-4">
+                          <div class="result-main-inner">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="result-main-img overflow-hidden position-relative">
+                                  <img src="assets/images/search-r-3.png"class="img-wrapper">
+                                  <div class="sold-out-logo position-absolute top-0">
+                                    <img src="assets/images/icons/search-soldout.png" >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                  <div class="result-main-middle">
+                                    <div class="result-main-middle-content">
+                                        <h2 class="middle-content-heading pt-4 mb-1">First Hotel</h2>
+                                        <div class="middle-content-location">
+                                          <p class="mb-1"><img src="assets/images/icons/search-h-loaction.png"><span class="loaction-text">Madrid, Spain</span></p>
+                                          <p class="loaction-text mb-3">Las Ramblas Neighborhood</p>
+                                        </div>
+                                        <div class="middle-content-review">
+                                          <p class="m-0 review-text text-decoration-underline">1024 reviews</p>
+                                          <span><img src="assets/images/icons/start.png"></span>
+                                          <span><img src="assets/images/icons/start.png"></span>
+                                          <span><img src="assets/images/icons/start.png"></span>
+                                          <span><img src="assets/images/icons/start.png"></span>
+                                          <span><img src="assets/images/icons/start.png"></span>
+                                          <div class="total-review mt-2 mb-3">
+                                              <span class="total-review-text">8/10</span>
+                                          </div>
+                                        </div>
+                                        <div class="middle-content-box d-flex mb-3">
+                                          <div class="middle-content-box-inner me-2">
+                                             <a href="#"><img src="assets/images/icons/search-r-time.png"></a>
+                                          </div>
+                                          <div class="middle-content-box-inner me-2">
+                                            <a href="#"><img src="assets/images/icons/search-360.png"></a>
+                                          </div>
+                                          <div class="middle-content-box-inner me-2">
+                                            <a href="#"><img src="assets/images/icons/search-doller.png"></a> 
+                                          </div>
+                                          <div class="middle-content-box-inner me-2">
+                                            <a href="#"><img src="assets/images/icons/search-h-loaction.png"></a> 
+                                          </div>
+                                        </div>
+                                        <div class="middle-content-bottom">
+                                          <p class="m-0">12 Nights, 2 Guests, 2 Rooms, 4 Beds</p>
+                                          <p class="bottom-text">Tax. Included</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-4 border-left">
+                                <div class="result-right-content mt-3 ps-3 pe-3">
+                                  <div class="result-right-inner">
+                                    <div class="right-select">
+                                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                        <option selected>What’s nearby</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                    </div>
+                                    <div class="right-menu-main">
+                                      <div class="right-menu-inner">
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-1.png">
+                                            </div>
+                                            <div>Fábula Taberna</div>
+                                          </div>
+                                        </div>
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-2.png">
+                                            </div>
+                                            <div>El Albero</div>
+                                          </div>
+                                        </div>
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-3.png">
+                                            </div>
+                                            <div>LePaste</div>
+                                          </div>
+                                        </div>
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-4.png">
+                                            </div>
+                                            <div>Pf Changs</div>
+                                          </div>
+                                        </div>
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-5.png">
+                                            </div>
+                                            <div>ATM Gran Via</div>
+                                          </div>
+                                        </div>
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-6.png">
+                                            </div>
+                                            <div>Hotel V bar</div>
+                                          </div>
+                                        </div>         
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </main>
+                    <div class="search-result-price-tag search-result-notify position-relative">
+                      <button class="price-btn notify-btn">Notify Me</button>
+                    </div>
+                     
+                    <main class="result-main-content mt-4">
+                          <div class="result-main-inner">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="result-main-img overflow-hidden">
+                                  <img src="assets/images/search-r-4.png"class="img-wrapper">
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                  <div class="result-main-middle">
+                                    <div class="result-main-middle-content">
+                                        <h2 class="middle-content-heading pt-4 mb-1">First Hotel</h2>
+                                        <div class="middle-content-location">
+                                          <p class="mb-1"><img src="assets/images/icons/search-h-loaction.png"><span class="loaction-text">Madrid, Spain</span></p>
+                                          <p class="loaction-text mb-3">Las Ramblas Neighborhood</p>
+                                        </div>
+                                        <div class="middle-content-review">
+                                          <p class="m-0 review-text text-decoration-underline">1024 reviews</p>
+                                          <span><img src="assets/images/icons/start.png"></span>
+                                          <span><img src="assets/images/icons/start.png"></span>
+                                          <span><img src="assets/images/icons/start.png"></span>
+                                          <span><img src="assets/images/icons/start.png"></span>
+                                          <span><img src="assets/images/icons/start.png"></span>
+                                          <div class="total-review mt-2 mb-3">
+                                              <span class="total-review-text">8/10</span>
+                                          </div>
+                                        </div>
+                                        <div class="middle-content-box d-flex mb-3">
+                                          <div class="middle-content-box-inner me-2">
+                                             <a href="#"><img src="assets/images/icons/search-r-time.png"></a>
+                                          </div>
+                                          <div class="middle-content-box-inner me-2">
+                                            <a href="#"><img src="assets/images/icons/search-360.png"></a>
+                                          </div>
+                                          <div class="middle-content-box-inner me-2">
+                                            <a href="#"><img src="assets/images/icons/search-doller.png"></a> 
+                                          </div>
+                                          <div class="middle-content-box-inner me-2">
+                                            <a href="#"><img src="assets/images/icons/search-h-loaction.png"></a> 
+                                          </div>
+                                        </div>
+                                        <div class="middle-content-bottom">
+                                          <p class="m-0">12 Nights, 2 Guests, 2 Rooms, 4 Beds</p>
+                                          <p class="bottom-text">Tax. Included</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-4 border-left">
+                                <div class="result-right-content mt-3 ps-3 pe-3">
+                                  <div class="result-right-inner">
+                                    <div class="right-select">
+                                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                        <option selected>What’s nearby</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                    </div>
+                                    <div class="right-menu-main">
+                                      <div class="right-menu-inner">
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-1.png">
+                                            </div>
+                                            <div>Fábula Taberna</div>
+                                          </div>
+                                        </div>
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-2.png">
+                                            </div>
+                                            <div>El Albero</div>
+                                          </div>
+                                        </div>
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-3.png">
+                                            </div>
+                                            <div>LePaste</div>
+                                          </div>
+                                        </div>
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-4.png">
+                                            </div>
+                                            <div>Pf Changs</div>
+                                          </div>
+                                        </div>
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-5.png">
+                                            </div>
+                                            <div>ATM Gran Via</div>
+                                          </div>
+                                        </div>
+                                        <div class="right-menu mb-2">
+                                          <div class="right-menu-icon d-flex pb-1">
+                                            <div class="right-menu-icon-inner">
+                                              <img src="assets/images/icons/search-i-6.png">
+                                            </div>
+                                            <div>Hotel V bar</div>
+                                          </div>
+                                        </div>         
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </main>
+                      <div class="search-result-price-tag ">
+                        <button class="price-btn">$1.520 for 3 Nights</button>
+                      </div>
+                </di  v>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!------- Search result end ------->
+<!-------- Footer start -------->
+<footer class="footer hotel-result">
+  <div class="container">
+    <div class="footer-main">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-title">
+            <a href="#">Odda</a>
+          </div>
+          <div class="footer-icon">
+            <div class="icon-inner"><i class="fa-brands fa-facebook-f"></i></div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-3">
+          <div class="footer-link">
+            <h5 class="purple">Products</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link ps-0 active" href="#">Hotels</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-0" href="#"> Places</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-0" href="#">Transportation</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-3">
+          <div class="footer-link">
+            <h5 class="purple">Customers</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-0" href="#"> Reviews</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-3">
+          <div class="footer-link">
+            <h5 class="purple">Company</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link ps-0 active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-0" href="#">Job</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-0" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-0" href="#">Newsroom</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-0" href="#">Terms of Use</a>
+                </li> 
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-3">
+          <div class="footer-link">
+            <h5 class="purple">Resources</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link ps-0 active" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-0" href="#"> Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p class="mb-0">© Inc. All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-------- Footer end -------->
+
+</body>
+</html>

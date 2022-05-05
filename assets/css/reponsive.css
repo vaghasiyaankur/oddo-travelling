@@ -1,0 +1,51 @@
+@media screen and (max-width:991px) {
+    .s-top-city .container{
+        max-width:720px;
+    }
+    .check-in-out .check-in-out-inner .check-in-out-form .check-in-out-bottom .select-option{
+        max-width: 100%;
+    }   
+}
+@media screen and (max-width:767px) {
+    .travel-planning .travel-planning-inner .travel-planning-heading h1{
+        font-size: 43px;
+        line-height: 25px;
+        margin-bottom: 31px;
+    }
+    
+}
+@media screen and (max-width:1399px) {
+    .travel-planning .travel-info-main .travel-info-inner .travel-info-csoon{
+        right: -15px;
+        top: 7px;
+    }
+    .travel-planning .travel-info-main .travel-info-inner .travel-info-rest{
+        top: 19px;
+        right: 16%;
+    }
+    .travel-planning .travel-info-main .travel-info-inner .travel-info-bag{
+        top: 77px;
+    }
+    .travel-planning .travel-info-main .travel-info-inner .travel-info-tree{
+        left: 45%;
+        top: -8px;
+    }
+    .travel-planning .travel-info-main .travel-info-inner .travel-info-bank{
+        top: 56px;
+        left: 29%;
+    }
+}
+@media screen and (max-width:1199px) {
+    .travel-planning .travel-info-main .travel-info-inner .travel-info-rest{
+        top: 26%;
+    }
+    .travel-planning .travel-info-main .travel-info-inner .travel-info-bag{
+        top: 8px;
+    }
+    .travel-planning .travel-info-main .travel-info-inner .travel-info-bank{
+        top: 76px; 
+    }
+    .travel-planning .travel-info-main .travel-info-inner .travel-info-car{
+        top: 46px;
+    }
+}
