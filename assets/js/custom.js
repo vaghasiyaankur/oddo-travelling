@@ -9,8 +9,3 @@ $(document).ready(function () {
 $(document).on('click', function () {
   $('.collapse').collapse('hide');
 });
-
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
