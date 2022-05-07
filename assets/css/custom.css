@@ -490,7 +490,7 @@ header.header .navbar .dropdown .dropdown-btn{
 }
 .hotel-result.search-result .search-result-inner .hotel-result-form .form-control:focus{
     background-color: transparent !important;
-    border-color: transparent !important;
+    border-color: #393C52 !important;
     box-shadow: none !important;
 }
 .hotel-result.search-result .search-result-inner .side-content .side-text{
@@ -537,7 +537,7 @@ header.header .navbar .dropdown .dropdown-btn{
     line-height: 22px;
     font-weight: 400;
 }
-.hotel-result.search-result .side-content .hotel-result-form .hotels-results-menities .amenities-icon img{
+.hotel-result.search-result .side-content .hotel-result-form .hotels-results-amenities .amenities-icon img{
     vertical-align: baseline;
 }
 /******search result side bar end ******/
@@ -553,13 +553,13 @@ header.header .navbar .dropdown .dropdown-btn{
 .hotel-result.search-result main.border-semidark{
     border: 1px solid #A4A6BA;
 }
-.search-result .result-main-content .result-main-middle h2.middle-content-heading{
+.hotel-result.search-result .result-main-content .result-main-middle h2.middle-content-heading{
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     color: #393C52;
 }
-.search-result .result-main-content .middle-content-location .loaction-text{
+.hotel-result.search-result .result-main-content .middle-content-location .loaction-text{
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -568,7 +568,7 @@ header.header .navbar .dropdown .dropdown-btn{
     color: #878996;
     vertical-align: middle;
 }
-.search-result .result-main-content .middle-content-review p{
+.hotel-result.search-result .result-main-content .middle-content-review p{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -576,7 +576,7 @@ header.header .navbar .dropdown .dropdown-btn{
     font-family: 'Abel', sans-serif;
     color: #878996;
 }
-.search-result .result-main-content .middle-content-review .total-review .total-review-text{
+.hotel-result.search-result .result-main-content .middle-content-review .total-review .total-review-text{
     padding: 8px 9px;
     background: #219653;
     border-radius: 5px;
@@ -585,7 +585,7 @@ header.header .navbar .dropdown .dropdown-btn{
     font-size: 12px;
     line-height: 12px;
 }
-.search-result .result-main-content .result-main-middle .middle-content-box-inner{
+.hotel-result.search-result .result-main-content .result-main-middle .middle-content-box-inner{
     width: 32px;
     height: 32px;
     background: #EEF1F7;
@@ -594,23 +594,24 @@ header.header .navbar .dropdown .dropdown-btn{
     place-items: center;
     line-height: 0;
 }
-.search-result .result-main-content .result-main-middle .middle-content-bottom p{
+.hotel-result.search-result .result-main-content .result-main-middle .middle-content-bottom p{
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
     color: #A4A6BA;
 }
-.search-result .result-main-content .result-main-middle .middle-content-bottom p.bottom-text{
+.hotel-result.search-result .result-main-content .result-main-middle .middle-content-bottom p.bottom-text{
     color: #878996;
 }
-    /***** Modal design ****/
-.search-result .search-result-inner .modal-content{
+/********* Popup design start*********/
+.hotel-result.search-result .search-result-inner .modal-content{
     background: rgba(57, 60, 82, 0.9);
 }
-.search-result .search-result-inner .modal-header{
+.hotel-result.search-result .search-result-inner .modal-header{
     border-bottom: none;
 }
-.modal-body .modal-body-img img{
+/****** View360 popup start *******/
+.hotel-result.search-result .modal-body .modal-body-img img{
     border: 10px solid #fff;
     border-radius: 8px;
     width: 100%;
@@ -618,7 +619,10 @@ header.header .navbar .dropdown .dropdown-btn{
     height: 100%;
     max-height: 640px;
 }
-.search-result .search-result-inner .result-main-content .middle-content-box .price-comparision-main .price-comparison{
+/****** View360 popup end *******/
+
+/******** Price comparision popup start**********/
+.hotel-result.search-result .search-result-inner .result-main-content .middle-content-box .price-comparision-main .price-comparison{
     width: 100%;
     max-width: 676px;
     margin: 0 auto;
@@ -626,7 +630,7 @@ header.header .navbar .dropdown .dropdown-btn{
     background: #fff;
     border-radius: 8px;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison .price-comparison-heading .comparison-title h3{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison .price-comparison-heading .comparison-title h3{
     font-family: 'Avenir LT Std';
     font-style: normal;
     font-weight: 400;
@@ -634,28 +638,28 @@ header.header .navbar .dropdown .dropdown-btn{
     line-height: 32px;
     color: #393C52;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison .price-comparison-heading .comparison-text{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison .price-comparison-heading .comparison-text{
     font-size: 14px;
     line-height: 22px;
     color: #A4A6BA;
     font-style: normal;
     font-weight: 400;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main p{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main p{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #393C52;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-details h5{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-details h5{
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     color: #6A78C7;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-details h6{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-details h6{
     font-family: 'Avenir LT Std';
     font-style: normal;
     font-weight: 400;
@@ -664,20 +668,20 @@ header.header .navbar .dropdown .dropdown-btn{
     letter-spacing: -0.06em;
     color: #6A78C7;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-wrapper{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-wrapper{
     border: 1px solid #6A78C7;
     padding: 32px;
     box-shadow: 0px 0px 19px rgb(0 0 0 / 10%);
     border-radius: 8px;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-info p{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-info p{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 32px;
     color: #40CC6D;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-info .price-comparison-btn{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-info .price-comparison-btn{
     background: #40CC6D;
     border-radius: 4px;
     font-style: normal;
@@ -687,25 +691,25 @@ header.header .navbar .dropdown .dropdown-btn{
     padding: 11px 15px;
     color: #fff;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-add-btn .price-add-button{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-add-btn .price-add-button{
     border-radius: 100px;
     padding: 12px 40px;
     color: #fff;
     margin-top: -28px;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-other-main .price-other-wrapper{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-other-main .price-other-wrapper{
     border: 1px solid #A4A6BA;
     border-radius: 8px;
     padding: 17px 26px;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-other-main .price-other-wrapper .other-middle-text{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-other-main .price-other-wrapper .other-middle-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     color: #878996;
     text-align: center;
 }
-.search-result .search-result-inner .result-main-content .price-comparision-main .price-other-main .price-other-wrapper .other-price-text{
+.hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-other-main .price-other-wrapper .other-price-text{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -713,35 +717,150 @@ header.header .navbar .dropdown .dropdown-btn{
     color: #6A78C7;
     text-align: center;
 }
+/******* Price Comparision popup end *******/
+/******* Location popup start *******/
+.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup-main .location-popup{
+    background: #fff;
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup-main .location-popup .loaction-popup-gmap iframe{
+    border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup-main .location-popup-hilton{
+    position: absolute;
+    top: 19px;
+    left: 46%;
+}
+.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-dist-radius{
+    width: 100%;
+    max-width: 184px;
+    height: 100%;
+    max-height: 188px;
+    background: #fff;
+    position: absolute;
+    top: 44px;
+    right: 25px;
+    border-radius: 8px;
+}
+.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-dist-radius .dist-radius-content h5{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #393C52;
+}
+.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-dist-radius .dist-radius-total{
+    width: 64px;
+    height: 44px;
+    background: #F8F8FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #6A78C7;
+}
+.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-dist-radius .dist-radius-mile-text p{
+    font-size: 12px;
+    line-height: 22px;
+    color: #878996;
+}
+/******* Location popup End *******/
 
-/******* My preferences-popup ******/
-.search-result .side-content .mypreferences-popup .hotel-sort-popup .hotel-sort-popup-heading h4{
+/******* Notify popup start ********/
+.hotel-result.search-result .search-result-price-tag .notify-popup-main .notify-popup-inner{
+    background: #fff;
+    width: 100%;
+    max-width: 327px;
+    border-radius: 8px;
+}
+.hotel-result.search-result .search-result-price-tag .notify-popup-main .notify-popup-inner .notify-popup-soldout{
+    position: absolute;
+    top: 0;
+}
+.hotel-result.search-result .search-result-price-tag .notify-popup-main .notify-popup-content .notify-input-select .form-check-input[type=checkbox]{
+    border-radius: 2px;
+}
+.hotel-result.search-result .search-result-price-tag .notify-popup-main .notify-popup-content .notify-input-select .form-check-input{
+    box-shadow: none;
+    border-color: #878996;
+}
+.hotel-result.search-result .search-result-price-tag .notify-popup-main .notify-popup-content .notify-input-select .form-check-input:checked{
+    background-color: #6A78C7;
+    border-color: #6A78C7;
+}
+.hotel-result.search-result .search-result-price-tag .notify-popup-main .notify-popup-content .notify-input-select .padding-left{
+    padding-left: 125px;
+}
+.hotel-result.search-result .search-result-price-tag .notify-popup-main .notify-popup-content .notify-input-select .form-custom-control{
+    padding: 13px 48px;
+    border: 1px solid #A4A6BA;
+    border-radius: 5px;
+    width: 100%;
+    width: 242px !important;
+    margin: 0 auto;
+}
+.hotel-result.search-result .search-result-price-tag .notify-popup-main .notify-popup-content .notify-popup-heading h5{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #393C52;
+    padding: 0 50px;
+}
+/******* Notify popup end ********/
+/******* My preferences-popup start******/
+.hotel-result.search-result .side-content .mypreferences-popup .hotel-sort-popup .hotel-sort-popup-heading h4{
     font-weight: 400;
     font-size: 32px;
     line-height: 32px;
     color: #393C52;
 }
-.search-result .side-content .mypreferences-popup .hotel-sort-popup {
+.hotel-result.search-result .side-content .mypreferences-popup .hotel-sort-popup {
     background: #fff;
     padding: 22px 40px;
     border-radius: 8px;
+    width: 100%;
+    max-width: 670px;
 }
+.hotel-result.search-result .search-result-inner .side-content .hotel-result-form  .hotel-sort-popup label.form-check-label{
+    padding-bottom: 8px;
+}
+.hotel-result.search-result .side-content .mypreferences-popup .hotel-sort-popup .preference-popup-save-btn .preference-popup-btn{
+    padding: 12px 40px;
+    color: #ffff;
+    border-radius: 100px;
+}
+/******* My Preference popup end ********/
+
+/********* Popup design end*********/
+
+
+
 /****** Search result main end *******/
-.search-result .search-result-inner .border-left{
+.hotel-result.search-result .search-result-inner .border-left{
     border-left: 1px solid #A4A6BA;
 }
-.search-result .search-result-inner .result-right-content .right-select .form-select{
+.hotel-result.search-result .search-result-inner .result-right-content .right-select .form-select{
     width: 100%;
     max-width: 192px;
     margin: 0 auto;
 }
-.search-result .search-result-inner .result-main-content .result-main-img img.img-wrapper{
+.hotel-result.search-result .search-result-inner .result-main-content .result-main-img img.img-wrapper{
     width: 100%;
     max-width: 301px;
     height: 100%;
     min-height: 346px;
 }
-.search-result .search-result-inner .search-result-price-tag .price-btn{
+.hotel-result.search-result .search-result-inner .search-result-price-tag .price-btn{
     border: none;
     background: #6A78C7;
     border-radius: 100px;
@@ -753,18 +872,18 @@ header.header .navbar .dropdown .dropdown-btn{
     letter-spacing: 0.02em;
     color: #fff;
 }
-.search-result .search-result-inner .search-result-price-tag{
+.hotel-result.search-result .search-result-inner .search-result-price-tag{
     margin-top: -30px;
     margin-left: 28%;
 }
-.search-result .search-result-inner .search-result-notify{
+.hotel-result.search-result .search-result-inner .search-result-notify{
     margin-top: -30px;
     margin-left: 31%;
 }
-.search-result .search-result-inner .search-result-notify .notify-btn{
+.hotel-result.search-result .search-result-inner .search-result-notify .notify-btn{
     background-color: #40CC6D;
 }
-.search-result .search-result-inner .result-main-content .result-right-content .right-menu-main .right-menu-icon-inner{
+.hotel-result.search-result .search-result-inner .result-main-content .result-right-content .right-menu-main .right-menu-icon-inner{
     width: 24px;
     height: 24px;
     display: flex;
@@ -774,16 +893,17 @@ header.header .navbar .dropdown .dropdown-btn{
     background-color: #F8F8FA;
     border-radius: 4px;
 }
-.search-result .search-result-inner .result-main-content .result-right-content .right-menu-main .right-menu-icon{
+.hotel-result.search-result .search-result-inner .result-main-content .result-right-content .right-menu-main .right-menu-icon{
     border-bottom: 1px dotted #A4A6BA;
 }
-.search-result .search-result-inner .result-main-content .result-right-content .right-menu-main{
+.hotel-result.search-result .search-result-inner .result-main-content .result-right-content .right-menu-main{
     height: 100%;
     max-height: 224px;
     overflow-y: auto;
 }
 
 /*************** Search result end **************/
+/****** Hotel result footer start ********/
 .footer.hotel-result .footer-icon .icon-inner{
     background: #DADADA;
     height: 32px;
@@ -799,8 +919,8 @@ header.header .navbar .dropdown .dropdown-btn{
     line-height: 28px;
     color: #393C52;
     text-decoration: none;
-
 }
+/****** Hotel result footer end ********/
 
 
 
