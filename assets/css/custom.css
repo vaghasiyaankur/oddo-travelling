@@ -43,6 +43,12 @@ body{
     background: #D126A1;
     box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
 }
+.bg-red{
+    background: #EB5757;
+}
+.bg-orange{
+    background: #F2994A
+}
 .bg-purple-2{
     background: #9B51E0;
 }
@@ -107,6 +113,108 @@ header.header .navbar .dropdown .dropdown-btn{
 }
 /****** Header End ******/
 /****** Landing page section start *******/
+[class^="swiper-button-"], .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
+    transition: all 0.3s ease;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.homepage-swiper.swiper-container {
+    width: 100%;
+    height: 28vw;
+    transition: opacity 0.6s ease;
+}
+.homepage-swiper.swiper-container.swiper-container-coverflow {
+    padding-top: 2%;
+}
+.homepage-swiper.swiper-container.loading {
+    opacity: 0;
+    visibility: hidden;
+}
+.homepage-swiper .swiper-slide .content p.title{
+    font-size: 56px;
+    line-height:  32px;
+    color: #fff;
+    margin-top: 40px;
+}
+.homepage-swiper.swiper-container:hover .swiper-button-prev, .swiper-container:hover .swiper-button-next {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+.homepage-swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+.homepage-swiper .swiper-slide .entity-img {
+    display: none;
+}
+.homepage-swiper .swiper-slide .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+[class^="swiper-button-"] {
+    width: 44px;
+    opacity: 0;
+    visibility: hidden;
+}
+.swiper-button-prev {
+    transform: translateX(50px);
+}
+.swiper-button-next {
+    transform: translateX(-50px);
+}
+/* .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 9px;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 0.4;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    transform: translate(-50%, -50%);
+    border: 0px solid #fff;
+    border-radius: 50%;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:hover, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+    border-width: 1px;
+} */
+@media (max-width: 1180px) {
+    .swiper-slide .content .title {
+        font-size: 25px;
+   }
+    .swiper-slide .content .caption {
+        font-size: 12px;
+   }
+}
+@media (max-width: 1023px) {
+    .swiper-container {
+        height: 40vw;
+   }
+    .swiper-container.swiper-container-coverflow {
+        padding-top: 0;
+   }
+}
+
+/****** Landing page section end ********/
 /****** Check-in-out section start *******/
 .check-in-out{
     padding: 80px 0;
@@ -571,7 +679,7 @@ header.header .navbar .dropdown .dropdown-btn{
     color: #878996;
     vertical-align: middle;
 }
-.hotel-result.search-result .result-main-content .middle-content-review p{
+.hotel-result.search-result .result-main-content .middle-content-review p a{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -745,7 +853,7 @@ header.header .navbar .dropdown .dropdown-btn{
     max-height: 188px;
     background: #fff;
     position: absolute;
-    top: 44px;
+    top: 80px;
     right: 25px;
     border-radius: 8px;
 }
@@ -802,7 +910,7 @@ header.header .navbar .dropdown .dropdown-btn{
 }
 .hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-popup-content-box .location-popup-card-single{
     width: 100%;
-    max-width: 240px;
+    min-width: 240px;
     height: 100%;
     min-height: 272px;
     background: #FFFFFF;
@@ -887,6 +995,76 @@ header.header .navbar .dropdown .dropdown-btn{
     padding: 0 50px;
 }
 /******* Notify popup end ********/
+/******* Reviews popup start *******/
+.para-fs-14{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #393C52;
+}
+.hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .reviews-popup{
+    width: 100%;
+    max-width: 852px;
+    height: 100%;
+    max-height: 746px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .reviews-popup .reviews-popup-heading{
+    border-bottom: 1px solid #A4A6BA;
+    padding: 32px 26px 17px 40px;
+}
+.hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .reviews-popup .reviews-heading h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    color: #393C52;
+}
+.hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .reviews-popup .reviews-heading P{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #878996;
+}
+.hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .reviews-popup .reviews-heading .good-text span{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #393C52;
+}
+.hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .popup-content-main{
+    padding: 16px 26px 17px 40px;
+}
+.hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .popup-content-main .review-section-total-review .review-section-text{
+    padding: 0px 8px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 24px;
+}
+.hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .popup-content-main .comment-reviews-option .form-select {
+    padding: 0.8rem 7rem 0.8rem 1rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #393C52;
+    border: 1px solid #393C52;
+    border-radius: 5px;
+}
+.hotel-result.search-result .result-main-middle .reviews-popup-main .reviews-comment-text-main .review-section-total-review span{
+    font-size: 20px;
+    line-height: 24px;
+    color: #393C52;
+}
+.hotel-result.search-result .result-main-middle .reviews-popup-main .reviews-comment-text-main .verified-text .reviews-verified-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #40CC6D;
+}
+/******* Reviews popup End *******/
+
 /******* My preferences-popup start******/
 .hotel-result.search-result .side-content .mypreferences-popup .hotel-sort-popup .hotel-sort-popup-heading h4{
     font-weight: 400;

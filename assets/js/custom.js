@@ -12,22 +12,47 @@ $(document).on('click', function () {
 
 
 
+    // Params
+    var sliderSelector = '.swiper-container',
+    options = {
+      init: false,
+      loop: true,
+      speed:800,
+      slidesPerView: 5, // or 'auto'
+      spaceBetween: 10,
+      centeredSlides : true,
+      effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+      coverflowEffect: {
+        rotate: 0, // Slide rotate in degrees
+        stretch: -100, // Stretch space between slides (in px)
+        depth: 200, // Depth offset in px (slides translate in Z axis)
+        modifier: 1, // Effect multipler
+        slideShadows : true, // Enables slides shadows
+      },
+      grabCursor: true,
+      parallax: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        1023: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        }
+      },
+      // Events
+      on: {
+        imagesReady: function(){
+          this.el.classList.remove('loading');
+        }
+      }
+    };
+var mySwiper = new Swiper(sliderSelector, options);
 
-
-$('.product-main-image').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  asNavFor: '.product-thumb-image'
-});
-$('.product-thumb-image').slick({
-  slidesToShow: 6,
-  slidesToScroll: 1,
-  asNavFor: '.product-main-image',
-  dots: false,
-  centerMode: false,
-  focusOnSelect: true
-});
+// Initialize slider
+mySwiper.init();
