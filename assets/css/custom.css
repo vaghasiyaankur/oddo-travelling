@@ -96,6 +96,27 @@ a.filter-btn{
     line-height: 22px;
     color: #393C52;
 }
+.small-box-wrapper{
+    background: #fff;
+    border-radius: 5px;
+    padding: 8px;
+    transition: all 0.5s ease;
+    border: 1px solid transparent;
+}
+.small-box-wrapper:hover{
+    box-shadow: 0px 0px 19px rgb(106 120 199 / 78%);
+    border: 1px solid #6A78C7;
+    transition: all 0.5s ease;
+}
+.d-l-Purple{
+    color: #878996;
+}
+h5.heading-fs-16{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #393C52;
+}
 /****** Header Start ******/
 header.header .navbar {
     padding: 26px 0;
@@ -902,11 +923,6 @@ header.header .navbar .dropdown .dropdown-btn{
     margin-top: -30px;
     overflow-x: auto;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-popup-box-main .small-box-wrapper{
-    background: #fff;
-    border-radius: 5px;
-    padding: 8px;
-}
 .hotel-result.search-result .search-result-inner .result-main-content .location-popup .loaction-popup-box-main .small-box-wrapper .small-box-text{
     font-weight: 400;
     font-size: 14px;
@@ -1196,6 +1212,114 @@ header.header .navbar .dropdown .dropdown-btn{
     /******** Explore cities section end ********/
 
 /******* Explore cities page end ********/
+/********* Place with map page start *********/
+    /****** Common class *******/
+    .pwd-search-input{
+        border-radius: 100px;
+        padding: 18px 20px 13px 26px;
+        max-width: 467px;
+        background: rgb(255 255 255 / 80%);
+        border: 1px solid #878996;
+        margin: 0 auto;
+    }
+    .pwm-hero h2{
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 64px;
+        color: #F8F8FA;
+    }
+    /********* Pwm hero section start ********/
+    .pwm-hero .pwm-hero-inner .pwm-hero-wraper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .pwm-hero .pwm-hero-inner .pwm-hero-img img{
+        width: 100% !important;
+        border-radius: 12px;
+        box-shadow:0px 0px 19px rgba(0, 0, 0, 0.1);
+    }
+    /********* Pwm hero section end ********/
+    /******* pwm map section start *********/
+    .pwm-map .pwm-gmap{
+        border: 5px solid #fff;
+        border-radius: 16px;
+    }
+    .pwm-map .pwm-map-inner .pwm-map-far-box{
+        position: absolute;
+        top: 29%;
+        right: 5%;
+    }
+    .pwm-map .pwm-map-inner .pwm-map-far-box {
+        width: 100%;
+        max-width: 207px;
+        height: 100%;
+        max-height: 272px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 25px 54px rgb(106 120 199 / 35%);
+        border: 1px solid #E6E8F5;
+        /* padding: 11px 24px; */
+    }
+    .pwm-map .pwm-map-inner .pwm-map-far-box .far-box-top{
+        padding: 11px 24px;
+        border-bottom: 1px solid #E6E8F5;
+    }
+    .pwm-map .pwm-map-inner .pwm-far-box-inner{
+        padding: 15px 24px 13px;
+    }
+    .pwm-map .pwm-map-inner .pwm-far-box-inner .form-check-input:checked{
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+    .pwm-map .pwm-map-inner .pwm-heading h2{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        color: #878996;
+    }
+    /******* pwm map section end *********/
+    /****** pwm-accordion section start ********/
+    .pwm-accordion .pwm-accordion-inner .pwm-accordion-title{
+        padding: 44px 23px 32px;
+        border-radius: 12px;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 0px 0px 19px rgb(0 0 0 / 10%);
+        border: 1px solid transparent;
+
+    }
+    .pwm-accordion .pwm-accordion-inner .pwm-accordion-title:hover{
+        border: 1px solid #2F80ED;
+    }
+    .pwm-accordion .pwm-accordion-inner .pwm-accordion-title .pwm-accordion-text .accordion-text{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .pwm-accordion .pwm-accordion-inner .pwm-accordion-text img{
+        vertical-align: sub;
+    }
+    .pwm-accordion a.accordion-btn{
+        border: 1px solid #878996;
+        border-radius: 100px;
+        padding: 5px 24px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .pwm-accordion .pwm-accordion-inner .rest-accordion .card{
+        border: 1px solid #E6E8F5;
+        border-radius: 12px;
+        box-shadow: 0px 0px 19px rgb(0 0 0 / 10%);
+        padding: 24px 32px;
+    }
+    /****** pwm-accordion section end ********/
+
+
+
+/********* Place with map page end *********/
+
 
 
 
