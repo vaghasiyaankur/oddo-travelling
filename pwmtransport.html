@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Design</title>
+
+    <!------- Bootstrap CSS Link------->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!------- Fontawsomee cdn link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!------- Font Family Link ------->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <!-- slick cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <!-------- Custom CSS Link -------->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+</head>
+
+<body>
+    <!------- Header start  -------->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">Odda</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Hotels </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="#">Planner
+                                <span
+                                    class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-lg-3">
+                            <a class="nav-link" href="#">Seaved</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi, Daniela!
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!------- Header End ------->
+
+    <!-------- Pwm-hero section start--------->
+    <section class="pwm-hero">
+        <div class="container">
+            <div class="pwm-hero-inner position-relative">
+                <div class="pwm-hero-img text-center mb-4">
+                    <img src="assets/images/pwm-hero-bg.png" class="img-fluid">
+                </div>
+                <div class="pwm-hero-wraper w-100 text-center">
+                    <h2 class="hero-text">Madrid</h2>
+                    <div class="hero-logo mb-4">
+                        <img src="assets/images/icons/city-s-logo.png" class="img-fluid">
+                    </div>
+                    <div class="input-group align-items-center pwd-search-input">
+                        <input type="text" class="form-control p-0 bg-transparent border-0 para-fs-14"
+                            placeholder="Search place">
+                        <i class="fa-solid fa-magnifying-glass ps-2 bg-transparent"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------- Pwm-hero section end--------->
+    <!------- pwm info box section start ------>
+    <section class="pwm-info-box">
+        <div class="container">
+            <div class="small-box-main pwm-small-box">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center  mb-2">
+                            <div class="small-box-single-img ">
+                                <img src="assets/images/icons/location-popup-1.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14">Museums</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-2.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14">Plazas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/locaion-5.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Cathedrals </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-9.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Shops </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-3.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Parks </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-4.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Markets </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-6.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Restaurants </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center active mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-10.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Nearby Towns </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-7.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Transportation </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/loaction-11.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Beaches </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-12.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Bars </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-12.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14">Nature </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------- pwm info box section end ------>
+    <section class="pwm-transport pt-5 ">
+        <div class="container">
+            <div class="pwm-transport-inner">
+                <div class="pwm-transport-heading">
+                    <h2>Transportation in Madrid</h2>
+                    <h5 class=" d-l-Purple heading-fs-16 mb-4">Go wherever you want.</h5>
+                </div>
+                <div class="pwm-transport-wrapper">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="pwm-trans-card mb-5 text-center">
+                                <div class="pwm-trans-card-head mb-4">
+                                    <h5 class="heading-fs-16">Ride Hailing</h5>
+                                </div>
+                                <div class="pwm-trans-card-inner d-flex justify-content-center align-items-center">
+                                    <div class="pwm-trans-card-content text-center">
+                                        <img src="assets/images/icons/trans-1.png">
+                                        <p class="pt-3">Get Uber credits at a <span class="green">10% discount </span> when you book a room</p>
+                                    </div>        
+                                </div>
+                                <div class="trans-btn mt-4">
+                                    <a href="#" class="filter-btn btn btn-outline-primary purple">Add </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="pwm-trans-card mb-5 text-center">
+                                <div class="pwm-trans-card-head mb-4">
+                                    <h5 class="heading-fs-16">Self-service car</h5>
+                                </div>
+                                <div class="pwm-trans-card-inner d-flex justify-content-center align-items-center">
+                                    <div class="pwm-trans-card-content text-center">
+                                        <img src="assets/images/icons/trans-2.png">
+                                    </div>        
+                                </div>
+                                <div class="trans-btn mt-4">
+                                    <a href="#" class="filter-btn btn btn-outline-primary purple">Visit Site </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="pwm-trans-card mb-5 text-center">
+                                <div class="pwm-trans-card-head mb-4">
+                                    <h5 class="heading-fs-16">Public Transportation</h5>
+                                </div>
+                                <div class="pwm-trans-card-inner d-flex justify-content-center align-items-center">
+                                    <div class="pwm-trans-card-content text-center">
+                                        <img src="assets/images/icons/trans-3.png">
+                                    </div>        
+                                </div>
+                                <div class="trans-btn mt-4">
+                                    <a href="#" class="filter-btn btn btn-outline-primary purple">Visit Site </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="pwm-trans-card mb-5 text-center">
+                                <div class="pwm-trans-card-head mb-4">
+                                    <h5 class="heading-fs-16">Train</h5>
+                                </div>
+                                <div class="pwm-trans-card-inner d-flex justify-content-center align-items-center">
+                                    <div class="pwm-trans-card-content text-center">
+                                        <img src="assets/images/icons/trans-4.png">
+                                    </div>        
+                                </div>
+                                <div class="trans-btn mt-4">
+                                    <a href="#" class="filter-btn btn btn-outline-primary purple">Visit Site </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="pwm-trans-card mb-5 text-center">
+                                <div class="pwm-trans-card-head mb-4">
+                                    <h5 class="heading-fs-16">Bus</h5>
+                                </div>
+                                <div class="pwm-trans-card-inner d-flex justify-content-center align-items-center">
+                                    <div class="pwm-trans-card-content text-center">
+                                        <img src="assets/images/icons/trans-5.png">
+                                    </div>        
+                                </div>
+                                <div class="trans-btn mt-4">
+                                    <a href="#" class="filter-btn btn btn-outline-primary purple">Visit Site </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-------- Footer start -------->
+    <footer class="footer hotel-result">
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-title mb-3">
+                            <a href="#">Odda</a>
+                        </div>
+                        <div class="footer-icon d-flex">
+                            <div class="icon-inner me-2"><i class="fa-brands fa-facebook-f text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-youtube text-white"></i></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-instagram text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-twitter text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-linkedin text-white"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Products</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Hotels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Places</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Transportation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Customers</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Reviews</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Company</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Job</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Newsroom</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Terms of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Resources</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Contact</a>
+                                </li>
+                                <h5 class="text-black">Legal</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Legal Agreement</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p class="mb-0">© Inc. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------- Footer end -------->
+</body>
+
+
+
+<!-------Jquery Cdn Link ------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!------- Bootstrap JS Link ------->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!------- Swiper js cdn------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+<!------- Custom JS Link ----- -->
+<script src="assets/js/custom.js"></script>
+
+</html>

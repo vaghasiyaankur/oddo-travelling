@@ -15,6 +15,10 @@ body{
 .purple{
     color: #6A78C7;
 }
+.green{
+    color: #219653;
+}
+
 .bg-white {
     background-color: #F8F8FA !important;
     box-shadow: 0px 2px 19px rgba(106, 120, 199,  0.66);
@@ -72,7 +76,6 @@ a.t-city-btn{
 a.filter-btn{
     padding: 5px 24px;
     border-radius: 100px;
-    color: #fff;
     font-weight: 400;
     font-weight: 400;
     font-size: 14px;
@@ -108,14 +111,13 @@ a.filter-btn{
     border: 1px solid #6A78C7;
     transition: all 0.5s ease;
 }
-.d-l-Purple{
-    color: #878996;
-}
 h5.heading-fs-16{
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: #393C52;
+}
+.d-l-Purple{
+    color: #878996;
 }
 /****** Header Start ******/
 header.header .navbar {
@@ -858,23 +860,23 @@ header.header .navbar .dropdown .dropdown-btn{
 }
 /******* Price Comparision popup end *******/
 /******* Location popup start *******/
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup-main .location-popup{
+ .location-popup{
     background: #fff;
     width: 100%;
     max-width: 1030px;
     margin: 0 auto;
     border-radius: 8px;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup-main .location-popup .loaction-popup-gmap iframe{
+ .location-popup .loaction-popup-gmap iframe{
     border-top-left-radius: 8px;
     border-top-left-radius: 8px;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup-main .location-popup-hilton{
+ .location-popup-hilton{
     position: absolute;
     top: 19px;
     left: 46%;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-dist-radius{
+ .location-popup .loaction-dist-radius{
     width: 100%;
     max-width: 184px;
     height: 100%;
@@ -885,14 +887,14 @@ header.header .navbar .dropdown .dropdown-btn{
     right: 25px;
     border-radius: 8px;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-dist-radius .dist-radius-content h5{
+ .location-popup .loaction-dist-radius .dist-radius-content h5{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #393C52;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-dist-radius .dist-radius-total{
+ .location-popup .loaction-dist-radius .dist-radius-total{
     width: 64px;
     height: 44px;
     background: #F8F8FA;
@@ -905,12 +907,12 @@ header.header .navbar .dropdown .dropdown-btn{
     line-height: 24px;
     color: #6A78C7;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-dist-radius .dist-radius-mile-text p{
+ .location-popup .loaction-dist-radius .dist-radius-mile-text p{
     font-size: 12px;
     line-height: 22px;
     color: #878996;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-dist-radius .dist-radius-mile span{
+ .location-popup .loaction-dist-radius .dist-radius-mile span{
     padding: 0px 16px;
     font-size: 10px;
     line-height: 12px;
@@ -918,12 +920,12 @@ header.header .navbar .dropdown .dropdown-btn{
     letter-spacing: 0.01em;
     font-weight: 400;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-popup-content-box{
+ .location-popup .loaction-popup-content-box{
     z-index: 99;
     margin-top: -30px;
     overflow-x: auto;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .location-popup .loaction-popup-box-main .small-box-wrapper .small-box-text{
+ .location-popup .loaction-popup-box-main .small-box-wrapper .small-box-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
@@ -931,7 +933,7 @@ header.header .navbar .dropdown .dropdown-btn{
     align-items: center;
     color: #393C52;
 }
-.hotel-result.search-result .search-result-inner .result-main-content .result-main-middle .location-popup .loaction-popup-content-box .location-popup-card-single{
+ .location-popup .loaction-popup-content-box .location-popup-card-single{
     width: 100%;
     min-width: 240px;
     height: 100%;
@@ -941,24 +943,24 @@ header.header .navbar .dropdown .dropdown-btn{
     border-radius: 8px;
     margin-right: 6px;
 }
-.hotel-result.search-result .search-result-inner .location-popup .loaction-popup-content-box .location-popup-card-single{
+ .location-popup .loaction-popup-content-box .location-popup-card-single{
     width: 100%;
     max-width: 240px;
     background: #FFFFFF;
     box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-.hotel-result.search-result .search-result-inner .location-popup .loaction-popup-content-box .location-popup-card-single .card-single-head{
+ .location-popup .loaction-popup-content-box .location-popup-card-single .card-single-head{
     /* background: #6A78C7; */
     border-radius: 8px 8px 0px 0px;
     padding: 12px 17px;
 }
-.hotel-result.search-result .search-result-inner .location-popup .loaction-popup-content-box .location-popup-card-single .card-content{
+ .location-popup .loaction-popup-content-box .location-popup-card-single .card-content{
     padding: 15px 22px;
     overflow-y: auto;
     max-height: 194px;
 }
-.hotel-result.search-result .search-result-inner .location-popup .loaction-popup-content-box .location-popup-card-single .card-content p{
+ .location-popup .loaction-popup-content-box .location-popup-card-single .card-content p{
     font-family: 'Abel', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -966,7 +968,7 @@ header.header .navbar .dropdown .dropdown-btn{
     line-height: 18px;
     color: #393C52;
 }
-.hotel-result.search-result .search-result-inner .location-popup .loaction-popup-content-box .location-popup-card-single .card-head-text{
+.location-popup .loaction-popup-content-box .location-popup-card-single .card-head-text{
     font-size: 14px;
     line-height: 22px;
     color: #fff;
@@ -1228,6 +1230,10 @@ header.header .navbar .dropdown .dropdown-btn{
         line-height: 64px;
         color: #F8F8FA;
     }
+    .pwm-gmap{
+        border: 5px solid #fff;
+        border-radius: 16px;
+    }
     /********* Pwm hero section start ********/
     .pwm-hero .pwm-hero-inner .pwm-hero-wraper{
         position: absolute;
@@ -1242,10 +1248,6 @@ header.header .navbar .dropdown .dropdown-btn{
     }
     /********* Pwm hero section end ********/
     /******* pwm map section start *********/
-    .pwm-map .pwm-gmap{
-        border: 5px solid #fff;
-        border-radius: 16px;
-    }
     .pwm-map .pwm-map-inner .pwm-map-far-box{
         position: absolute;
         top: 29%;
@@ -1281,13 +1283,15 @@ header.header .navbar .dropdown .dropdown-btn{
     }
     /******* pwm map section end *********/
     /****** pwm-accordion section start ********/
+    .pwm-accordion{
+        padding-bottom: 100px;
+    }
     .pwm-accordion .pwm-accordion-inner .pwm-accordion-title{
         padding: 44px 23px 32px;
         border-radius: 12px;
         transition: all 0.5s ease-in-out;
         box-shadow: 0px 0px 19px rgb(0 0 0 / 10%);
         border: 1px solid transparent;
-
     }
     .pwm-accordion .pwm-accordion-inner .pwm-accordion-title:hover{
         border: 1px solid #2F80ED;
@@ -1308,17 +1312,122 @@ header.header .navbar .dropdown .dropdown-btn{
         font-size: 12px;
         line-height: 22px;
     }
-    .pwm-accordion .pwm-accordion-inner .rest-accordion .card{
+    .pwm-accordion .pwm-accordion-inner .rest-accordion .rest-accordion-body{
         border: 1px solid #E6E8F5;
         border-radius: 12px;
         box-shadow: 0px 0px 19px rgb(0 0 0 / 10%);
         padding: 24px 32px;
+        max-height: 268px;
+    }
+    .pwm-accordion .pwm-accordion-inner .rest-accordion .rest-accordion-body-close{
+        max-height: 320px;
+    }
+    .pwm-accordion .pwm-accordion-inner .rest-accordion .rest-accordion-right p{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        color: #A4A6BA;
+    }
+    .pwm-accordion .pwm-accordion-inner .rest-accordion .rest-accordionp-data{
+        border-bottom: 0.5px dashed #A4A6BA;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
     /****** pwm-accordion section end ********/
-
-
-
 /********* Place with map page end *********/
+
+/******* place with map transport start ********/
+    .small-box-wrapper.small-box-blue2:hover{
+        border: 1px solid #2D9CDB;
+        box-shadow: 0px 0px 8px #2d9cdb;
+    }
+    .pwm-transport-heading h2{
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 32px;
+        color: #393C52;
+    }
+    .pwm-transport{
+        padding-bottom: 80px;
+    }
+    /* .pwm-transport .pwm-transport-inner .pwm-trans-card {
+        width: 100%;
+        max-width: 240px;
+    } */
+    .pwm-transport .pwm-trans-card .pwm-trans-card-inner{
+        box-shadow: 0px 0px 19px rgb(0 0 0 / 10%);
+        border-radius: 12px;
+        background: #fff;
+        /* max-width: 240px; */
+        max-height: 240px;
+        padding: 103px 32px;
+        /* margin: 0 auto; */
+    }
+    .pwm-transport .pwm-trans-card .pwm-trans-card-inner .pwm-trans-card-content p{
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 24px;
+        color: #393C52;
+    }
+    .pwm-transport .pwm-transport-inner .pwm-trans-card .trans-btn .btn-outline-primary{
+        transition: all 0.5s ease;
+    }
+    .pwm-transport .pwm-transport-inner .pwm-trans-card .trans-btn .btn-outline-primary:hover{
+        background-color: #6A78C7;
+        border-color: #6A78C7;
+        color: #fff !important;
+    }
+/******* place with map transport end ********/
+    /******** Common css for pwm-card   *********/
+    .pwm-card-inner{
+        width: 100%;
+        max-width: 240px;
+    }
+    .pwm-card{
+        height: 100%;
+        max-height: 278px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        border: none;
+    }
+    .pwm-card-body{
+        padding: 13px 24px 26px 23px;
+    }
+    .pwm-card-pluse img{
+        vertical-align: initial;
+    }
+/********* place with map second page start ********/
+
+    /******** pwm-museums section start **********/    
+    .pwm-museums{
+        padding-bottom: 192px;
+    }
+    .pwm-museums .pwm-museums-main .pwm-museums-map{
+        height: 580px;
+    }
+    .pwm-museums .pwm-museums-main .pwm-museums-card-main{
+        max-height: 580px;
+        overflow: auto;
+    }
+    /******** pwm-museums section end **********/
+
+/********* place with map second page end ********/
+
+/********* place with map third page start ********/
+    /*********** pwm-shop section start **********/
+    .pwm-shop .pwm-shop-check .form-check-input:checked{
+        background-color: #f2c94c;
+        border-color: #f2c94c;
+    }
+    .small-box-wrapper.small-box-wrapper-yellow:hover{
+        box-shadow: 0px 0px 8px rgb(242 201 76);
+        border: 1px solid #f2c94c;
+    }
+    /*********** pwm-shop section end **********/
+
+/********* place with map third page end ********/
+
 
 
 
