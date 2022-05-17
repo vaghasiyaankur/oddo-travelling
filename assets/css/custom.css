@@ -9,7 +9,7 @@ body{
     color: #000;
     font-family: 'Avenir LT Std';
     width: 100%;
-    background: linear-gradient(180deg, #EEF1F7 0%, rgba(238, 241, 247, 0) 100%);
+    /* background: linear-gradient(180deg, #EEF1F7 0%, rgba(238, 241, 247, 0) 100%); */
 }
 /******* Comman Classes *******/
 .purple{
@@ -18,7 +18,15 @@ body{
 .green{
     color: #219653;
 }
-
+.green-two{
+    color: #6FCF97;
+}
+.text--green{
+    color: #40CC6D;
+}
+.text--red{
+    color: #DC4946;
+}
 .bg-white {
     background-color: #F8F8FA !important;
     box-shadow: 0px 2px 19px rgba(106, 120, 199,  0.66);
@@ -118,6 +126,22 @@ h5.heading-fs-16{
 }
 .d-l-Purple{
     color: #878996;
+}
+.purple-dark{
+    color: #393C52;
+}
+.para-d-l-p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #878996;
+    }
+.btn-check:focus+.btn,
+.btn:focus{
+    box-shadow: none;
+}
+.form-check-input:focus{
+    box-shadow: none;
+    border-color: #878996;
 }
 /****** Header Start ******/
 header.header .navbar {
@@ -248,6 +272,135 @@ header.header .navbar .dropdown .dropdown-btn{
 }
 /****** Landing page section end ********/
 /****** Check-in-out section start *******/
+/*------------- CALENDER CSS ------------*/
+ .check-in-out .calendar {
+    background: transparent;
+    font-size: 14px;
+    border: none;
+    width: 100%;
+  }
+  
+  .ui-datepicker {
+    background: #ffffff;
+    border-radius: 15px;
+    top: 849.391px !important;
+    width: 100%;
+    max-width: 255px;
+  }
+  .ui-datepicker-header {
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    background: #31639c;
+  }
+  
+   .ui-datepicker-prev,
+   .ui-datepicker-next {
+    width: 20px;
+    height: 20px;
+    text-indent: 9999px;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 12px;
+  }
+  
+  .ui-datepicker-prev {
+    float: left;
+    margin-left: 12px;
+  }
+  
+   .ui-datepicker-prev:after {
+    transform: rotate(45deg);
+    margin: -43px 0px 0px 8px;
+  }
+  
+  .ui-datepicker-next {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .ui-datepicker-next:after {
+    transform: rotate(-135deg);
+    margin: -43px 0px 0px 6px;
+  }
+  
+  .ui-datepicker-prev:after,
+  .ui-datepicker-next:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+  }
+  
+  .ui-datepicker-prev:hover,
+  .ui-datepicker-next:hover,
+  .ui-datepicker-prev:hover:after,
+  .ui-datepicker-next:hover:after {
+    border-color: #333333;
+  }
+  
+  .ui-datepicker-title {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .ui-datepicker-calendar {
+    width: 100%;
+    text-align: center;
+    border: 1px solid lightgray;
+  }
+  
+  .ui-datepicker-calendar thead tr th span {
+    display: block;
+    width: 28px;
+    color: #31639c;
+    margin-bottom: -2px;
+    font-size: 14px;
+  }
+  
+  .ui-state-default {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    line-height: 19px;
+    font-size: 12px;
+  }
+  
+  .ui-state-default:hover {
+    color: #ffffff;
+    background: #31639c;
+    border-radius: 50px;
+    transition: all 0.25s cubic-bezier(0.7, -0.12, 0.2, 1.12);
+  }
+  
+  .ui-state-active {
+    color: #ffffff;
+    background-color: #31639c;
+    border-radius: 50px;
+  }
+  
+  .ui-datepicker-unselectable .ui-state-default {
+    color: #eee;
+    border: 2px solid transparent;
+  }
+  .calender_input_box{
+      border: 1px solid #878996;
+      border-radius: 5px;
+      padding-left: 16px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+  }
+  .calender_input_box .cal-icon {
+      line-height: 0;
+  }
+  .calender_input_box .calendar:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+/* ***** Calender end ******** */
 .check-in-out{
     padding: 80px 0;
 }
@@ -489,6 +642,14 @@ header.header .navbar .dropdown .dropdown-btn{
     border-bottom: 0;
     transform: translate(-50%, calc(100% + 5px));
     border-top: 8px solid #D126A1;
+}
+.travel-planning .travel-info-main .coming--pill{
+    position: absolute;
+    top: 50px;
+    right: -14px;
+    font-size: 11px;
+    padding: 6px 12px;
+    line-height: 6px;
 }
 /******* Travel info end *******/
 
@@ -737,6 +898,34 @@ header.header .navbar .dropdown .dropdown-btn{
 .hotel-result.search-result .result-main-content .result-main-middle .middle-content-bottom p.bottom-text{
     color: #878996;
 }
+    /******** slider css start ********/
+        .hotel-result .result-main-content .result-main-inner .result-swpier-img .slick-prev, 
+      .hotel-result .result-main-content .result-main-inner .result-swpier-img  .slick-next{
+            z-index: 99;
+            transform: translate(-50%, -50%);
+        }
+        .hotel-result .result-main-content .result-main-inner .result-swpier-img  .slick-prev:before{
+          content: '\f060';
+          font-family: "Font Awesome 5 Free"; 
+	        font-weight: 900;
+        }
+        .hotel-result .result-main-content .result-main-inner .result-swpier-img  .slick-next:before{
+          content: "\f061";
+          font-family: "Font Awesome 5 Free"; 
+	        font-weight: 900;
+        }
+        .hotel-result .result-main-content .result-main-inner .result-swpier-img  .slick-prev:before, 
+        .hotel-result .result-main-content .result-main-inner .result-swpier-img  .slick-next:before{
+            opacity: 1;
+            z-index: 99;
+        }
+        .hotel-result .result-main-content .result-main-inner .result-swpier-img  .slick-prev{
+            left: 14px;
+        }
+        .hotel-result .result-main-content .result-main-inner .result-swpier-img .slick-next{
+            right: 0;
+        }
+    /*******Slider Css End ********/
 /********* Popup design start*********/
 /***** popup comman class *******/
 .modal-content{
@@ -1428,7 +1617,207 @@ header.header .navbar .dropdown .dropdown-btn{
 
 /********* place with map third page end ********/
 
+/********* place with map fourth page start ********/
+    /*******pwm-rest-main start ********/
+    .small-box-wrapper.small-box-green-two:hover{
+        border: 1px solid #6FCF97;
+        box-shadow: 0px 0px 8px #6FCF97;
+    }
+    /* / ------------ SUB TITLE SWIPER ---------- / */
+    .pwm-rest-main .pwm-title-swiper .sub-category p {
+        margin-bottom: 0px;
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-container {
+        position: relative;
+        width: 100%;
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-container > .swiper-slide__content {
+        position: absolute;
+        top: 0;
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-slide {
+        width: 190px !important;
+        display: flex;
+        font-size: 21px;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        transition: all 200ms linear;
+        transform: scale(0.8);
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-slide.swiper-slide-active {
+        transform: scale(0.8);
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-slide__content {
+        height: 300px;
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-button-next {
+            right: -47px;
+            top: 9px;
+            background-size: 10px;
+            left: auto;
+            transform: translateX(0px);
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-button-prev {
+            left: auto;
+            top: 9px;
+            background-size: 10px;
+            right: 24px;
+        }
+        .pwm-rest-main .pwm-title-swiper [class^="swiper-button-"]{
+            width: 8%;
+            opacity: 1;
+            visibility: visible;
+        }
+        .pwm-rest-main .pwm-title-swiper  .swiper-container-3d .swiper-slide-shadow-right{
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+        }
+        .pwm-rest-main .pwm-title-swiper  .swiper-container-3d .swiper-slide-shadow-left{
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+        }
+        .pwm-rest-main .pwm-title-swiper .form-check-input:checked{
+            background-color: #6FCF97;
+            border-color: #6FCF97;
+        }
+        .pwm-rest-main .pwm-title-swiper label.form-check-label,
+        .pwm-rest-main .pwm-rest-price  label.form-check-label{
+            font-size: 16px;
+            line-height: 32px;
+        }
+    /*******pwm-rest-main start ********/
 
+/********* place with map fourth page end ********/
 
+/******* Hotels details page start ********/
+        /******* common class *******/
+        .reserve-btn{
+            padding: 9px 32px;
+            border-radius: 100px;
+            color: #EEF1F7;
+        }
+        .border--bottom{
+            border-bottom: 1px solid #E6E8F5;
+            padding-bottom: 25px;
+        }
+    /*********h-details-title section start *******/
+    .h-details-title .h-details-title-box{
+        border: 1px solid #A4A6BA;
+        border-radius: 12px;
+        padding: 32px 24px;
+    }
+    .h-details-title span.rating-text{
+        padding: 5px 8px;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 24px;
+        margin-right: 14px;
+    }
+    .h-details-title .h-details-title-box .h-rating img{
+        vertical-align:baseline;
+    }
+    .h-details-title .h-details-title-box .h-details-heading h2{
+        font-size: 48px;
+        line-height: 48px;
+        color: #393C52;
+    }
+    /*********h-details-title section end *******/
+    /******** h-d-amenities section start *******/
+    .h-d-amenities .amenities-single-card{
+        border: 1px solid #A4A6BA;
+        padding: 15px 32px;
+        border-radius: 5px;
+    }
+    .h-d-amenities .h-d-amenities-inner .amenities-card .amenities-single-card img{
+        vertical-align: sub;
+    }
+    .h-d-amenities .h-d-amenities-inner .amenities-card{
+        max-width: 1030px;
+    }
+    /******** h-d-amenities section end *******/
+
+    /******** h-details-n-b section start *******/
+    .h-details-n-b .h-d-near-by-inner .show-map img{
+        vertical-align: bottom;
+    }
+    .h-details-n-b .h-d-near-by-inner .nearby-location-main .nearby-loaction{
+        max-width: 100%;
+    }
+    .h-details-n-b .h-d-near-by-inner .nearby-location-main .nearby-single-card .nearby-card-content{
+        max-height: 200px;
+    }
+    .h-details-n-b .h-d-near-by-inner .nearby-location-main .nearby-content-box{
+        margin-top: 0px;
+        overflow-x: inherit;
+    }
+    /******** h-details-n-b section end *******/
+    /********** hotel-policies section start **********/
+    .border-green{
+        border: 1px solid #40CC6D;
+    }
+    .border-red{
+        border: 1px solid #DC4946;
+    }
+    .hotel-policies .h-policies-main .h-check-in-out{
+        max-width: 172px;
+        max-height: 100px;
+        /* height: 100%; */
+        padding: 9px 22px;
+        border-radius: 8px;
+    }
+    .hotel-policies .h-policies-main  .form-control[readonly]{
+        background-color: transparent;
+    }
+    .hotel-policies .h-policies-main .h-check-in-out .form-control{
+        border: none;
+        padding-top: 22px;
+    }
+    .hotel-policies .h-policies-main .h-check-in-out .form-control:focus{
+        border-color: transparent;
+        box-shadow: noe;
+    }
+    .hotel-policies .h-policies-main .h-check-in-out .check-text{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .hotel-policies .h-policies-main .policies-extra .policies-text{
+        border: 1px solid #6A78C7;
+        padding: 17px 44px;
+        border-radius: 5px;
+    }
+    .hotel-policies .h-policies-main .policies-extra a,
+    .hotel-policies .h-policies-main{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    /********** hotel-policies section end **********/
+    /********** Hotel Room section start *********/
+    .hotel-room{
+        background-color: #F8F8FA;
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+    .hotel-room .hotel-room-inner .room-card-main{
+        background-color: #fff;
+        border-radius: 12px;
+    }
+   
+    .hotel-room .hotel-room-inner .room-card-main .h-room-info-main img{
+        vertical-align: initial;
+    }
+    .hotel-room .hotel-room-inner .room-single-card .single-main-head h5{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .hotel-room .hotel-room-inner .room-card-main .border--left{
+        border-left: 1px solid #E6E8F5;
+    }
+    .hotel-room .hotel-room-inner .room-card-main .room-single-card .single-card-price img{
+        vertical-align: sub;
+    }
+
+    /********** Hotel Room section end *********/
+
+/******* Hotels details page start ********/
 
 

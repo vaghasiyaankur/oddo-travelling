@@ -11,11 +11,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <!------- Font Family Link ------->
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <!------- select2 css link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
     <!-------- Slick css cdn ------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+    
     <!-------- Custom CSS Link -------->
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/reponsive.css">
+    <style>
+      /* Css for select2  */
+      .select2{
+        width: 100% !important;
+      }
+      .select2-container--default .select2-selection--single .select2-selection__arrow{
+        height: 38px;
+      }
+      .select2-container .select2-selection--single{
+        height: 38px;
+      }
+      .select2-container--default .select2-selection--single{
+        border: 1px solid #878996;
+        border-radius: 5px;
+      }
+      .select2-container--default .select2-selection--single .select2-selection__rendered{
+        color: #6A78C7;
+        line-height: 35px;
+      }
+    </style>
 </head>
 <body>
     <!------- Headerm start  -------->
@@ -121,43 +144,46 @@
               </div>
             </div>
             <div class="col-lg-3 mb-2">
-              <label for="checkin">Check In</label>
-              <input class="form-control" id="checkin" type="date">
+              <label for="checkin">Check In </label>
+              <div class="calender_input_box d-flex  align-items-center">
+                  <div class="cal-icon"><img src="assets/images/icons/cal-1.png" class="trip_icon pe-2"></div>
+                  <div class="cal-placeholder w-100"><input placeholder="08/19/2020" type="text" name="checkIn" id="date_checkin" class="calendar"></div>
+              </div>
             </div>
             <div class="col-lg-3 mb-2">
-              <label for="checkout">Check Out</label>
-              <input class="form-control" id="checkout" type="date">
+              <label for="checkin">Check Out </label>
+              <div class="calender_input_box d-flex  align-items-center">
+                  <div class="cal-icon"><img src="assets/images/icons/cal-2.png" class="trip_icon pe-2"></div>
+                  <div class="cal-placeholder w-100"><input placeholder="08/28/2020" type="text" name="checkIn" id="date_checkout" class="calendar"></div>
+              </div>
             </div>
           </div>
         </div>
         <div class="check-in-out-bottom">
           <div class="row align-items-center">
             <div class="col-lg-2 col-md-4 select-option pe-lg-0 mt-2">
-              <label>Guest</label>
-                <select class="form-select" id="sel1" name="sellist1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
+              <label>Guests</label>
+              <select class="select2-icon" name="icon">
+                <option value="fa-user-group" data-icon="fa-user-group">2</option>
+                <option value="fa-user" data-icon="fa-user">1</option>
+                <option value="fa-users" data-icon="fa-users">3</option>
+              </select>
             </div>
             <div class="col-lg-2 col-md-4 select-option pe-lg-0 mt-2">
               <label>Room</label>
-                <select class="form-select" id="sel1" name="sellist1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
+              <select class="select2-icon" name="icon">
+                <option value="fa-door-closed" data-icon="fa-door-closed">2</option>
+                <option value="fa-door-closed" data-icon="fa-door-closed">1</option>
+                <option value="fa-door-closed" data-icon="fa-door-closed">3</option>
+              </select>
             </div>
             <div class="col-lg-2 col-md-4 select-option pe-lg-0 mt-2">
               <label >Bed</label>
-                <select class="form-select" id="sel1" name="sellist1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
+              <select class="select2-icon" name="icon">
+                <option value="fa-bed" data-icon="fa-bed">2</option>
+                <option value="fa-bed" data-icon="fa-bed">1</option>
+                <option value="fa-bed" data-icon="fa-bed">3</option>
+              </select>
             </div>
             <div class="col-lg-2 mt-4 col-md-3 col-sm-6 col-6 text-lg-center">
               <div class="check-in-out-icon">
@@ -214,10 +240,10 @@
     <div class="travel-planning-inner">
       <div class="travel-planning-heading text-center">
         <h1>A one stop shop for <span class="purple"> travel</span></h1>
-        <p>Travel planning and booking made easy</p>
+        <p class="pb-5">Travel planning and booking made easy</p>
       </div>
       <!------- pagination start -------->
-      <div class="pagination-main">
+      <div class="pagination-main pt-3">
         <ul class="list-group list-group-horizontal mt-2 justify-content-center align-items-baseline">
               <div class="text-center list-group-main">
                   <li class="list-group-item pagination-list"><a href="#" class="purple text-decoration-none"> 1</a></li>
@@ -273,6 +299,7 @@
                 <img src="assets/images/icons/t-info-6.png" class="img-fluid">
               </div>
             </div>
+            <div class="rounded-pill bg-danger text-white coming--pill">COMING SOON</div>
             <div class="travel-info-csoon">
               <div class="travel-info-csoon-img travel-info-bg d-pink position-relative">
                 <img src="assets/images/icons/t-info-7.png"class="img-fluid">
@@ -289,12 +316,12 @@
 <!------- Travel Planning section end  -------->
 <!------- Top cities section start -------->
 <section class="s-top-city">
-  <div class="container">
-      <div class="s-top-city-inner"> 
+    <div class="container">
+      <div class="s-top-city-inner slick-wrapper"> 
         <div class="s-top-city-head text-center mb-5">
           <h2>Top Cities in Spain <img src="assets/images/icons/Spain.png" class="img-fluid"></h2>
         </div>
-        <div class="s-top-city-main">
+        <div class="s-top-city-main" id="slick1">
             <div class="row">
               <div class="col-lg-4 col-md-6 col-12  p-0 mb-3">
                   <div class="t-city-card position-relative ">
@@ -383,8 +410,9 @@
                   </div>
               </div>
             </div>
+        </div>
       </div>
-  </div>
+    </div>
 </section>
 <!------- Top cities section end -------->
 <!------- Top hotels section start ------->
@@ -551,14 +579,42 @@
 
     <!-------Jquery Cdn Link ------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!------- Bootstrap JS Link ------->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-
+    <!-------- select2 js link ------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <!------- Swiper js cdn------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    
     <!------- Custom JS Link -----  -->
      <script src="assets/js/custom.js"></script>
-
+  <script>
+     //----  clander js checkin check-out  ----//
+     jQuery(document).ready(function () {
+            jQuery('#date_checkin').datepicker({
+                dateFormat: 'mm-dd-yy',
+                startDate: '+1d'
+            });
+        });
+        jQuery(document).ready(function () {
+            jQuery('#date_checkout').datepicker({
+                dateFormat: 'mm-dd-yy',
+                startDate: '+1d'
+            });
+        });
+  </script>
+  <!------ Js for select2 option ------->
+  <script>
+    function formatText (icon) {
+    return $('<span><i class="fas ' + $(icon.element).data('icon') + '"></i> ' + icon.text + '</span>');
+    };
+    $('.select2-icon').select2({
+        width: "50%",
+        templateSelection: formatText,
+        templateResult: formatText
+    });
+  </script>
   
 </body>
 </html>
