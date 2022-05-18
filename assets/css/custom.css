@@ -1386,6 +1386,9 @@ header.header .navbar .dropdown .dropdown-btn{
     section.explore-city .explore-city-check{
         padding: 22px 0 32px 0;
     }
+    section.explore-city.s-top-city{
+        background: linear-gradient(#EEF1F7, rgba(238, 241, 247, 0) 100%);
+    }
     section.explore-city .explore-city-check select.form-select{
         max-width: 187px;
         padding: 13px 16px;
@@ -1399,6 +1402,37 @@ header.header .navbar .dropdown .dropdown-btn{
         font-size: 18px;
         line-height: 32px;
         color: #878996;
+    }
+    section.explore-city.s-top-city .explore-city-map .dropdown .drop-city-btn{
+        background: #fff;
+        color: black;
+        border-radius: 100px;
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 18px;
+        padding-bottom: 14px;
+        padding-left: 32px;
+        padding-right: 43px;
+        font-weight: 400;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        max-width: 297px;
+    }
+    section.explore-city.s-top-city .explore-city-map .dropdown .btn{
+        text-align: left;
+    }
+    section.explore-city.s-top-city .explore-city-map .dropdown .dropdown-toggle::after{
+        margin-left: 9em;
+    }
+    section.explore-city.s-top-city .explore-city-map .dropdown .dropdown-menu{
+        min-width: 297px;
+        border: none;
+    }
+    section.explore-city.s-top-city .explore-city-map .dropdown span.drop-text{
+        font-size: 20px;
+        line-height: 24px;
+        color: #393C52;
     }
     /******** Explore cities section end ********/
 
@@ -1820,4 +1854,17 @@ header.header .navbar .dropdown .dropdown-btn{
 
 /******* Hotels details page start ********/
 
+/******** Multisearch page start ********/
+    /****** payment section start *******/
+    .credit-box .credit-box-main{
+        width: 100%;
+        max-width: 240px;
+        background: #fff;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
+    }
+    /****** payment section end *******/
+
+/******** Multisearch page end ********/
 
