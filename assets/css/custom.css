@@ -8,7 +8,6 @@
 body{
     color: #000;
     font-family: 'Avenir LT Std';
-    width: 100%;
     /* background: linear-gradient(180deg, #EEF1F7 0%, rgba(238, 241, 247, 0) 100%); */
 }
 /******* Comman Classes *******/
@@ -75,6 +74,7 @@ h3{
 }
 .form-select:focus{
     box-shadow: none;
+    border-color: #A4A6BA;
 }
 a.t-city-btn{
     border-radius: 100px;
@@ -151,6 +151,24 @@ header.header .navbar {
 .navbar-toggler:focus{
     box-shadow: none;
 }
+/****** Dropdown ******/
+header.header .navbar .dropdown-custom{
+    border: none;
+    border-radius: 16px;
+    width: 280px;
+    height: 206px;
+}
+header.header .navbar .dropdown-custom .dropdown-item{
+    padding-bottom: 12px;
+    padding-left: 20px;
+    color:#393C52;
+    font-style: 14px;
+    line-height: 32px;
+}
+header.header .navbar .dropdown-custom .dropdown-item.active, 
+header.header .navbar .dropdown-custom .dropdown-item:active{
+    background-color: #e9ecef;
+}
     /******Logo design *******/
 header.header .navbar a.navbar-brand{
     color: #393C52;
@@ -193,11 +211,6 @@ header.header .navbar .dropdown .dropdown-btn{
 /****** homepage-swiper section start *******/
 [class^="swiper-button-"], .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
     transition: all 0.3s ease;
-}
-*, *:before, *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 .homepage-swiper .swiper-wrapper .swiper-slide{
     border-radius: 16px;
@@ -242,165 +255,45 @@ header.header .navbar .dropdown .dropdown-btn{
     width: 100%;
     text-align: center;
 }
+.homepage-swiper .swiper-button-next, 
+.homepage-swiper .swiper-button-prev{
+  height: 25px;
+}
 
-[class^="swiper-button-"] {
+.homepage-swiper [class^="swiper-button-"] {
     width: 44px;
     opacity: 0;
     visibility: hidden;
 }
-.swiper-button-prev {
+.homepage-swiper .swiper-button-prev {
     transform: translateX(50px);
+    left: 25px;
+    right: auto;
 }
-.swiper-button-next {
+.homepage-swiper .swiper-button-next {
     transform: translateX(-50px);
+    right: 4%;
+    left: auto;
 }
 @media (max-width: 1180px) {
-    .swiper-slide .content .title {
+    .homepage-swiper .swiper-slide .content .title {
         font-size: 25px;
    }
-    .swiper-slide .content .caption {
+   .homepage-swiper .swiper-slide .content .caption {
         font-size: 12px;
    }
 }
 @media (max-width: 1023px) {
-    .swiper-container {
+    .homepage-swiper .swiper-container {
         height: 40vw;
    }
-    .swiper-container.swiper-container-coverflow {
+   .homepage-swiper .swiper-container.swiper-container-coverflow {
         padding-top: 0;
    }
 }
 /****** Landing page section end ********/
 /****** Check-in-out section start *******/
-/*------------- CALENDER CSS ------------*/
- .check-in-out .calendar {
-    background: transparent;
-    font-size: 14px;
-    border: none;
-    width: 100%;
-  }
-  
-  .ui-datepicker {
-    background: #ffffff;
-    border-radius: 15px;
-    top: 849.391px !important;
-    width: 100%;
-    max-width: 255px;
-  }
-  .ui-datepicker-header {
-    height: 50px;
-    line-height: 50px;
-    color: #ffffff;
-    background: #31639c;
-  }
-  
-   .ui-datepicker-prev,
-   .ui-datepicker-next {
-    width: 20px;
-    height: 20px;
-    text-indent: 9999px;
-    border-radius: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    margin-top: 12px;
-  }
-  
-  .ui-datepicker-prev {
-    float: left;
-    margin-left: 12px;
-  }
-  
-   .ui-datepicker-prev:after {
-    transform: rotate(45deg);
-    margin: -43px 0px 0px 8px;
-  }
-  
-  .ui-datepicker-next {
-    float: right;
-    margin-right: 20px;
-  }
-  
-  .ui-datepicker-next:after {
-    transform: rotate(-135deg);
-    margin: -43px 0px 0px 6px;
-  }
-  
-  .ui-datepicker-prev:after,
-  .ui-datepicker-next:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-left: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-  }
-  
-  .ui-datepicker-prev:hover,
-  .ui-datepicker-next:hover,
-  .ui-datepicker-prev:hover:after,
-  .ui-datepicker-next:hover:after {
-    border-color: #333333;
-  }
-  
-  .ui-datepicker-title {
-    text-align: center;
-    font-size: 15px;
-  }
-  
-  .ui-datepicker-calendar {
-    width: 100%;
-    text-align: center;
-    border: 1px solid lightgray;
-  }
-  
-  .ui-datepicker-calendar thead tr th span {
-    display: block;
-    width: 28px;
-    color: #31639c;
-    margin-bottom: -2px;
-    font-size: 14px;
-  }
-  
-  .ui-state-default {
-    display: block;
-    text-decoration: none;
-    color: #333333;
-    line-height: 19px;
-    font-size: 12px;
-  }
-  
-  .ui-state-default:hover {
-    color: #ffffff;
-    background: #31639c;
-    border-radius: 50px;
-    transition: all 0.25s cubic-bezier(0.7, -0.12, 0.2, 1.12);
-  }
-  
-  .ui-state-active {
-    color: #ffffff;
-    background-color: #31639c;
-    border-radius: 50px;
-  }
-  
-  .ui-datepicker-unselectable .ui-state-default {
-    color: #eee;
-    border: 2px solid transparent;
-  }
-  .calender_input_box{
-      border: 1px solid #878996;
-      border-radius: 5px;
-      padding-left: 16px;
-      padding-top: 6px;
-      padding-bottom: 6px;
-  }
-  .calender_input_box .cal-icon {
-      line-height: 0;
-  }
-  .calender_input_box .calendar:focus-visible {
-    outline: -webkit-focus-ring-color auto 0px;
-  }
-/* ***** Calender end ******** */
+
 .check-in-out{
     padding: 80px 0;
 }
@@ -655,37 +548,66 @@ header.header .navbar .dropdown .dropdown-btn{
 
 /******** Travel planning end *******/
 /****** Top cities section start ******/
-.s-top-city .container{
+/* .s-top-city .container{
     max-width: 1089px;
-}
+} */
 .s-top-city .s-top-city-inner .s-top-city-head h2{
     font-size: 32px;
     line-height: 24px;
     color: #393C52;
     font-weight: 500;
 }
-/* .s-top-city .s-top-city-main .t-city-card .t-city-card-img::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-} */
+
 .s-top-city .s-top-city-main .t-city-card .t-city-card-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+.s-top-city .s-top-city-inner .t-city-card-img img{
+        border-radius: 20px;
+    }
+.s-top-city .s-top-city-inner .s-top-city-main .t-city-card-button{
+        margin-top: 118px;
+    }
+ /* Css for top city slider */
+ .s-top-city .s-top-city-inner .s-top-city-main .slick-wrapper {
+    width: 100%;
+
 }
-.s-top-city .s-top-city-inner .t-city-card .t-city-card-img img{
+.s-top-city .s-top-city-inner .s-top-city-main  .slide-item {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.s-top-city .s-top-city-inner .s-top-city-main  .slide-item button {
+    background-color: black;
     border-radius: 20px;
+    margin-top: 20px;
 }
-.s-top-city .s-top-city-inner .t-city-card-content .t-city-card-button{
-    margin-top: 118px;
+.s-top-city .s-top-city-inner .s-top-city-main  .slick-next{
+    position: absolute;
+    top: 47%;
+    right: -2%;
+    cursor: pointer;
+    font-size: 50px;
+    color: #6A78C7;
 }
- 
+.s-top-city .s-top-city-inner .s-top-city-main .slick-prev{
+    position: absolute;
+    top: 47%;
+    left: -2%;
+    cursor: pointer;
+    font-size: 50px;
+    color: #6A78C7;
+}
+.s-top-city .s-top-city-inner .s-top-city-main .s-city-img-content{
+    min-height: 118px;
+}
+
+  
 /****** Top cities section end *******/
 /****** Top hotels section start ******/
 .t-hotels-main .t-hotels-inner .top-hotels-wraper{
@@ -745,13 +667,25 @@ header.header .navbar .dropdown .dropdown-btn{
 .hotel-result .check-in-out-inner .check-in-out-form .check-in-out-bottom .select-option{
     max-width: 134px;
 }
-/* .hotel-result.g-map-main .g-map-inner {
-    max-width: 1030px;
-    margin: 0 auto;
-} */
 .hotel-result.g-map-main .g-map-inner .g-map{
     border: 5px solid #fff;
     border-radius: 16px;
+}
+.hotel-result.check-in-out .check-in-out-form .custom-calender-piker .check-text-label .check-inout{
+    position: absolute;
+    top: -24px;
+}
+.hotel-result.check-in-out .check-in-out-form .custom-calender-piker .check-text-label .input--control{
+    border: none;
+}
+.hotel-result.check-in-out .check-in-out-form .custom-calender-piker .check-text-label .input--control:focus-visible{
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.hotel-result.check-in-out .check-in-out-form .custom-calender-piker .check-text-label .input--text{
+    border: 1px solid #878996;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 6px 10px;
 }
 /****** Hotel Result Check-in-out section end *******/
 /*************** Search result Start **************/
@@ -899,7 +833,7 @@ header.header .navbar .dropdown .dropdown-btn{
     color: #878996;
 }
     /******** slider css start ********/
-        .hotel-result .result-main-content .result-main-inner .result-swpier-img .slick-prev, 
+        /* .hotel-result .result-main-content .result-main-inner .result-swpier-img .slick-prev, 
       .hotel-result .result-main-content .result-main-inner .result-swpier-img  .slick-next{
             z-index: 99;
             transform: translate(-50%, -50%);
@@ -924,7 +858,7 @@ header.header .navbar .dropdown .dropdown-btn{
         }
         .hotel-result .result-main-content .result-main-inner .result-swpier-img .slick-next{
             right: 0;
-        }
+        } */
     /*******Slider Css End ********/
 /********* Popup design start*********/
 /***** popup comman class *******/
@@ -940,6 +874,33 @@ header.header .navbar .dropdown .dropdown-btn{
     color: #fff;
     font-size: 30px;
 }
+/******img slider popup start ********/
+.hotel-result .img-popup-slider .img-swiper .slider-single img{
+    width: 100%;
+}
+.hotel-result .img-popup-slider .img-swiper .slick-next:before{
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.hotel-result .img-popup-slider .img-swiper .slick-prev:before{
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.hotel-result .img-popup-slider .img-swiper{
+  width: 100%;
+  max-width: 857px;
+  /* height: 100%;
+  max-height: 857px; */
+  margin: 0 auto;
+}
+/******img slider popup end ********/
+
+
+
+
+
 /****** View360 popup start *******/
 .hotel-result.search-result .modal-body .modal-body-img img{
     border: 10px solid #fff;
@@ -1306,11 +1267,6 @@ header.header .navbar .dropdown .dropdown-btn{
 .hotel-result.search-result .search-result-inner .border-left{
     border-left: 1px solid #A4A6BA;
 }
-.hotel-result.search-result .search-result-inner .result-right-content .right-select .form-select{
-    width: 100%;
-    max-width: 192px;
-    margin: 0 auto;
-}
 .hotel-result.search-result .search-result-inner .result-main-content .result-main-img img.img-wrapper{
     width: 100%;
     max-width: 301px;
@@ -1457,6 +1413,10 @@ header.header .navbar .dropdown .dropdown-btn{
         border: 5px solid #fff;
         border-radius: 16px;
     }
+    .hero-logo span.logo-text{
+        font-size: 20px;
+        line-height: 32px;
+    }
     /********* Pwm hero section start ********/
     .pwm-hero .pwm-hero-inner .pwm-hero-wraper{
         position: absolute;
@@ -1464,6 +1424,7 @@ header.header .navbar .dropdown .dropdown-btn{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    
     .pwm-hero .pwm-hero-inner .pwm-hero-img img{
         width: 100% !important;
         border-radius: 12px;
@@ -1602,13 +1563,15 @@ header.header .navbar .dropdown .dropdown-btn{
     }
 /******* place with map transport end ********/
     /******** Common css for pwm-card   *********/
-    .pwm-card-inner{
+    /* .pwm-card-inner{
         width: 100%;
         max-width: 240px;
-    }
+    } */
     .pwm-card{
         height: 100%;
         max-height: 278px;
+        width: 100%;
+        max-width: 240px;
         background: #FFFFFF;
         box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
@@ -1632,6 +1595,92 @@ header.header .navbar .dropdown .dropdown-btn{
     .pwm-museums .pwm-museums-main .pwm-museums-card-main{
         max-height: 580px;
         overflow: auto;
+    }
+    /***** City tab popup start ******/
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .city-tab-popup{
+        width: 100%;
+        max-width: 852px;
+        margin: 0 auto;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .tab-popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .slick-next:before{
+        content: "\f061";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .slick-prev::before{
+        content: "\f060";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .slick-prev{
+        z-index: 99 !important;
+        left: 15px;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .slick-next{
+        right: 15px;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .city-tab-logo-text{
+        z-index:10;
+        top: 28px;
+        left: 24px;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .slick-dots li button:before{
+        color: #ffffff8c !important;
+        opacity: 0.75;
+        font-size: 10px;
+    }
+    .slick-dots li.slick-active button:before{
+        opacity: 0.75;
+        color: #fff !important;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .slick-dots{
+        bottom: 30px;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content .city-tab-input{
+        padding: 17px 20px 17px 26px;
+        max-width: 297px;
+        background: #fff;
+        border: 1px solid #A4A6BA;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .city-tab-single .tab-popup-content h2{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content {
+        padding: 64px;
+    }
+    /******* City tab popup end ******/
+    /****** Css for horizontal line with text *******/
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content .h-line-text span::before,
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content .h-line-text span::after {
+    background-color:   #E6E8F5;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: super;
+    width: 50%;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content .h-line-text span {
+    overflow: hidden;
+    text-align: center;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content .h-line-text span::before {
+    right: 0.5em;
+    margin-left: -50%;
+    }
+
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content .h-line-text span::after {
+    left: 0.5em;
+    margin-right: -50%;
     }
     /******** pwm-museums section end **********/
 

@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
     <!------- Swiper cdn link ------->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css"> -->
+    <!------ Datepiker cdn ------->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.css" />
     <!-------- Custom CSS Link -------->
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/reponsive.css">
@@ -48,36 +50,40 @@
             border: 1px solid #878996;
             top: 10px !important;
           }
+          .select2-container--open .select2-dropdown--above{
+            width: 211px !important;
+            height: 200px !important;
+            border: 1px solid #878996;
+            top: 0px !important;
+          }
            .select2-search--dropdown{
             display: none ;
           }
           .select2-results__option {
-    padding-right: 20px;
-    vertical-align: middle;
-  }
-  .select2-results__option:before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    height: 20px;
-    width: 20px;
-    border: 2px solid #e9e9e9;
-    border-radius: 4px;
-    background-color: #fff;
-    margin-right: 20px;
-    vertical-align: middle;
-  }
-  .select2-results__option[aria-selected=true]:before {
-    font-family:fontAwesome;
-    content: "\f00c";
-    color: #fff;
-    background-color: #f77750;
-    border: 0;
-    display: inline-block;
-    padding-left: 3px;
-  }
-        
-
+        padding-right: 20px;
+        vertical-align: middle;
+      }
+      .select2-results__option:before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border: 2px solid #e9e9e9;
+        border-radius: 4px;
+        background-color: #fff;
+        margin-right: 20px;
+        vertical-align: middle;
+      }
+      .select2-results__option[aria-selected=true]:before {
+        font-family:fontAwesome;
+        content: "\f00c";
+        color: #fff;
+        background-color: #f77750;
+        border: 0;
+        display: inline-block;
+        padding-left: 3px;
+      }
     </style>
 </head>
 
@@ -132,7 +138,7 @@
         <h4>Hotels</h4>
         <div class="check-in-out-form">
           <div class="check-in-out-top">
-            <div class=" row">
+            <div class=" row align-items-center">
               <div class="col-lg-6 mb-2">
                 <label for="hotels"></label>
                 <div class="d-flex align-items-center search-input">
@@ -140,14 +146,40 @@
                   <i class="fa-solid fa-magnifying-glass pe-3"></i>
                 </div>
               </div>
-              <div class="col-lg-3 mb-2">
+              <div class="col-lg-6 mb-2">
+                <form action="javascript: void(0);"> 
+                  <div class="custom-calender-piker d-sm-flex justify-content-lg-center position-relative">
+                    <div class="check-text-label pt-4 pe-xl-4 pe-lg-3 pe-sm-4">
+                      <label class="check-inout mt-2">Check-In </label>
+                      <div class="input--text mt-3">
+                        <img src="assets/images/icons/cal-1.png" class="mb-2 ps-2">
+                        <input type="text" class="input--control ps-xl-2" name="value_from_start_date" placeholder="08/19/2020" data-datepicker="separateRange"/>
+                      </div>
+                    </div>
+                    <div class="check-text-label pt-4">
+                      <label class="check-inout check-out-label mt-2">Check-Out</label>
+                      <div class="input--text mt-3">
+                        <img src="assets/images/icons/cal-2.png" class="mb-2 ps-2">
+                        <input type="text" class="input--control ps-xl-2" name="value_from_end_date" placeholder="08/19/2020" data-datepicker="separateRange"/>
+                      </div>
+                    </div>
+                  </div>  
+                </form>
+              </div>
+              <!-- <div class="col-lg-3">
+                <form action="javascript: void(0);">
+                <div><label for="">Check-Out</label></div>
+                  <input type="text" name="value_from_end_date" data-datepicker="separateRange"/>
+                </form>
+              </div> -->
+              <!-- <div class="col-lg-3 mb-2">
                 <label for="checkin">Check In</label>
                 <input class="form-control" id="checkin" type="date">
               </div>
               <div class="col-lg-3 mb-2">
                 <label for="checkout">Check Out</label>
                 <input class="form-control" id="checkout" type="date">
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="check-in-out-bottom">
@@ -176,7 +208,7 @@
                     <option value="fa-bed" data-icon="fa-bed">3</option>
                   </select>
                 </div>
-                <div class="check-in-out-btn mt-3 text-end col-lg-3">
+                <div class="check-in-out-btn mt-3 text-xl-end text-center col-lg-3">
                     <a href="#" class="btn search-btn purple">Search</a>
                 </div>
             </div>
@@ -205,7 +237,7 @@
         <div class="container">
           <div class="search-result-inner">
             <div class="row">
-              <div class="col-md-3 col-12">
+              <div class="col-lg-3">
                 <aside class="side-content">
                    <span class="side-text">Viewing 350 results</span>
                    <form class="hotel-result-form">
@@ -656,18 +688,66 @@
                    </form>
                 </aside>
               </div>
-                <div class="col-md-9 position-relative">
+                <div class="col-lg-9 position-relative">
                   <main class="result-main-content">
                       <div class="result-main-inner">
                         <div class="row">
                           <div class="col-4">
-                              <div class="result-main-img result-swpier-img overflow-hidden">
-                                <div class="swiper-s-img"><img src="assets/images/search-r-1.png"class="img-wrapper"></div>
-                                <div class="swiper-s-img"><img src="assets/images/search-r-1.png"class="img-wrapper"></div>
-                                <div class="swiper-s-img"><img src="assets/images/search-r-1.png"class="img-wrapper"></div>
-                                <div class="swiper-s-img"><img src="assets/images/search-r-1.png"class="img-wrapper"></div>
-                                <div class="swiper-s-img"><img src="assets/images/search-r-1.png"class="img-wrapper"></div>
+                            <div class="result-main-img result-swpier-img overflow-hidden">
+                              <div class="swiper-s-img"><a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img src="assets/images/search-r-2.png" class="img-wrapper"></a></div>
+                               <!------- img slider popup start -------->
+                              <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header justify-content-end">
+                                      <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                  </div>
+                                    <div class="modal-body d-flex justify-content-center align-items-center">
+                                        <div class="img-swiper">
+                                            <div class="slider slider-single mb-5">
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                            </div>
+                                            <div class="slider slider-nav">
+                                                <img src="assets/images/nav-img1.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img2.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img3.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img4.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img5.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img6.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img7.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img8.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img9.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img10.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img11.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img12.png" class="me-2" alt="">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
+                               <!------- img slider popup end -------->
+                              <!-- <div class="swiper-s-img"> <img src="assets/images/search-r-1.png" class="img-wrapper" ></div>
+                              <div class="swiper-s-img"> <img src="assets/images/search-r-2.png" class="img-wrapper" ></div>
+                              <div class="swiper-s-img"> <img src="assets/images/search-r-3.png" class="img-wrapper" ></div>
+                              <div class="swiper-s-img"> <img src="assets/images/search-r-4.png" class="img-wrapper" ></div>
+                              <div class="swiper-s-img"> <img src="assets/images/search-r-2.png" class="img-wrapper" ></div> -->
+                            </div>
                           </div>
                           <div class="col-4">
                               <div class="result-main-middle">
@@ -1272,11 +1352,59 @@
                       <div class="row">
                          <div class="col-4">
                             <div class="result-main-img result-swpier-img overflow-hidden">
+                              <div class="swiper-s-img"><a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img src="assets/images/search-r-2.png" class="img-wrapper"></a></div> 
+                              <!------- img slider popup start -------->
+                              <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header justify-content-end">
+                                      <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                  </div>
+                                    <div class="modal-body d-flex justify-content-center align-items-center">
+                                        <div class="img-swiper">
+                                            <div class="slider slider-single mb-5">
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                            </div>
+                                            <div class="slider slider-nav">
+                                                <img src="assets/images/nav-img1.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img2.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img3.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img4.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img5.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img6.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img7.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img8.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img9.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img10.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img11.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img12.png" class="me-2" alt="">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                               <!------- img slider popup end -------->
+                              <!-- <div class="swiper-s-img"> <img src="assets/images/search-r-2.png" class="img-wrapper" ></div>
                               <div class="swiper-s-img"> <img src="assets/images/search-r-2.png" class="img-wrapper" ></div>
                               <div class="swiper-s-img"> <img src="assets/images/search-r-2.png" class="img-wrapper" ></div>
                               <div class="swiper-s-img"> <img src="assets/images/search-r-2.png" class="img-wrapper" ></div>
-                              <div class="swiper-s-img"> <img src="assets/images/search-r-2.png" class="img-wrapper" ></div>
-                              <div class="swiper-s-img"> <img src="assets/images/search-r-2.png" class="img-wrapper" ></div>
+                              <div class="swiper-s-img"> <img src="assets/images/search-r-2.png" class="img-wrapper" ></div> -->
                             </div>
                          </div>
                          <div class="col-4">
@@ -1883,12 +2011,58 @@
                       <div class="row">
                        <div class="col-4">
                           <div class="result-main-img result-swpier-img overflow-hidden position-relative">
-                            <div class="swiper-s-img"><img src="assets/images/search-r-3.png"class="img-wrapper">
+                            <div class="swiper-s-img"><a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img src="assets/images/search-r-3.png"class="img-wrapper"></a>
                                 <div class="sold-out-logo position-absolute top-0">
                                   <img src="assets/images/icons/search-soldout.png" >
                               </div>
                             </div> 
-                            <div class="swiper-s-img"><img src="assets/images/search-r-3.png"class="img-wrapper">
+                              <!------- img slider popup start -------->
+                                <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header justify-content-end">
+                                            <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center align-items-center">
+                                          <div class="img-swiper">
+                                            <div class="slider slider-single mb-5">
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                            </div>
+                                            <div class="slider slider-nav">
+                                                <img src="assets/images/nav-img1.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img2.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img3.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img4.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img5.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img6.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img7.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img8.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img9.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img10.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img11.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img12.png" class="me-2" alt="">  
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                               <!------- img slider popup end -------->
+                            <!-- <div class="swiper-s-img"><img src="assets/images/search-r-3.png"class="img-wrapper">
                                 <div class="sold-out-logo position-absolute top-0">
                                   <img src="assets/images/icons/search-soldout.png" >
                                 </div>
@@ -1907,7 +2081,7 @@
                               <div class="sold-out-logo position-absolute top-0">
                                 <img src="assets/images/icons/search-soldout.png" >
                               </div>
-                            </div> 
+                            </div>  -->
                           </div>
                        </div>
                        <div class="col-4">
@@ -2569,11 +2743,54 @@
                       <div class="row">
                           <div class="col-4">
                             <div class="result-main-img  result-swpier-img overflow-hidden">
-                              <div class="swiper-s-img"><img src="assets/images/search-r-4.png"class="img-wrapper"> </div>
-                              <div class="swiper-s-img"><img src="assets/images/search-r-4.png"class="img-wrapper"> </div>
-                              <div class="swiper-s-img"><img src="assets/images/search-r-4.png"class="img-wrapper"> </div>
-                              <div class="swiper-s-img"><img src="assets/images/search-r-4.png"class="img-wrapper"> </div>
-                              <div class="swiper-s-img"><img src="assets/images/search-r-4.png"class="img-wrapper"> </div>
+                              <div class="swiper-s-img"><a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img src="assets/images/search-r-4.png"></a></div>
+                               <!------- img slider popup start -------->
+                              <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header justify-content-end">
+                                      <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                  </div>
+                                    <div class="modal-body d-flex justify-content-center align-items-center">
+                                        <div class="img-swiper">
+                                            <div class="slider slider-single mb-5">
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                            </div>
+                                            <div class="slider slider-nav">
+                                                <img src="assets/images/nav-img1.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img2.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img3.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img4.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img5.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img6.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img7.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img8.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img9.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img10.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img11.png" class="me-2" alt="">
+                                                <img src="assets/images/nav-img12.png" class="me-2" alt="">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                               <!------- img slider popup end -------->
                             </div>
                           </div>
                           <div class="col-4">
@@ -3292,10 +3509,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
    <!-------- select2 js link ------->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+   <!------Datepiker js cdn ------->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.js"></script>
   <!------- Custom JS Link ----- -->
   <script src="assets/js/custom.js"></script>
-  <script>
-    // Hotel result swiper js
+  <!-- // Hotel result swiper js -->
+  <!-- <script>
   $('.result-swpier-img').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -3304,7 +3524,8 @@
     autoplay: false,
     autoplaySpeed: 2000,
   });
-  </script>
+   </script> -->
+
   <!------ Js for select2 option ------->
   <script>
     function formatText (icon) {
@@ -3321,13 +3542,86 @@
 			  tags: true // создает новые опции на лету
     }); 
   </script>
-  <!------- Checkbox dropdown  -------->
-  <script>
-  // $(".select2-icon").select2({
-  //   closeOnSelect : false,
-  //   // allowHtml: true,
-  //   allowClear: true,
-  //   tags: true // создает новые опции на лету
-  // });
+<!-------- image popup slider image js------>
+ <script>
+  $('.slider-single').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  draggable:false,
+  fade: true,
+  asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 10,
+    slidesToScroll: 1,
+    asNavFor: '.slider-single',
+    dots: false,
+    draggable:false,
+    centerMode: true,
+    focusOnSelect: true
+  });
+  $('.modal').on('shown.bs.modal', function (e) {
+      $('.slider-single').slick('setPosition');
+      $('.swiper').addClass('open');
+  })
+  $('.modal').on('shown.bs.modal', function (e) {
+      $('.slider-nav').slick('setPosition');
+      $('.swiper').addClass('open');
+  })
+ </script>
+ <!------ Date piker js ------>
+ <script>
+  var separator = ' - ', dateFormat = 'MM/DD/YYYY';
+  var options = {
+    autoUpdateInput: false,
+    autoApply: true,
+    locale: {
+      format: dateFormat,
+      separator: separator,
+      // applyLabel: '確認',
+      // cancelLabel: '取消'
+  },
+  // minDate: moment().add(1, 'days'),
+  // maxDate: moment().add(359, 'days'),
+  opens: "right"
+};
+
+
+  $('[data-datepicker=separateRange]')
+      .daterangepicker(options)
+      .on('apply.daterangepicker' ,function(ev, picker) {
+          var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
+          var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
+
+          var mainName = this.name.replace('value_from_start_', '');
+          if(boolEnd) {
+              mainName = this.name.replace('value_from_end_', '');
+              $(this).closest('form').find('[name=value_from_end_'+ mainName +']').blur();
+          }
+
+          $(this).closest('form').find('[name=value_from_start_'+ mainName +']').val(picker.startDate.format(dateFormat));
+          $(this).closest('form').find('[name=value_from_end_'+ mainName +']').val(picker.endDate.format(dateFormat));
+
+          $(this).trigger('change').trigger('keyup');
+      })
+      .on('show.daterangepicker', function(ev, picker) {
+          var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
+          var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
+          var mainName = this.name.replace('value_from_start_', '');
+          if(boolEnd) {
+              mainName = this.name.replace('value_from_end_', '');
+          }
+
+          var startDate = $(this).closest('form').find('[name=value_from_start_'+ mainName +']').val();
+          var endDate = $(this).closest('form').find('[name=value_from_end_'+ mainName +']').val();
+
+          $('[name=daterangepicker_start]').val(startDate).trigger('change').trigger('keyup');
+          $('[name=daterangepicker_end]').val(endDate).trigger('change').trigger('keyup');
+          
+          if(boolEnd) {
+              $('[name=daterangepicker_end]').focus();
+          }
+      });
 </script>
 </html>
