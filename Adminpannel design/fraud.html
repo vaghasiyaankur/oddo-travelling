@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!------- Bootstrap CSS Link------->  
+     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+     <!------- Fontawsome cdn link ------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+     <!------- Font Family Link ------->
+     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+     
+    <!-------- Custom css link --------->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="css/pannel.css">
+</head>
+<body>
+    <!------- Header start  -------->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">Odda</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+              </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Hotels </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="#">Planner
+                            <span class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ps-lg-3">
+                        <a class="nav-link" href="#" >Seaved</a>
+                    </li>
+                    </ul>
+                    <div class="list-properties pe-5">
+                        <a href="#" class="list-properties-btn btn">list-properties</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi, Daniela!
+                        </button>
+                        <ul class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item active" href="#">My Account</a></li>
+                        <li><a class="dropdown-item" href="#">Order History</a></li>
+                        <li><a class="dropdown-item" href="#">Upcoming Trips</a></li>
+                        <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <!------- Header End ------->
+    <!------ list-properties nav start------->
+    <section class="l-p-navbar">
+        <div class="container">
+            <div class="l-p-nav-list d-flex">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active rounded-pill" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Properties</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Balnace</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Balnace</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!------ list-properties nav end------->
+    <section class="admin-pannel-main">
+        <div class="container">
+            <div class="admin-pannel-inner">
+                <div class="row">
+                    <div class="col-2">
+                        <aside class="side-content">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pannelsecond.html" >All Payment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="fraud.html">Fraud & risk</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Invoices</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Subscriptions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Payment links</a>
+                                </li>
+                            </ul>
+                            <!-- <div class="side-content-list">
+                                <div class="d-flex align-items-start">
+                                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                      <a href="pannelsecond.html" class="nav-link l-p-link active" id="v-pills-allPayment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-allPayment" role="tab" aria-controls="v-pills-allPayment" aria-selected="true">All Payment
+                                      </a>
+                                      <a href="fraud.html" class="nav-link  l-p-link " id="v-pills-fraud-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fraud" role="tab" aria-controls="v-pills-fraud" aria-selected="false">Fraud & risk
+                                      </a>
+                                      <a href="#" class="nav-link  l-p-link" id="v-pills-invoices-tab" data-bs-toggle="pill" data-bs-target="#v-pills-invoices" role="tab" aria-controls="v-pills-invoices" aria-selected="false">Invoices
+                                      </a>
+                                      <a href="#" class="nav-link  l-p-link" id="v-pills-subscriptions-tab" data-bs-toggle="pill" data-bs-target="#v-pills-subscriptions" role="tab" aria-controls="v-pills-subscriptions" aria-selected="false">Subscriptions
+                                      </a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </aside>
+                    </div>
+                    <div class="col-10">
+                        <main class="main-content">
+                            <nav class="nav flex-column">
+                                <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link disabled">Disabled</a>
+                              </nav>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<!-------Jquery Cdn Link ------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!------- Bootstrap cdn link ------->
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+</html>

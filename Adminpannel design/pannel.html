@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!------- Bootstrap CSS Link------->  
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!------- Fontawsomee cdn link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!------- Font Family Link ------->
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <!-------- Custom CSS Link -------->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="css/pannel.css">
+</head>
+<body>
+     <!------- Header start  -------->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">Odda</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+              </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Hotels </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="#">Planner
+                            <span class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ps-lg-3">
+                        <a class="nav-link" href="#" >Seaved</a>
+                    </li>
+                    </ul>
+                    <div class="list-properties pe-5">
+                        <a href="#" class="list-properties-btn btn">list-properties</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi, Daniela!
+                        </button>
+                        <ul class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item active" href="#">My Account</a></li>
+                        <li><a class="dropdown-item" href="#">Order History</a></li>
+                        <li><a class="dropdown-item" href="#">Upcoming Trips</a></li>
+                        <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+     <!------- Header End ------->
+     <!------ list-properties nav start------->
+    <section class="l-p-navbar">
+        <div class="container">
+            <div class="l-p-nav-list d-flex">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active rounded-pill" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Properties</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Balnace</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Balnace</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!------ list-properties nav end------->
+    <!------- list properties content start------->
+    <section class="l-p-myproperties pb-5">
+        <div class="container">
+            <div class="myproperties-heading">
+                <h4>List Your Property and start welcoming guests in no time!</h4>
+                <h5 class="heading-fs-16 d-l-Purple" >To get started, select the type of property you want to list</h5>
+            </div>
+            <div class="l-p-myproperties-card">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 border-right ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 border-right ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 border-right ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 border-right ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 border-right ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="l-p-myproperties-card mt-3">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 border-right ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 border-right ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 border-right ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 border-right ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 border-right ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 ">
+                        <div class="l-mypro-card text-center">
+                            <div class="l-mypro-card-logo">
+                                <img src="../assets/images/icons/house.png">
+                            </div>
+                            <div class="l-mypro-card-heading">
+                                <h5 class="l-mypro-card-head fw-bold pt-3">Home</h5>
+                            </div>
+                            <div class="l-mypro-card-content">
+                                <p class="m-0">properties like apartments, vacation, Home, villas etc</p>
+                            </div>
+                            <div class="l-mypro-card-btn">
+                                <a href="javascript:;" class="btn card-btn">List your Properties</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+   <!-------- list properties content end -------->
+<!-------- Footer start -------->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-link">
+              <h5 class="purple">Products</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link ps-0 active" href="#">Hotels</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-0" href="#"> Places</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-0" href="#">Transportation</a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-link">
+              <h5 class="purple">Customers</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-0" href="#"> Reviews</a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-link">
+              <h5 class="purple">Company</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link ps-0 active" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-0" href="#">Job</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-0" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-0" href="#">Newsroom</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-0" href="#">Terms of Use</a>
+                  </li> 
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3">
+            <div class="footer-link">
+              <h5 class="purple">Resources</h5>
+              <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link ps-0 active" href="#">Support</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-0" href="#"> Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p class="mb-0">© Inc. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+</footer>
+  <!-------- Footer end -------->
+
+
+
+
+
+
+
+
+  
+    
+    <!-------- Footer start -------->
+    <!-- <footer class="footer">
+        <div class="container">
+        <div class="footer-main">
+            <div class="row">
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Products</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Transportation</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Customers</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Reviews</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Company</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Newsroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Terms of Use</a>
+                    </li> 
+                </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Resources</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            </div>
+            <div class="footer-copyright">
+            <p class="mb-0">© Inc. All Rights Reserved</p>
+            </div>
+        </div>
+        </div>
+    </footer> -->
+  <!-------- Footer end -------->
+</body>
+ <!-------Jquery Cdn Link ------->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <!------- Bootstrap JS Link ------->
+ <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</html>

@@ -10,54 +10,114 @@ $(document).on('click', function () {
   $('.collapse').collapse('hide');
 });
 
+// js for top city slider (index.html)
+$('#slick1').slick({
+  rows: 2,
+  dots: false,
+  arrows: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+{ breakpoint: 992,
+settings: {
+  slidesToShow: 2,
+  slidesToScroll: 2,        
+}
+},
+{ breakpoint: 776,
+  settings: {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  rows: 1 
+  }
+}],
+  // draggable: false,
+  prevArrow: "<i class='slick-prev pull-left fa-solid fa-angle-left' aria-hidden='true'></i>",
+  nextArrow: "<i class=' slick-next pull-right fa-solid fa-angle-right' aria-hidden='true'></i>"
+      });
 
-// Home page slider start
-    // Params
-    var sliderSelector = '.swiper-container',
-    options = {
-      init: false,
-      loop: true,
-      speed:800,
-      slidesPerView: 5, // or 'auto'
-      spaceBetween: 10,
-      centeredSlides : true,
-      effect: 'coverflow', // 'cube', 'fade', 'coverflow',
-      coverflowEffect: {
-        rotate: 0, // Slide rotate in degrees
-        stretch: -100, // Stretch space between slides (in px)
-        depth: 200, // Depth offset in px (slides translate in Z axis)
-        modifier: 1, // Effect multipler
-        slideShadows : true, // Enables slides shadows
-      },
-      grabCursor: true,
-      parallax: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        1023: {
-          slidesPerView: 1,
-          spaceBetween: 0
-        }
-      },
-      // Events
-      on: {
-        imagesReady: function(){
-          this.el.classList.remove('loading');
-        }
-      }
+  // <!------ Js for select2 option ------->
+
+  function formatText (icon) {
+    return $('<span><i class="fas ' + $(icon.element).data('icon') + '"></i> ' + icon.text + '</span>');
     };
-var mySwiper = new Swiper(sliderSelector, options);
+    $('.select2-icon').select2({
+      width: "50%",
+      templateSelection: formatText,
+      templateResult: formatText,
+      placeholder : "Placeholder",
+      });
 
-// Initialize slider
-mySwiper.init();
-// Home page slider end
+
+  //----  clander js checkin check-out start ----//
+  jQuery(document).ready(function () {
+    jQuery('#date_checkin').datepicker({
+        dateFormat: 'mm-dd-yy',
+        startDate: '+1d'
+    });
+});
+jQuery(document).ready(function () {
+    jQuery('#date_checkout').datepicker({
+        dateFormat: 'mm-dd-yy',
+        startDate: '+1d'
+    });
+});
+  //----  clander js checkin check-out  end----//
+
+// js for tooltip (hotelresult)
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+
+// js for multiselect datepiker calender start (hotelresult page)
+var separator = ' - ', dateFormat = 'MM/DD/YYYY';
+  var options = {
+    autoUpdateInput: false,
+    autoApply: true,
+    locale: {
+      format: dateFormat,
+      separator: separator,
+  },
+  opens: "right"
+};
 
 
+  $('[data-datepicker=separateRange]')
+      .daterangepicker(options)
+      .on('apply.daterangepicker' ,function(ev, picker) {
+          var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
+          var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
 
+          var mainName = this.name.replace('value_from_start_', '');
+          if(boolEnd) {
+              mainName = this.name.replace('value_from_end_', '');
+              $(this).closest('form').find('[name=value_from_end_'+ mainName +']').blur();
+          }
+
+          $(this).closest('form').find('[name=value_from_start_'+ mainName +']').val(picker.startDate.format(dateFormat));
+          $(this).closest('form').find('[name=value_from_end_'+ mainName +']').val(picker.endDate.format(dateFormat));
+
+          $(this).trigger('change').trigger('keyup');
+      })
+      .on('show.daterangepicker', function(ev, picker) {
+          var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
+          var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
+          var mainName = this.name.replace('value_from_start_', '');
+          if(boolEnd) {
+              mainName = this.name.replace('value_from_end_', '');
+          }
+
+          var startDate = $(this).closest('form').find('[name=value_from_start_'+ mainName +']').val();
+          var endDate = $(this).closest('form').find('[name=value_from_end_'+ mainName +']').val();
+
+          $('[name=daterangepicker_start]').val(startDate).trigger('change').trigger('keyup');
+          $('[name=daterangepicker_end]').val(endDate).trigger('change').trigger('keyup');
+          
+          if(boolEnd) {
+              $('[name=daterangepicker_end]').focus();
+          }
+      });
+// js for multiselect calender end (hotelresult page)
 

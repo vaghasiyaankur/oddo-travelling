@@ -151,6 +151,13 @@ header.header .navbar {
 .navbar-toggler:focus{
     box-shadow: none;
 }
+.header .list-properties .list-properties-btn{
+    background: white;
+    border: 1px solid #ffffff;
+    border-radius: 100px;;
+    padding: 11px 43px;
+    color: #393c52;
+}
 /****** Dropdown ******/
 header.header .navbar .dropdown-custom{
     border: none;

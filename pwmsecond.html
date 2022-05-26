@@ -25,10 +25,66 @@
     <link rel="stylesheet" href="assets/css/reponsive.css">
 
     <style>
-       .form-control{
-           padding: 0;
-           border: none;
-       }
+     /***** Css for map ******/
+     /* #map {
+  height: 600px;
+} */
+/* Optional: Makes the sample page fill the window. */
+
+.h2-font{
+  color: black;
+}
+
+
+#map [tabindex="0"] > div:first-child {
+    will-change: transform;
+}
+.gm-style-iw-t::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,0);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: none;
+}
+.gm-style .gm-style-iw-t::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,0);
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 11px solid #fff;
+    background: transparent;
+    box-shadow: none;
+}
+.gm-style .gm-style-iw-c {
+    position: absolute;
+    box-sizing: border-box;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-100%);
+    background-color: white;
+    border-radius: 0;
+    padding: 8px 20px!important;
+    box-shadow: none;
+    color:white;
+    max-width:420px !important;
+}
+.gm-style-iw-d {
+    overflow: auto !important;
+    min-height: 55px;
+    min-width: auto;
+}
+
     </style>
 </head>
 
@@ -801,7 +857,7 @@
                             <div class="col-7">
                                 <div class="pwm-museums-map">
                                     <div class="pwm-gmap overflow-hidden h-100">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463081.43252067344!2d-3.4872597865933366!3d40.31538629590688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2sin!4v1651553036245!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48603.67801984402!2d-3.7257636073724782!3d40.41483450833875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2sin!4v1653179413872!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" ></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -924,7 +980,7 @@
 <!------ select2 cdn link ------->
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <!------- Custom JS Link ----- -->
-<script src="assets/js/custom.js"></script>
+<!-- <script src="assets/js/custom.js"></script> -->
 
 <script>
     // <!------- js for city tab slider -------->

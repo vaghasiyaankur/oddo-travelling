@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Design</title>
- 
+    
     <!------- Bootstrap CSS Link------->  
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!------- Fontawsomee cdn link ------->
@@ -50,7 +50,7 @@
             border: 1px solid #878996;
             top: 10px !important;
           }
-          .select2-container--open .select2-dropdown--above{
+           .select2-container--open .select2-dropdown--above{
             width: 211px !important;
             height: 200px !important;
             border: 1px solid #878996;
@@ -59,23 +59,23 @@
            .select2-search--dropdown{
             display: none ;
           }
-          .select2-results__option {
-        padding-right: 20px;
-        vertical-align: middle;
-      }
-      .select2-results__option:before {
-        content: "";
-        display: inline-block;
-        position: relative;
-        height: 20px;
-        width: 20px;
-        border: 2px solid #e9e9e9;
-        border-radius: 4px;
-        background-color: #fff;
-        margin-right: 20px;
-        vertical-align: middle;
-      }
-      .select2-results__option[aria-selected=true]:before {
+           .select2-results__option {
+          padding-right: 20px;
+          vertical-align: middle;
+          }
+         .select2-results__option:before {
+          content: "";
+          display: inline-block;
+          position: relative;
+          height: 20px;
+          width: 20px;
+          border: 2px solid #e9e9e9;
+          border-radius: 4px;
+          background-color: #fff;
+          margin-right: 20px;
+          vertical-align: middle;
+        }
+         .select2-results__option[aria-selected=true]:before {
         font-family:fontAwesome;
         content: "\f00c";
         color: #fff;
@@ -84,6 +84,9 @@
         display: inline-block;
         padding-left: 3px;
       }
+      
+
+    
     </style>
 </head>
 
@@ -148,17 +151,17 @@
               </div>
               <div class="col-lg-6 mb-2">
                 <form action="javascript: void(0);"> 
-                  <div class="custom-calender-piker d-sm-flex justify-content-lg-center position-relative">
-                    <div class="check-text-label pt-4 pe-xl-4 pe-lg-3 pe-sm-4">
+                  <div class="custom-calender-piker d-lg-flex justify-content-lg-center position-relative align-items-center">
+                    <div class="check-text-label pt-4 pe-xl-4 pe-lg-3">
                       <label class="check-inout mt-2">Check-In </label>
-                      <div class="input--text mt-3">
+                      <div class="input--text">
                         <img src="assets/images/icons/cal-1.png" class="mb-2 ps-2">
                         <input type="text" class="input--control ps-xl-2" name="value_from_start_date" placeholder="08/19/2020" data-datepicker="separateRange"/>
                       </div>
                     </div>
                     <div class="check-text-label pt-4">
                       <label class="check-inout check-out-label mt-2">Check-Out</label>
-                      <div class="input--text mt-3">
+                      <div class="input--text">
                         <img src="assets/images/icons/cal-2.png" class="mb-2 ps-2">
                         <input type="text" class="input--control ps-xl-2" name="value_from_end_date" placeholder="08/19/2020" data-datepicker="separateRange"/>
                       </div>
@@ -225,7 +228,7 @@
         <div class="container ">
             <div class="g-map-inner position-relative">
                 <div class="g-map overflow-hidden">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463081.43252067344!2d-3.4872597865933366!3d40.31538629590688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2sin!4v1651553036245!5m2!1sen!2sin" width="100%" height="441" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440859.40502705984!2d-1.207392589264925!3d41.65372810770349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2sin!4v1653181050700!5m2!1sen!2sin" width="100%" height="450" style="border:0;"></iframe>
                 </div>
             </div>
         </div>
@@ -976,7 +979,7 @@
                                           <!-------- view360 popup start --------->
                                         </div>
                                         <div class="middle-content-box-inner me-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="assets/images/icons/search-doller.png"></a>
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-toggle="tooltip" data-placement="top" title="Price Comparision"><img src="assets/images/icons/search-doller.png"></a>
                                           <!-------- Price comparision popup start -------->
                                           <div class="modal fade price-comparision-main" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"          aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-fullscreen modal-dialog-centered">
@@ -3398,7 +3401,6 @@
 </section>
   <!------- Search result end ------->
 
-
 <!-------- Footer start -------->
 <footer class="footer hotel-result">
   <div class="container">
@@ -3501,6 +3503,8 @@
 
 
 
+</body>
+
   <!-------Jquery Cdn Link ------->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!------- Bootstrap JS Link ------->
@@ -3511,7 +3515,8 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
    <!------Datepiker js cdn ------->
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/moment.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLLMH8fLoGNpcHsvRvp0rU0e_vBCDemlk&callback=initMap" async defer></script>
   <!------- Custom JS Link ----- -->
   <script src="assets/js/custom.js"></script>
   <!-- // Hotel result swiper js -->
@@ -3526,22 +3531,7 @@
   });
    </script> -->
 
-  <!------ Js for select2 option ------->
-  <script>
-    function formatText (icon) {
-    return $('<span><i class="fas ' + $(icon.element).data('icon') + '"></i> ' + icon.text + '</span>');
-    };
-    $('.select2-icon').select2({
-        width: "50%",
-        templateSelection: formatText,
-        templateResult: formatText,
-        closeOnSelect : false,
-			  placeholder : "Placeholder",
-			// allowHtml: true,
-		  	allowClear: true,
-			  tags: true // создает новые опции на лету
-    }); 
-  </script>
+  
 <!-------- image popup slider image js------>
  <script>
   $('.slider-single').slick({
@@ -3570,58 +3560,4 @@
       $('.swiper').addClass('open');
   })
  </script>
- <!------ Date piker js ------>
- <script>
-  var separator = ' - ', dateFormat = 'MM/DD/YYYY';
-  var options = {
-    autoUpdateInput: false,
-    autoApply: true,
-    locale: {
-      format: dateFormat,
-      separator: separator,
-      // applyLabel: '確認',
-      // cancelLabel: '取消'
-  },
-  // minDate: moment().add(1, 'days'),
-  // maxDate: moment().add(359, 'days'),
-  opens: "right"
-};
-
-
-  $('[data-datepicker=separateRange]')
-      .daterangepicker(options)
-      .on('apply.daterangepicker' ,function(ev, picker) {
-          var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
-          var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
-
-          var mainName = this.name.replace('value_from_start_', '');
-          if(boolEnd) {
-              mainName = this.name.replace('value_from_end_', '');
-              $(this).closest('form').find('[name=value_from_end_'+ mainName +']').blur();
-          }
-
-          $(this).closest('form').find('[name=value_from_start_'+ mainName +']').val(picker.startDate.format(dateFormat));
-          $(this).closest('form').find('[name=value_from_end_'+ mainName +']').val(picker.endDate.format(dateFormat));
-
-          $(this).trigger('change').trigger('keyup');
-      })
-      .on('show.daterangepicker', function(ev, picker) {
-          var boolStart = this.name.match(/value_from_start_/g) == null ? false : true;
-          var boolEnd = this.name.match(/value_from_end_/g) == null ? false : true;
-          var mainName = this.name.replace('value_from_start_', '');
-          if(boolEnd) {
-              mainName = this.name.replace('value_from_end_', '');
-          }
-
-          var startDate = $(this).closest('form').find('[name=value_from_start_'+ mainName +']').val();
-          var endDate = $(this).closest('form').find('[name=value_from_end_'+ mainName +']').val();
-
-          $('[name=daterangepicker_start]').val(startDate).trigger('change').trigger('keyup');
-          $('[name=daterangepicker_end]').val(endDate).trigger('change').trigger('keyup');
-          
-          if(boolEnd) {
-              $('[name=daterangepicker_end]').focus();
-          }
-      });
-</script>
 </html>
