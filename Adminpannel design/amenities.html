@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!------ Bootstrap css link ------>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+     <!------- Fontawsomee cdn link ------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+     <!------- Font Family Link ------->
+     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <!------- Custum css link -------->
+    <link rel="stylesheet" href="css/pannel.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+<body>
+     <!------- Header start  -------->
+     <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">Odda</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+              </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Hotels </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="#">Planner
+                            <span class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ps-lg-3">
+                        <a class="nav-link" href="#" >Seaved</a>
+                    </li>
+                    </ul>
+                    <div class="list-properties pe-5">
+                        <a href="#" class="list-properties-btn btn">list-properties</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi, Daniela!
+                        </button>
+                        <ul class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item active" href="#">My Account</a></li>
+                        <li><a class="dropdown-item" href="#">Order History</a></li>
+                        <li><a class="dropdown-item" href="#">Upcoming Trips</a></li>
+                        <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <!------- Header End ------->
+    <!------ Pannel Form start ------->
+    <section class="pannel-form admin-pannel-main py-5">
+        <div class="container">
+            <div class="admin-pannel-inner">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <aside class="side-content">
+                            <div class="side-content-list">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="basicinfo.html" >Basic Info</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="layout.html">Layout & Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="facilities.html">Facilities & Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="amenities.html">Aminities</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript">Photos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript">Policies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript">Payments</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-9">
+                        <main class="facilities">
+                            <div class="pannel-heading">
+                                <h2 class=" purple-dark pannel-title">Amenities</h2>
+                                <h5 class="heading-fs-16 purple-dark">You are almost done! We just need a few more details about the extra bed options you provide,pluse any amenities or specific features and services available.</h5>
+                            </div>
+                            <div class="form-info-box">
+                                <form action="" class="form-parking">
+                                    <div class="p-form-heading  d-flex">
+                                        <h5>Extra Bed Options</h5>
+                                        <i class="fa-solid fa-circle-exclamation ps-2 mt-1"  data-toggle="tooltip" data-bs-placement="top" title="This are the option for beds that can be added upon request."></i>
+                                    </div>
+                                    <div class="amenities-title pt-3">
+                                        <label for="" class="form-label label-heading ">Can you provide extra bed?</label>
+                                    </div>
+                                    <div class="amenities-raido-btn">
+                                        <div class="form-check form-check-inline amenities-radio">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="yes" checked>
+                                            <label class="form-check-label" for="yes">
+                                             Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline amenities-radio">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="no">
+                                            <label class="form-check-label" for="no">
+                                             No
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="total-room-layout pt-3">
+                                        <label for="" class="form-label label-heading ">Select the number of extra beds that can be added</label>
+                                        <select class="form-select layout-totalroom  me-3">
+                                            <option selected="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="form-info-box mt-3">
+                                <form action="" class="form-breakfast">
+                                    <div class="p-form-heading">
+                                        <h5>Amenities</h5>
+                                        <h6 class="label-heading form-label">Tell us about your amenities</h6>
+                                    </div>
+                                    <div class="amenities-req border rounded-1">
+                                        <div class="p-form-heading pt-3 px-2">
+                                            <h5>Most Requested by Guests</h5>
+                                        </div>
+                                        <div class="amenities-check-box px-5">
+                                            <div class="form-check py-3 ">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label para-fs-14 fs-6">
+                                                Air conditioning
+                                                </label>
+                                            </div>
+                                            <div class="form-check pb-3 ">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label para-fs-14 fs-6">
+                                                Bathtub
+                                                </label>
+                                            </div>
+                                            <div class="form-check pb-3 ">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label para-fs-14 fs-6">
+                                                Spa tub
+                                                </label>
+                                            </div>
+                                            <div class="form-check pb-3 ">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label para-fs-14 fs-6">
+                                                Flat-screen Tv
+                                                </label>
+                                            </div>
+                                            <div class="form-check pb-3 ">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label para-fs-14 fs-6">
+                                                Electric kettle
+                                                </label>
+                                            </div>
+                                            <div class="form-check pb-3 ">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label para-fs-14 fs-6">
+                                                Balcony
+                                                </label>
+                                            </div>
+                                            <div class="form-check pb-3 ">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label para-fs-14 fs-6">
+                                                View
+                                                </label>
+                                            </div>
+                                            <div class="form-check pb-3 ">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label para-fs-14 fs-6">
+                                                Terrace
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="amenities-category pt-4">
+                                        <div class="p-form-heading pb-3">
+                                            <h5>All amenities by category</h5>
+                                        </div>
+                                        <div class="amenities-accordion">
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" >
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#raAme" aria-expanded="false" aria-controls="raAme">
+                                                            <span>Room Amenities</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="raAme" class="accordion-collapse collapse" >
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" >
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#bathAme" aria-expanded="false" aria-controls="bathAme">
+                                                            <span> Bathroom</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="bathAme" class="accordion-collapse collapse" >
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" >
+                                                         <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#mediaAme" aria-expanded="false" aria-controls="mediaAme">
+                                                                <span> Media & Technology</span>
+                                                                <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="mediaAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                                <div class="form-check pb-3 border--bottom">
+                                                                    <input class="form-check-input" type="checkbox">
+                                                                    <label class="form-check-label para-fs-14 fs-6">
+                                                                      Room is located On the ground floor
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check py-3 border--bottom">
+                                                                    <input class="form-check-input" type="checkbox">
+                                                                    <label class="form-check-label para-fs-14 fs-6">
+                                                                      Room is completely wheelchair accessible
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check py-3 border--bottom">
+                                                                    <input class="form-check-input" type="checkbox">
+                                                                    <label class="form-check-label para-fs-14 fs-6">
+                                                                      Upper floors accessible by elevator
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check py-3 border--bottom">
+                                                                    <input class="form-check-input" type="checkbox" checked>
+                                                                    <label class="form-check-label para-fs-14 fs-6">
+                                                                      Upper floors accessible by stairs only
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check pt-3 ">
+                                                                    <input class="form-check-input" type="checkbox" checked>
+                                                                    <label class="form-check-label para-fs-14 fs-6">
+                                                                      Toilet with grab rails
+                                                                    </label>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#fdDrink" aria-expanded="false" aria-controls="fdDrink">
+                                                            <span> Food & Drink</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="fdDrink" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#seAme" aria-expanded="false" aria-controls="seAme">
+                                                            <span> Services & Extras</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="seAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#ovAme" aria-expanded="false" aria-controls="ovAme">
+                                                            <span> Outdoor & View</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="ovAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#layAme" aria-expanded="false" aria-controls="layAme">
+                                                            <span> Layout</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="layAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#accAme" aria-expanded="false" aria-controls="accAme">
+                                                            <span> Accessibility</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="accAme" class="accordion-collapse collapse show">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#efsAme" aria-expanded="false" aria-controls="efsAme">
+                                                            <span> Entertainment & Family Services</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="efsAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#hsAme" aria-expanded="false" aria-controls="hsAme">
+                                                            <span> Hot Spring</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="hsAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#ssAme" aria-expanded="false" aria-controls="ssAme">
+                                                            <span> Safety & Security</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="ssAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#sfAme" aria-expanded="false" aria-controls="sfAme">
+                                                            <span> Safety & Features</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="sfAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#pdAme" aria-expanded="false" aria-controls="pdAme">
+                                                            <span> Physical & distancing</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="pdAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#cdAme" aria-expanded="false" aria-controls="cdAme">
+                                                            <span> Cleanliness & disinfection</span>
+                                                            <span class="ms-auto me-5"> 0/12 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="cdAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#selAme" aria-expanded="false" aria-controls="selAme">
+                                                            <span class="mx-auto "> 0/0 selected</span>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="selAme" class="accordion-collapse collapse">
+                                                        <div class="accordion-body bg-light">
+                                                            <div class="form-check pb-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is located On the ground floor
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Room is completely wheelchair accessible
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by elevator
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check py-3 border--bottom">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Upper floors accessible by stairs only
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check pt-3 ">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                <label class="form-check-label para-fs-14 fs-6">
+                                                                  Toilet with grab rails
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="another-c-details mt-4">
+                                <a href="javascript:;" class="btn another-c-d-btn w-100">Continue</a>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------ Pannel Form end ------->
+    <!-------- Footer start -------->
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-main">
+            <div class="row">
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Products</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Transportation</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Customers</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Reviews</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Company</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Newsroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Terms of Use</a>
+                    </li> 
+                </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                    <h5 class="purple">Resources</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link ps-0 active" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="#"> Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="footer-copyright">
+            <p class="mb-0">© Inc. All Rights Reserved</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-------- Footer end -------->
+
+</body>
+<!-------Jquery Cdn Link ------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-------Bootstarp js link -------->
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<!-------Tooltip js -------->
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+</html>

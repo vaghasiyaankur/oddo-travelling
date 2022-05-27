@@ -64,25 +64,25 @@
     </header>
     <!------- Header End ------->
     <!------ Pannel Form start ------->
-    <section class="pannel-form admin-pannel-main pt-5">
+    <section class="pannel-form admin-pannel-main py-5">
         <div class="container">
             <div class="admin-pannel-inner">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <aside class="side-content">
                             <div class="side-content-list">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link " href="javscript:;" >Basic Info</a>
+                                        <a class="nav-link " href="basicinfo.html" >Basic Info</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="javascript:;">Layout & Pricing</a>
+                                        <a class="nav-link active" href="layout.html">Layout & Pricing</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">Facilities & Services</a>
+                                        <a class="nav-link" href="facilities.html">Facilities & Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">Aminities</a>
+                                        <a class="nav-link" href="amenities.html">Aminities</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="javascript">Photos</a>
@@ -97,129 +97,202 @@
                             </div>
                         </aside>
                     </div>
-                    <div class="col-9">
-                        <div class="pannel-heading">
-                            <h2 class=" purple-dark pannel-title">Layout & Pricing</h2>
-                            <h5 class="heading-fs-16 purple-dark">Back to overview</h5>
-                        </div>
-                        <div class="form-info-box">
-                            <form action="" class="form-name-info">
-                                <div class="p-form-heading">
-                                    <h5 >Please select</h5>
-                                </div>
-                                <div class="p-form-select pt-3">
-                                    <label for="" class="form-label label-heading">Room type</label>
-                                    <select class="form-select w-50" aria-label="Default select example">
-                                        <option selected>N/A</option>
-                                        <option value="1">Single</option>
-                                        <option value="2">Double</option>
-                                        <option value="3">king</option>
-                                        <option value="3">Queen</option>
-                                        <option value="3">Twin</option>
-                                    </select>
-                                </div>
-                                <div class="p-form-select pt-3">
-                                    <label for="" class="form-label label-heading">Smoking policy</label>
-                                    <select class="form-select w-50" aria-label="Default select example">
-                                        <option selected>N/A</option>
-                                        <option value="1">Non-smoking</option>
-                                        <option value="2">smoking</option>
-                                    </select>
-                                </div>
-                                <div class="total-room-layout pt-3">
-                                    <label for="" class="form-label label-heading ">Number of room(of this type)</label>
-                                    <input type="number"  class="form-control layout-totalroom">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="form-info-box mt-3">
-                            <form action="" class="form-contact-info">
-                                <div class="p-form-heading">
-                                    <h5>Bed Options</h5>
-                                </div>
-                                <h5 for="" class="form-label label-heading">What knd of bed are available in this room</h5>
-                                <i class="fa-solid fa-circle-exclamation pe-2"  data-toggle="tooltip" data-bs-placement="top" title="Tell us only about the existing room (don't include extra beds)"></i>
-                                <div class="d-flex justify-content-between">
+                    <div class="col-lg-9">
+                        <main class="layout">
+                            <div class="pannel-heading">
+                                <h2 class=" purple-dark pannel-title">Layout & Pricing</h2>
+                                <h5 class="heading-fs-16 purple-dark">Back to overview</h5>
+                            </div>
+                            <div class="form-info-box">
+                                <form action="" class="form-room-type">
+                                    <div class="p-form-heading">
+                                        <h5 >Please select</h5>
+                                    </div>
                                     <div class="p-form-select pt-3">
-                                        <select class="form-select" aria-label="Default select example">
+                                        <label for="" class="form-label label-heading">Room type</label>
+                                        <select class="form-select w-50">
                                             <option selected>N/A</option>
-                                            <option value="1">Non-smoking</option>
-                                            <option value="2">smoking</option>
+                                            <option value="single">Single</option>
+                                            <option value="double">Double</option>
+                                            <option value="king">king</option>
+                                            <option value="queen">Queen</option>
+                                            <option value="twin">Twin</option>
                                         </select>
                                     </div>
                                     <div class="p-form-select pt-3">
-                                        <select class="form-select" aria-label="Default select example">
+                                        <label for="" class="form-label label-heading">Smoking policy</label>
+                                        <select class="form-select w-50">
                                             <option selected>N/A</option>
-                                            <option value="1">Non-smoking</option>
-                                            <option value="2">smoking</option>
+                                            <option value="n-smoking">Non-smoking</option>
+                                            <option value="smoking">smoking</option>
                                         </select>
                                     </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="form-info-box mt-3">
-                            <form action="" class="form-c-m">
-                                <div class="p-form-heading">
-                                    <h5>Where's your Property Located?</h5>
-                                </div>
-                                <div class="p-locat-form">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="p-l-inner">
-                                                <div class="mb-3">
-                                                    <label  class="form-label">Street address</label>
-                                                    <input class="form-control custom-from-control" type="text" placeholder="eg.123 easy street">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Address line 2</label>
-                                                    <input class="form-control custom-from-control" type="text" placeholder="unit number, suite, floor,building,etc">
-                                                </div>
-                                                <div class="p-l-dropdwon mb-3">
-                                                    <label for="" class="form-label">Country/Region</label>
-                                                    <select class="form-select">
-                                                        <option selected>India</option>
-                                                        <option value="usa">USA</option>
-                                                        <option value="uk">UK</option>
-                                                        <option value="ru">Russia</option>
-                                                    </select>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">City</label>
-                                                    <input class="form-control custom-from-control" type="text" placeholder="eg.Mumbai">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Zip Code</label>
-                                                    <input class="form-control custom-from-control" type="text" placeholder="eg.123456">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="p-l-messagebox">
-                                                <div class="p-l-messagebox-inner d-flex">
-                                                    <div class="messagebox-icon">
-                                                        <i class="fa-solid fa-envelope-open-text"></i>
-                                                    </div>
-                                                    <div class="messagebox-content">
-                                                        <h5>Your Address Matters</h5>
-                                                        <p>Make sure you enter the full address of your property including bulding name,number,etc Base on the info you provide, we might send a letter to verify this address.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="total-room-layout pt-3">
+                                        <label for="" class="form-label label-heading ">Number of room(of this type)</label>
+                                        <input type="number"  class="form-control layout-totalroom">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="form-info-box mt-3">
+                                <form action="" class="form-bedoption">
+                                    <div class="p-form-heading">
+                                        <h5>Bed Options</h5>
+                                    </div>
+                                    <div class="bed-option-title d-flex">
+                                        <h5 for="" class="form-label label-heading">What knd of bed are available in this room?</h5>
+                                        <i class="fa-solid fa-circle-exclamation ps-2 mt-1"  data-toggle="tooltip" data-bs-placement="top" title="Tell us only about the existing room (don't include extra beds)"></i>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <select class="form-select w-50" >
+                                            <option selected>N/A</option>
+                                            <option value="twinb">Twin bed(s) / 90-130 cm wide</option>
+                                            <option value="kingb">King bed(s) / 130-130 cm wide</option>
+                                            <option value="queenb">Queen bed(s) / 100-130 cm wide</option>
+                                        </select>
+                                        <span class="px-5"><i class="fa-solid fa-xmark"></i></span>
+                                        <select class="form-select c-form-select">
+                                            <option selected>Select the number of Beds</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="pannel-add-another py-3">
+                                        <a href="javascript:;" class="para-fs-14 "><i class="fa-solid fa-circle-plus purple"></i> <span class="purple">Add another bed</span></a>
+                                    </div>
+                                    <div class="bed-option-guest-number">
+                                        <label for="" class="form-label label-heading">How many guests can stay in this room?</label>
+                                        <div class="total-room-layout ">
+                                            <input type="number" class="form-control layout-totalroom d-inline"> 
+                                            <span class="user-icon ps-2"><i class="fa-solid fa-user purple"></i></span>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="another-c-details mt-4">
-                            <a href="javascript:;" class="btn another-c-d-btn w-100">Continue</a>
-                        </div>
+                                </form>
+                            </div>
+                            <div class="form-info-box mt-3">
+                                <form action="" class="form-roomsize ">
+                                    <div class="p-form-heading">
+                                        <h5>Room Size (Optional)</h5>
+                                    </div>
+                                    <div class="input-group mb-3 total-room-layout w-50">
+                                        <input type="tel"  class="form-control custom-from-control" placeholder="0">
+                                        <select class="form-select " >
+                                                <option selected>N/A</option>
+                                                <option value="s-meter">square meter</option>
+                                                <option value="meter">meter</option>
+                                                <option value="cm">cm</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="form-info-box mt-3">
+                                <form action="" class="form-priceper-night">
+                                    <div class="p-form-heading d-flex">
+                                        <h5>Base price per night</h5>
+                                        <i class="fa-solid fa-circle-exclamation ps-2 mt-1"  data-toggle="tooltip" data-bs-placement="top" title="This is lowest price we automatically apply to this room for all date. Before your property goes live,you can set seasonal pricing on your property dashboard."></i>
+                                    </div>
+                                    <div class="input-group mb-3 total-room-layout w-25">
+                                        <label for="" class="form-label label-heading">Price for 1 person</label>
+                                        <div class="input-group flex-nowrap">
+                                                <span class="input-group-text para-fs-14" id="addon-wrapping">INR/per Night</span>
+                                                <input type="text" class="form-control custom-from-control" placeholder="0">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="another-c-details mt-4">
+                                <a href="javascript:;" class="btn another-c-d-btn w-100">Continue</a>
+                            </div>
+                        </main>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
     <!------ Pannel Form end ------->
+    <!-------- Footer start -------->
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-main">
+            <div class="row">
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Products</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Transportation</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Customers</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Reviews</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Company</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Newsroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Terms of Use</a>
+                    </li> 
+                </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Resources</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            </div>
+            <div class="footer-copyright">
+            <p class="mb-0">© Inc. All Rights Reserved</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-------- Footer end -------->
 
 </body>
 <!-------Jquery Cdn Link ------->
