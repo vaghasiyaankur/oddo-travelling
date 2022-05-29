@@ -111,13 +111,46 @@
                                     <div class="p-form-select pt-3">
                                         <label for="" class="form-label label-heading">Room type</label>
                                         <select class="form-select w-50">
-                                            <option selected>N/A</option>
+                                            <option selected>Please select</option>
                                             <option value="single">Single</option>
                                             <option value="double">Double</option>
-                                            <option value="king">king</option>
-                                            <option value="queen">Queen</option>
                                             <option value="twin">Twin</option>
+                                            <option value="twindouble">Twin/double</option>
+                                            <option value="">Triple</option>
+                                            <option value="twin">Quad</option>
+                                            <option value="twin">Family</option>
+                                            <option value="twin">Suite</option>
+                                            <option value="twin">Studio</option>
+                                            <option value="twin">Apartment</option>
+                                            <option value="twin">Dorm Room</option>
+                                            <option value="twin">Bed in Dorm Room</option>
                                         </select>
+                                    </div>
+                                    <div class="layout-room-name d-flex ">
+                                        <div class="p-form-select pt-3  w-50">
+                                            <label for="" class="form-label label-heading">Room name</label>
+                                            <select class="form-select">
+                                                <option selected>Please select</option>
+                                                <option value="single">Single</option>
+                                                <option value="double">Double</option>
+                                                <option value="twin">Twin</option>
+                                                <option value="twindouble">Twin/double</option>
+                                                <option value="">Triple</option>
+                                                <option value="twin">Quad</option>
+                                                <option value="twin">Family</option>
+                                                <option value="twin">Suite</option>
+                                                <option value="twin">Studio</option>
+                                                <option value="twin">Apartment</option>
+                                                <option value="twin">Dorm Room</option>
+                                                <option value="twin">Bed in Dorm Room</option>
+                                            </select>
+                                            <label for="" class="form-label label-heading">This is the name guests will see on the website</label>
+                                        </div>
+                                        <div class="contact-number-inner w-50 ps-4 pt-3">
+                                            <label for="" class="form-label label-heading ">Phone Number</label>
+                                            <input type="tel" class="form-control custom-from-control">
+                                            <label for="" class="form-label label-heading">Create an optional, custom name for your reference.</label>
+                                        </div>
                                     </div>
                                     <div class="p-form-select pt-3">
                                         <label for="" class="form-label label-heading">Smoking policy</label>
@@ -142,23 +175,25 @@
                                         <h5 for="" class="form-label label-heading">What knd of bed are available in this room?</h5>
                                         <i class="fa-solid fa-circle-exclamation ps-2 mt-1"  data-toggle="tooltip" data-bs-placement="top" title="Tell us only about the existing room (don't include extra beds)"></i>
                                     </div>
-                                    <div class="d-flex align-items-center">
-                                        <select class="form-select w-50" >
-                                            <option selected>N/A</option>
-                                            <option value="twinb">Twin bed(s) / 90-130 cm wide</option>
-                                            <option value="kingb">King bed(s) / 130-130 cm wide</option>
-                                            <option value="queenb">Queen bed(s) / 100-130 cm wide</option>
-                                        </select>
-                                        <span class="px-5"><i class="fa-solid fa-xmark"></i></span>
-                                        <select class="form-select c-form-select">
-                                            <option selected>Select the number of Beds</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
+                                    <div id="text-input-add">
+                                        <div class="d-flex align-items-center mb-3" >
+                                            <select class="form-select w-50" >
+                                                <option selected>N/A</option>
+                                                <option value="twinb">Twin bed(s) / 90-130 cm wide</option>
+                                                <option value="kingb">King bed(s) / 130-130 cm wide</option>
+                                                <option value="queenb">Queen bed(s) / 100-130 cm wide</option>
+                                            </select>
+                                            <span class="px-4"><i class="fa-solid fa-xmark"></i></span>
+                                            <select class="form-select c-form-select">
+                                                <option selected>Select the number of Beds</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="pannel-add-another py-3">
-                                        <a href="javascript:;" class="para-fs-14 "><i class="fa-solid fa-circle-plus purple"></i> <span class="purple">Add another bed</span></a>
+                                    <div class="pannel-add-another py-3" >
+                                        <a href="javascript:;" class="para-fs-14" id="p_add_another"><i class="fa-solid fa-circle-plus purple"></i> <span class="purple">Add another bed</span></a>
                                     </div>
                                     <div class="bed-option-guest-number">
                                         <label for="" class="form-label label-heading">How many guests can stay in this room?</label>
@@ -305,4 +340,37 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
 </script>
+
+<!-------- Js for Append ------->
+<script>
+$(function () {
+    $("#p_add_another").bind("click", function () {
+        var div = $("<div />");
+        div.html(GetDynamicTextBox(""));
+        $("#text-input-add").append(div);
+    });
+    $("body").on("click", ".remove", function () {
+        $(this).closest("div").remove();
+    });
+});
+function GetDynamicTextBox(value) {
+    return '<div class="d-flex align-items-center mb-3" >' +
+            '<select class="form-select w-50" >'+
+                '<option selected>N/A</option>'+
+                '<option value="twinb">Twin bed(s) / 90-130 cm wide</option>'+
+                '<option value="kingb">King bed(s) / 130-130 cm wide</option>'+
+                '<option value="queenb">Queen bed(s) / 100-130 cm wide</option>'+
+            '</select>'+
+            '<span class="px-4"><i class="fa-solid fa-xmark"></i></span>'+
+            '<select class="form-select c-form-select">'+
+                '<option selected>Select the number of Beds</option>'+
+                '<option value="1">1</option>'+
+                '<option value="2">2</option>'+
+                '<option value="3">3</option>'+
+            '</select>'+ '<i class="fa-solid fa-xmark text--red ps-3"></i>' + '<input type="button"  value="Remove" class="remove bedoption-remove-btn ps-2 text--red" />'
+        '</div>'  
+}
+
+</script>
 </html>
+

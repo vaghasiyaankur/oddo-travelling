@@ -154,14 +154,19 @@
                                         <h5 >Languages Spoken</h5>
                                         <i class="fa-solid fa-circle-exclamation ps-2 mt-1"  data-toggle="tooltip" data-bs-placement="top" title="What languages do you or your staff speak?"></i>
                                     </div>
-                                    <div class="p-form-select d-flex">
-                                        <select class="form-select w-25 me-3">
-                                            <option selected>English</option>
-                                            <option value="">Hindi</option>
-                                            <option value="">Russian</option>
-                                        </select>
+                                    <div id="text-input-add">
+                                        <div class="p-form-select d-flex mb-3">
+                                            <select class="form-select w-25 me-3">
+                                                <option selected>English</option>
+                                                <option value="">Hindi</option>
+                                                <option value="">Russian</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </form>
+                                <div class="pannel-add-another py-3" >
+                                    <a href="javascript:;" class="para-fs-14"  id="p_add_another"><i class="fa-solid fa-circle-plus purple"></i> <span class="purple">Add another bed</span></a>
+                                </div>
                             </div>
                             <div class="form-info-box mt-3">
                                 <form action="" class="form-facility-part">
@@ -389,5 +394,28 @@
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
+</script>
+
+<!-------- Js for Append ------->
+<script>
+    $(function () {
+    $("#p_add_another").bind("click", function () {
+        var div = $("<div />");
+        div.html(GetDynamicTextBox(""));
+        $("#text-input-add").append(div);
+    });
+    $("body").on("click", ".remove", function () {
+        $(this).closest("div").remove();
+    });
+});
+function GetDynamicTextBox(value) {
+    return '<div class="p-form-select d-flex mb-3 align-items-center">' +
+                '<select class="form-select w-25 me-3">' +
+                    '<option selected>English</option>' +
+                    '<option value="">Hindi</option>' +
+                    '<option value="">Russian</option>' +
+                '</select>' + '<i class="fa-solid fa-xmark text--red ps-3 "></i>' + '<input type="button"  value="Remove" class="remove bedoption-remove-btn ps-2 text--red" />'
+            '</div>'
+}
 </script>
 </html>

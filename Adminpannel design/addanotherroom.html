@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!------ Bootstrap css link ------>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+     <!------- Fontawsome cdn link ------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+     <!------- Font Family Link ------->
+     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <!------- Custum css link -------->
+    <link rel="stylesheet" href="css/pannel.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+<body>
+     <!------- Header start  -------->
+     <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">Odda</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+              </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Hotels </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="#">Planner
+                            <span class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ps-lg-3">
+                        <a class="nav-link" href="#" >Seaved</a>
+                    </li>
+                    </ul>
+                    <div class="list-properties pe-5">
+                        <a href="#" class="list-properties-btn btn">list-properties</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi, Daniela!
+                        </button>
+                        <ul class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item active" href="#">My Account</a></li>
+                        <li><a class="dropdown-item" href="#">Order History</a></li>
+                        <li><a class="dropdown-item" href="#">Upcoming Trips</a></li>
+                        <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <!------- Header End ------->
+    <!------ Pannel Form start ------->
+    <section class="pannel-form admin-pannel-main py-5">
+        <div class="container">
+            <div class="admin-pannel-inner">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <aside class="side-content">
+                            <div class="side-content-list">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="basicinfo.html" >Basic Info</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="layout.html">Layout & Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="facilities.html">Facilities & Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="amenities.html">Aminities</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript">Photos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript">Policies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript">Payments</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-9">
+                        <main class="layout-add">
+                            <div class="pannel-heading">
+                                <h2 class=" purple-dark pannel-title">Layout & Pricing</h2>
+                                <h5 class="heading-fs-16 purple-dark">Tell us abourt your first room. After entering all the necessary info,you can fill in the details of your other room.</h5>
+                            </div>
+                            <div class="layout-add-room px-4 py-5">
+                                <div class="add-room-box d-flex justify-content-between align-items-center">
+                                    <div class="addroom-left">
+                                        <h5 class="m-0 heading-fs-16 fw-bold">Standard Room With Sea View</h5>
+                                    </div>
+                                    <div class="addroom-middle">
+                                        <P class="m-0 para-fs-14">Number of this type: <span class="fw-bold">5</span></P>
+                                    </div>
+                                    <div class="addroom-right">
+                                        <div class="addroom-btn">
+                                            <a href="javascript:;" class="addroom-link pe-3 purple">Edit</a>
+                                            <a href="javascript:;" class="addroom-link purple">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="another-c-details mt-4 text-end">
+                                <a href="javascript:;" class="btn another-c-d-btn bg-light w-25 btn-outline-dark text-dark py-2">Add Another Room</a>
+                                <a href="javascript:;" class="btn another-c-d-btn w-25 py-2">Continue</a>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------ Pannel Form end ------->
+    <!-------- Footer start -------->
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-main">
+            <div class="row">
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Products</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Transportation</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Customers</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Reviews</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Company</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Newsroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Terms of Use</a>
+                    </li> 
+                </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="footer-link">
+                <h5 class="purple">Resources</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link ps-0 active" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#"> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            </div>
+            <div class="footer-copyright">
+            <p class="mb-0">© Inc. All Rights Reserved</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-------- Footer end -------->
+
+</body>
+<!-------Jquery Cdn Link ------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-------Bootstarp js link -------->
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<!-------Tooltip js -------->
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+</html>
