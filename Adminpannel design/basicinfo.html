@@ -85,10 +85,10 @@
                                         <a class="nav-link" href="amenities.html">Aminities</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="javascript">Photos</a>
+                                        <a class="nav-link" href="photos.html">Photos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="javascript">Policies</a>
+                                        <a class="nav-link" href="policies.html">Policies</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="javascript">Payments</a>
@@ -130,24 +130,26 @@
                                     <div class="p-form-heading">
                                         <h5>What’s the contact details for this property?</h5>
                                     </div>
-                                    <div class="contact--name">  
-                                        <label for="contactname" class="form-label label-heading">Contact Name</label>
-                                        <input type="text" id="contactname" class="form-control custom-from-control">
-                                    </div>
-                                    <div class="contact-number pt-3">
-                                        <div class="contact-number-main d-flex">
-                                            <div class="contact-number-inner">
-                                                <label for="" class="form-label label-heading ">Phone Number</label>
-                                                <input type="tel"  class="form-control custom-from-control">
-                                            </div>
-                                            <div class="contact-number-inner mx-auto">
-                                                <label for="" class="form-label label-heading ">Alternative Phone Number(Optional)</label>
-                                                <input type="tel"  class="form-control custom-from-control">
+                                    <div id="add_pro_detail">
+                                        <div class="contact--name">  
+                                            <label for="contactname" class="form-label label-heading">Contact Name</label>
+                                            <input type="text" id="contactname" class="form-control custom-from-control">
+                                        </div>
+                                        <div class="contact-number pt-3">
+                                            <div class="contact-number-main d-flex">
+                                                <div class="contact-number-inner">
+                                                    <label for="" class="form-label label-heading ">Phone Number</label>
+                                                    <input type="tel"  class="form-control custom-from-control">
+                                                </div>
+                                                <div class="contact-number-inner mx-auto">
+                                                    <label for="" class="form-label label-heading ">Alternative Phone Number(Optional)</label>
+                                                    <input type="tel"  class="form-control custom-from-control">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="another-c-details mt-4">
-                                        <a href="javascript:;" class="btn another-c-d-btn">Add Another Contact Details</a>
+                                        <a href="javascript:;" class="btn another-c-d-btn" id="add_contact_detail">Add Another Contact Details</a>
                                     </div>
                                 </form>
                             </div>
@@ -205,7 +207,7 @@
                                 </form>
                             </div>
                             <div class="another-c-details mt-4">
-                                <a href="javascript:;" class="btn another-c-d-btn w-100">Continue</a>
+                                <a href="javascript:;" class="btn another-c-d-btn w-100" >Continue</a>
                             </div>
                         </main>
                     </div>
@@ -309,5 +311,39 @@
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+</script>
+<!-------- Js for Append ------->
+<script>
+        $(function () {
+        $("#add_contact_detail").bind("click", function () {
+            var div = $("<div />");
+            div.html(GetDynamicTextBox(""));
+            $("#add_pro_detail").append(div);
+        });
+        $("body").on("click", ".remove", function () {
+            $(this).closest(".remove-p-details").remove();
+        });
+    });
+    function GetDynamicTextBox(value) {
+        return '<div class="remove-p-details">' +
+                    '<div class="contact--name pt-3">' +
+                        '<label for="contactname" class="form-label label-heading">Contact Name</label>' +
+                        '<input type="text" id="contactname" class="form-control custom-from-control">' +
+                    '</div>' +
+                    '<div class="contact-number pt-3">' +
+                        '<div class="contact-number-main d-flex align-items-center">' +
+                            '<div class="contact-number-inner">' +
+                                '<label for="" class="form-label label-heading ">Phone Number</label>' +
+                                '<input type="tel"  class="form-control custom-from-control">' +
+                            '</div>' +
+                            '<div class="contact-number-inner mx-auto">' +
+                                '<label for="" class="form-label label-heading ">Alternative Phone Number(Optional)</label>' +
+                                ' <input type="tel"  class="form-control custom-from-control">' +
+                            '</div>' + 
+                            '<i class="fa-solid fa-xmark text--red ps-3 "></i>' + '<input type="button"  value="Remove" class="remove bedoption-remove-btn ps-2 text--red" />' + '</div>' +
+                    '</div>' +
+                '</div>'
+    };
 </script>
 </html>

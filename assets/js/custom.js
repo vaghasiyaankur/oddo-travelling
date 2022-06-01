@@ -10,33 +10,7 @@ $(document).on('click', function () {
   $('.collapse').collapse('hide');
 });
 
-// js for top city slider (index.html)
-$('#slick1').slick({
-  rows: 2,
-  dots: false,
-  arrows: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-{ breakpoint: 992,
-settings: {
-  slidesToShow: 2,
-  slidesToScroll: 2,        
-}
-},
-{ breakpoint: 776,
-  settings: {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  rows: 1 
-  }
-}],
-  // draggable: false,
-  prevArrow: "<i class='slick-prev pull-left fa-solid fa-angle-left' aria-hidden='true'></i>",
-  nextArrow: "<i class=' slick-next pull-right fa-solid fa-angle-right' aria-hidden='true'></i>"
-      });
+
 
   // <!------ Js for select2 option ------->
 

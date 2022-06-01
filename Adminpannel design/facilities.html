@@ -85,10 +85,10 @@
                                         <a class="nav-link" href="amenities.html">Aminities</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="javascript">Photos</a>
+                                        <a class="nav-link" href="photos.html">Photos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="javascript">Policies</a>
+                                        <a class="nav-link" href="policies.html">Policies</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="javascript">Payments</a>
@@ -114,9 +114,9 @@
                                     </div>
                                     <div class="p-form-select d-flex justify-content-between">
                                         <select class="form-select w-50 me-3">
-                                            <option selected>N/A</option>
-                                            <option value="">yes,free</option>
-                                            <option value="">no,paid</option>
+                                            <option selected>Yes,free</option>
+                                            <option value="">No</option>
+                                            <option value="">Paid</option>
                                         </select>
                                         <select class="form-select input-w-20 me-3">
                                             <option selected>Private</option>
@@ -154,7 +154,7 @@
                                         <h5 >Languages Spoken</h5>
                                         <i class="fa-solid fa-circle-exclamation ps-2 mt-1"  data-toggle="tooltip" data-bs-placement="top" title="What languages do you or your staff speak?"></i>
                                     </div>
-                                    <div id="text-input-add">
+                                    <div id="add_languages">
                                         <div class="p-form-select d-flex mb-3">
                                             <select class="form-select w-25 me-3">
                                                 <option selected>English</option>
@@ -165,7 +165,7 @@
                                     </div>
                                 </form>
                                 <div class="pannel-add-another py-3" >
-                                    <a href="javascript:;" class="para-fs-14"  id="p_add_another"><i class="fa-solid fa-circle-plus purple"></i> <span class="purple">Add another bed</span></a>
+                                    <a href="javascript:;" class="para-fs-14"  id="p_add_lan"><i class="fa-solid fa-circle-plus purple"></i> <span class="purple">Add another languages</span></a>
                                 </div>
                             </div>
                             <div class="form-info-box mt-3">
@@ -399,10 +399,10 @@ $(document).ready(function(){
 <!-------- Js for Append ------->
 <script>
     $(function () {
-    $("#p_add_another").bind("click", function () {
+    $("#p_add_lan").bind("click", function () {
         var div = $("<div />");
         div.html(GetDynamicTextBox(""));
-        $("#text-input-add").append(div);
+        $("#add_languages").append(div);
     });
     $("body").on("click", ".remove", function () {
         $(this).closest("div").remove();

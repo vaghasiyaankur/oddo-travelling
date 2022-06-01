@@ -17,6 +17,11 @@
     .hotel-result.check-in-out .check-in-out-form .custom-calender-piker .check-text-label .check-inout.check-out-label{
         top: 45%;
     }
+    .hotel-result.search-result .side-content .hotels-filter{
+        max-height: 550px;
+        margin-bottom: 50px;
+        overflow-y: scroll;
+    }
 }
 @media screen and (max-width:767px) {
     .travel-planning .travel-planning-inner .travel-planning-heading h1{
@@ -37,10 +42,16 @@
         max-height: 180px;
         padding: 60px 50px;
     }
-    
+   
+    .hotel-result.search-result .search-result-inner .border-left{
+        border: none;
+    }
+    .hotel-result.search-result .search-result-inner .result-main-content .result-main-img img.img-wrapper{
+        max-width: 100%;
+    }
 }
 @media screen and (max-width:1399px) {
-    .travel-planning .travel-info-main .travel-info-inner .travel-info-csoon{
+    /* .travel-planning .travel-info-main .travel-info-inner .travel-info-csoon{
         right: -15px;
         top: 7px;
     }
@@ -58,7 +69,7 @@
     .travel-planning .travel-info-main .travel-info-inner .travel-info-bank{
         top: 56px;
         left: 29%;
-    }
+    } */
 }
 @media screen and (max-width:1240px) {
     .homepage-swiper .swiper-slide .content p.title{
@@ -66,11 +77,13 @@
         margin-top: 30px;
     }
 }
-@media screen and (min-width:1044px) and (max-width:1240px) {
-    
+@media screen and (min-width:992px) and (max-width:1199px)     {
+    .explore-city .s-top-city-main .t-city-card-img  img{
+        max-width: 280px;
+    }
 }
 @media screen and (max-width:1199px) {
-    .travel-planning .travel-info-main .travel-info-inner .travel-info-rest{
+    /* .travel-planning .travel-info-main .travel-info-inner .travel-info-rest{
         top: 26%;
     }
     .travel-planning .travel-info-main .travel-info-inner .travel-info-bag{
@@ -81,7 +94,7 @@
     }
     .travel-planning .travel-info-main .travel-info-inner .travel-info-car{
         top: 46px;
-    }
+    } */
     .hotel-result.check-in-out .check-in-out-form .custom-calender-piker .check-text-label .input--text{
         padding: 6px 0;
     }
@@ -92,7 +105,23 @@
         max-height: 156px;
         padding: 37px 37px;
     }
-  
+    .check-in-out{
+        padding: 45px 0;
+    }
+    .travel-planning .travel-planning-inner .travel-planning-heading h1{
+        font-size: 27px;
+        line-height: 25px;
+        margin-bottom: 16px;
+    }
+    .travel-planning .travel-planning-inner .travel-planning-heading p{
+        font-size: 17px;
+        line-height: 12px;
+    }
+    .pagination-main .list-group-main .pagination-list{
+        width: 50px;
+        height: 50px;
+        box-shadow: 0px 2.23711px 12.7421px rgb(107 120 199 / 15%)
+    }
 }
 @media screen and (max-width:420px){
     .s-top-city .s-top-city-inner .s-top-city-main .slick-prev{
@@ -100,5 +129,19 @@
     }
     .s-top-city .s-top-city-inner .s-top-city-main .slick-next{
         display: none !important;
+    }
+    .explore-city .explore-city-map-img img{
+        width: 200px;
+    }
+    
+}
+@media screen and (max-width:380px) {
+    section.explore-city .explore-city-check{
+        flex-direction: column;
+        align-items: flex-start !important;
+        margin-left: 20px !important;
+    }
+    section.explore-city .explore-city-check select.form-select{
+        margin: 0;
     }
 }
