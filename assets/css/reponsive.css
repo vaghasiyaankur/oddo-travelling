@@ -17,10 +17,41 @@
     .hotel-result.check-in-out .check-in-out-form .custom-calender-piker .check-text-label .check-inout.check-out-label{
         top: 45%;
     }
-    .hotel-result.search-result .side-content .hotels-filter{
+    .hotel-result.search-result .side-content .hotels-filter.result-mobile-view{
         max-height: 550px;
         margin-bottom: 50px;
         overflow-y: scroll;
+    }
+    .homepage-swiper.swiper-container{
+        height: 50vw;
+    }
+    .location-popup-hilton{
+        display: none;
+    }
+    .hotel-result .img-popup-slider .img-swiper button.slick-next.slick-arrow{
+        right: 0;
+    }
+    .hotel-result .img-popup-slider .img-swiper button.slick-prev.slick-arrow{
+        left: 0;
+        z-index: 99;
+    }
+    .pwd-search-input{
+        max-width: 300px;
+        padding: 12px 20px;
+    }
+    .pwm-hero h2{
+        font-size: 44px;
+        line-height: 44px;
+    }
+    .hero-logo span.logo-text{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    section.pwm-hero .pwm-hero-inner .pwm-hero-wraper .hero-logo img{
+        width: 30px;
+    }
+    .pwm-hero .pwm-hero-inner .pwm-hero-img img{
+        height: 300px ;
     }
 }
 @media screen and (max-width:767px) {
@@ -48,8 +79,16 @@
     }
     .hotel-result.search-result .search-result-inner .result-main-content .result-main-img img.img-wrapper{
         max-width: 100%;
+        height: 50vh;
+    }
+    .hotel-result.search-result .search-result-inner .result-main-content .middle-content-box .price-comparision-main .price-comparison{
+        padding: 37px 50px 40px;
+    }
+    .hotel-result.search-result .side-content .mypreferences-popup .hotel-sort-popup{
+        padding: 22px;
     }
 }
+
 @media screen and (max-width:1399px) {
     /* .travel-planning .travel-info-main .travel-info-inner .travel-info-csoon{
         right: -15px;
@@ -100,6 +139,11 @@
     }
     
 }
+@media screen and (min-width:576px) and (max-width:655px) {
+    section.explore-city.s-top-city .s-top-city-main .t-city-card-img img{
+        width: 280px;
+    }
+}
 @media screen and (max-width:576px) {
     .t-hotels-main .t-hotels-inner .top-hotels-wraper .top-hotels-card .top-hotels-card-inner{
         max-height: 156px;
@@ -118,10 +162,50 @@
         line-height: 12px;
     }
     .pagination-main .list-group-main .pagination-list{
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         box-shadow: 0px 2.23711px 12.7421px rgb(107 120 199 / 15%)
     }
+    .homepage-swiper.swiper-container{
+        height: 100vw;
+    }
+
+    .hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison .price-comparison-heading .comparison-title h3{
+        font-size: 22px;
+        line-height: 19px;
+        white-space: nowrap;
+    }
+    .hotel-result.search-result .search-result-inner .result-main-content .middle-content-box .price-comparision-main .price-comparison{
+        padding: 37px 14px 40px;    
+    }
+    .hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison .price-comparison-heading .comparison-text
+    .location-popup .loaction-dist-radius{
+        top: 120px;
+    }
+    .hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-wrapper{
+        padding: 32px 12px;
+    }
+    .display-flex-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .reviews-popup .reviews-popup-heading{
+        padding: 17px;
+    }
+    .hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .popup-content-main{
+        padding: 17px;
+    }
+    .hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .reviews-popup .reviews-heading h4{
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
+@media screen and (max-width:480px) {
+    .hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-wrapper{
+        padding: 32px 12px;
+    }
+
 }
 @media screen and (max-width:420px){
     .s-top-city .s-top-city-inner .s-top-city-main .slick-prev{
@@ -133,7 +217,16 @@
     .explore-city .explore-city-map-img img{
         width: 200px;
     }
-    
+    .hotel-result.search-result .search-result-inner .search-result-price-tag{
+        margin-left: 20%;
+    }
+    .hotel-result.search-result .search-result-inner .search-result-notify{
+        margin-left: 29%;
+    }
+    .hotel-result.search-result .search-result-inner .search-result-price-tag .price-btn{
+        padding: 10px 25px;
+    }
+  
 }
 @media screen and (max-width:380px) {
     section.explore-city .explore-city-check{
@@ -143,5 +236,38 @@
     }
     section.explore-city .explore-city-check select.form-select{
         margin: 0;
+    }
+    .travel-planning .travel-planning-inner .travel-planning-heading h1{
+        font-size: 22px;
+        line-height: 14px;
+    }
+    .travel-planning .travel-planning-inner .travel-planning-heading p{
+        font-size: 15px;
+        line-height: 7px;
+    }
+    .pagination-main .list-group-main .pagination-list{
+        width: 45px;
+        height: 45px;
+    }
+    .pagination-main .list-group-main a.pagination-text{
+        font-size: 18px;
+        line-height: 30px;
+
+    }
+    .hotel-result.search-result .search-result-inner .result-main-content .middle-content-box .price-comparision-main .price-comparison{
+        padding: 37px 8px 40px;
+    }
+    .hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison .price-comparison-heading .comparison-title h3{
+        font-size: 18px;
+        line-height: 13px;
+        margin-right: 10px;
+    }
+    .pwd-search-input{
+        max-width: 250px;
+    }
+}
+@media screen and (max-width:320px) {
+    section.explore-city .explore-city-check{
+        margin-left: 0px !important;
     }
 }

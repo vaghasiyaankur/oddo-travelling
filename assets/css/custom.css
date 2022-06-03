@@ -609,9 +609,6 @@ header.header .navbar .dropdown .dropdown-btn{
     font-size: 50px;
     color: #6A78C7;
 }
-.s-top-city .s-top-city-inner .s-top-city-main .s-city-img-content{
-    min-height: 118px;
-}
 /****** Top cities section end *******/
 
 /****** Top hotels section start ******/
@@ -887,7 +884,7 @@ header.header .navbar .dropdown .dropdown-btn{
     font-weight: 900;
 }
 .hotel-result .img-popup-slider .img-swiper .slick-prev:before{
-    content: "\f053";
+    content: "\f104";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
@@ -970,6 +967,7 @@ header.header .navbar .dropdown .dropdown-btn{
     font-size: 12px;
     line-height: 32px;
     color: #40CC6D;
+    white-space: nowrap;
 }
 .hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-info .price-comparison-btn{
     background: #40CC6D;
@@ -1124,6 +1122,7 @@ header.header .navbar .dropdown .dropdown-btn{
     width: 100%;
     max-width: 327px;
     border-radius: 8px;
+    margin: 0 auto  ;
 }
 .hotel-result.search-result .search-result-price-tag .notify-popup-main .notify-popup-inner .notify-popup-soldout{
     position: absolute;
@@ -1171,6 +1170,7 @@ header.header .navbar .dropdown .dropdown-btn{
     max-height: 746px;
     background: #FFFFFF;
     border-radius: 8px;
+    margin: 0 auto;
 }
 .hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .reviews-popup .reviews-popup-heading{
     border-bottom: 1px solid #A4A6BA;
@@ -1182,6 +1182,7 @@ header.header .navbar .dropdown .dropdown-btn{
     font-size: 32px;
     line-height: 32px;
     color: #393C52;
+    white-space: nowrap;
 }
 .hotel-result.search-result .result-main-middle .middle-content-review .reviews-popup-main .reviews-popup .reviews-heading P{
     font-weight: 400;
@@ -1224,6 +1225,7 @@ header.header .navbar .dropdown .dropdown-btn{
     font-size: 12px;
     line-height: 22px;
     color: #40CC6D;
+    text-align: center;
 }
 /******* Reviews popup End *******/
 
@@ -1240,6 +1242,7 @@ header.header .navbar .dropdown .dropdown-btn{
     border-radius: 8px;
     width: 100%;
     max-width: 670px;
+    margin: 0 auto;
 }
 .hotel-result.search-result .search-result-inner .side-content .hotel-result-form  .hotel-sort-popup label.form-check-label{
     padding-bottom: 8px;
@@ -1248,6 +1251,9 @@ header.header .navbar .dropdown .dropdown-btn{
     padding: 12px 40px;
     color: #ffff;
     border-radius: 100px;
+}
+.hotel-result.search-result .side-content .mypreferences-popup .hotel-sort-popup .hotels-results-amenities-popup{
+    white-space: nowrap;
 }
 /******* My Preference popup end ********/
 
@@ -1261,7 +1267,7 @@ header.header .navbar .dropdown .dropdown-btn{
     width: 100%;
     max-width: 301px;
     height: 100%;
-    min-height: 346px;
+    min-height: 350px;
 }
 .hotel-result.search-result .search-result-inner .search-result-price-tag .price-btn{
     border: none;
@@ -1274,6 +1280,7 @@ header.header .navbar .dropdown .dropdown-btn{
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
+    white-space: nowrap;
 }
 .hotel-result.search-result .search-result-inner .search-result-price-tag{
     margin-top: -22px;
