@@ -19,39 +19,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
   <!------- select2 css link ------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
-  <!------- Swiper cdn link ------->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css"> -->
   <!------ Datepiker cdn ------->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.css" />
   <!-------- Custom CSS Link -------->
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel="stylesheet" href="assets/css/reponsive.css">
   <style>
     /* Css for select2  */
-    .select2 {
+    section.check-in-out .check-in-out-bottom .select2 {
       width: 100% !important;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__arrow {
+    section.check-in-out .check-in-out-bottom .select2-container--default .select2-selection--single .select2-selection__arrow {
       height: 38px;
     }
 
-    .select2-container .select2-selection--single {
+    section.check-in-out .check-in-out-bottom .select2-container .select2-selection--single {
       height: 38px;
     }
 
-    .select2-container--default .select2-selection--single {
+   section.check-in-out .check-in-out-bottom .select2-container--default .select2-selection--single {
       border: 1px solid #878996;
       border-radius: 5px;
     }
 
-    .select2-container--default .select2-selection--single .select2-selection__rendered {
+    section.check-in-out .check-in-out-bottom .select2-container--default .select2-selection--single .select2-selection__rendered {
       color: #6A78C7;
       line-height: 35px;
     }
 
-    .select2-dropdown.select2-dropdown--below {
+    section.check-in-out .check-in-out-bottom .select2-dropdown.select2-dropdown--below {
       width: 211px !important;
       height: 200px !important;
       border: 1px solid #878996;
@@ -168,16 +165,16 @@
                     class="custom-calender-piker d-lg-flex justify-content-lg-center position-relative align-items-center">
                     <div class="check-text-label pt-4 pe-xl-4 pe-lg-3">
                       <label class="check-inout mt-2">Check-In </label>
-                      <div class="input--text">
-                        <img src="assets/images/icons/cal-1.png" class="mb-2 ps-2">
+                      <div class="input--text d-flex align-items-center">
+                        <img src="assets/images/icons/cal-1.png" class="px-2">
                         <input type="text" class="input--control ps-xl-2" name="value_from_start_date"
                           placeholder="08/19/2020" data-datepicker="separateRange" />
                       </div>
                     </div>
                     <div class="check-text-label pt-4">
                       <label class="check-inout check-out-label mt-2">Check-Out</label>
-                      <div class="input--text">
-                        <img src="assets/images/icons/cal-2.png" class="mb-2 ps-2">
+                      <div class="input--text d-flex align-items-center">
+                        <img src="assets/images/icons/cal-2.png" class="px-2">
                         <input type="text" class="input--control ps-xl-2" name="value_from_end_date"
                           placeholder="08/19/2020" data-datepicker="separateRange" />
                       </div>
@@ -3879,12 +3876,9 @@
 <!-------- select2 js link ------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 <!------Datepiker js cdn ------->
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/moment.min.js"></script>
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLLMH8fLoGNpcHsvRvp0rU0e_vBCDemlk&callback=initMap" async
-  defer></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLLMH8fLoGNpcHsvRvp0rU0e_vBCDemlk&callback=initMap" async defer></script>
 <!------- Custom JS Link ----- -->
 <script src="assets/js/custom.js"></script>
 

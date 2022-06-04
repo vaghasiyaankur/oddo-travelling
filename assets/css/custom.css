@@ -86,7 +86,7 @@ a.filter-btn{
     border-radius: 100px;
     font-weight: 400;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 22px;
 }
 .form-check-input[type=checkbox]{
@@ -121,7 +121,7 @@ a.filter-btn{
     transition: all 0.5s ease;
 }
 h5.heading-fs-16{
-    font-weight: 400;
+    font-weight: 800;
     font-size: 16px;
     line-height: 32px;
 }
@@ -357,6 +357,24 @@ header.header .navbar .dropdown .dropdown-btn{
     line-height: 24px;
     font-weight: 800;
 }
+  /* Css for select2  */
+  .check-in-out .check-in-out-inner .select2{
+    width: 100% !important;
+  }
+  .check-in-out .check-in-out-inner .select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 38px;
+  }
+  .check-in-out .check-in-out-inner .select2-container .select2-selection--single{
+    height: 38px;
+  }
+  .check-in-out .check-in-out-inner .select2-container--default .select2-selection--single{
+    border: 1px solid #878996;
+    border-radius: 5px;
+  }
+  .check-in-out .check-in-out-inner .select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #6A78C7;
+    line-height: 35px;
+  }
 /****** Check-in-out section end *******/
 /******** Travel planning start *******/
 .travel-planning .travel-planning-inner .travel-planning-heading h1{
@@ -891,8 +909,6 @@ header.header .navbar .dropdown .dropdown-btn{
 .hotel-result .img-popup-slider .img-swiper{
   width: 100%;
   max-width: 857px;
-  /* height: 100%;
-  max-height: 857px; */
   margin: 0 auto;
 }
 /******img slider popup end ********/
@@ -1585,7 +1601,7 @@ header.header .navbar .dropdown .dropdown-btn{
         margin: 0 auto;
     }
     .pwm-hero h2{
-        font-weight: 400;
+        font-weight: 500;
         font-size: 64px;
         line-height: 64px;
         color: #F8F8FA;
@@ -1593,10 +1609,14 @@ header.header .navbar .dropdown .dropdown-btn{
     .pwm-gmap{
         border: 5px solid #fff;
         border-radius: 16px;
+        box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
     }
     .hero-logo span.logo-text{
         font-size: 20px;
         line-height: 32px;
+        color: #F8F8FA;
+        font-weight: 800;
+        letter-spacing: 2px;
     }
     /********* Pwm hero section start ********/
     .pwm-hero .pwm-hero-inner .pwm-hero-wraper{
@@ -1610,6 +1630,8 @@ header.header .navbar .dropdown .dropdown-btn{
         width: 100% !important;
         border-radius: 12px;
         box-shadow:0px 0px 19px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        min-height: 333px;
     }
     /********* Pwm hero section end ********/
     /******* pwm map section start *********/
@@ -1617,8 +1639,6 @@ header.header .navbar .dropdown .dropdown-btn{
         position: absolute;
         top: 29%;
         right: 5%;
-    }
-    .pwm-map .pwm-map-inner .pwm-map-far-box {
         width: 100%;
         max-width: 207px;
         height: 100%;
@@ -1627,11 +1647,11 @@ header.header .navbar .dropdown .dropdown-btn{
         border-radius: 8px;
         box-shadow: 0px 25px 54px rgb(106 120 199 / 35%);
         border: 1px solid #E6E8F5;
-        /* padding: 11px 24px; */
     }
     .pwm-map .pwm-map-inner .pwm-map-far-box .far-box-top{
         padding: 11px 24px;
         border-bottom: 1px solid #E6E8F5;
+        white-space: nowrap;
     }
     .pwm-map .pwm-map-inner .pwm-far-box-inner{
         padding: 15px 24px 13px;
@@ -1641,7 +1661,7 @@ header.header .navbar .dropdown .dropdown-btn{
         border-color: #0d6efd;
     }
     .pwm-map .pwm-map-inner .pwm-heading h2{
-        font-weight: 400;
+        font-weight: 800;
         font-size: 24px;
         line-height: 24px;
         color: #878996;
@@ -1662,7 +1682,7 @@ header.header .navbar .dropdown .dropdown-btn{
         border: 1px solid #2F80ED;
     }
     .pwm-accordion .pwm-accordion-inner .pwm-accordion-title .pwm-accordion-text .accordion-text{
-        font-weight: 400;
+        font-weight: 800;
         font-size: 24px;
         line-height: 24px;
     }

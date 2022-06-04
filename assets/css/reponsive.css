@@ -1,4 +1,7 @@
 @media screen and (max-width:991px) {
+    .m-view-img{
+        max-width: 30px;
+    }
     .s-top-city .container{
         max-width:720px;
     }
@@ -47,12 +50,6 @@
         font-size: 18px;
         line-height: 28px;
     }
-    section.pwm-hero .pwm-hero-inner .pwm-hero-wraper .hero-logo img{
-        width: 30px;
-    }
-    .pwm-hero .pwm-hero-inner .pwm-hero-img img{
-        height: 300px ;
-    }
 }
 @media screen and (max-width:767px) {
     .travel-planning .travel-planning-inner .travel-planning-heading h1{
@@ -85,6 +82,9 @@
         padding: 37px 50px 40px;
     }
     .hotel-result.search-result .side-content .mypreferences-popup .hotel-sort-popup{
+        padding: 22px;
+    }
+    .pwm-accordion .pwm-accordion-inner .pwm-accordion-title{
         padding: 22px;
     }
 }
@@ -205,6 +205,10 @@
     .hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-wrapper{
         padding: 32px 12px;
     }
+    .pwm-accordion .pwm-accordion-inner .pwm-accordion-title .pwm-accordion-text .accordion-text {
+        font-size: 18px;
+        line-height: 18px;
+    }
 
 }
 @media screen and (max-width:420px){
@@ -226,7 +230,10 @@
     .hotel-result.search-result .search-result-inner .search-result-price-tag .price-btn{
         padding: 10px 25px;
     }
-  
+    .pwm-map .pwm-map-inner .pwm-heading h2{
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 @media screen and (max-width:380px) {
     section.explore-city .explore-city-check{
@@ -264,6 +271,9 @@
     }
     .pwd-search-input{
         max-width: 250px;
+    }
+    .pwm-accordion .pwm-accordion-inner .rest-accordion .rest-accordion-body{
+        padding: 20px;
     }
 }
 @media screen and (max-width:320px) {
