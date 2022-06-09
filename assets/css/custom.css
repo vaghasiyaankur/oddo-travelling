@@ -164,7 +164,7 @@ header.header .navbar {
 header.header .navbar .dropdown-custom{
     border: none;
     border-radius: 16px;
-    width: 280px;
+    width: 180px;
     height: 206px;
 }
 header.header .navbar .dropdown-custom .dropdown-item{
@@ -1727,7 +1727,7 @@ header.header .navbar .dropdown .dropdown-btn{
         box-shadow: 0px 0px 8px #2d9cdb;
     }
     .pwm-transport-heading h2{
-        font-weight: 400;
+        font-weight: 800;
         font-size: 32px;
         line-height: 32px;
         color: #393C52;
@@ -1777,6 +1777,7 @@ header.header .navbar .dropdown .dropdown-btn{
         box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
         border: none;
+        /* margin: 0 auto; */
     }
     .pwm-card-body{
         padding: 13px 24px 26px 23px;
@@ -1805,30 +1806,30 @@ header.header .navbar .dropdown .dropdown-btn{
         border-radius: 8px;
         background-color: #fff;
     }
-    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .tab-popup-content {
+    /* .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-popup-content {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .slick-next:before{
+    } */
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .slick-next:before{
         content: "\f061";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
     }
-    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .slick-prev::before{
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .slick-prev::before{
         content: "\f060";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
     }
-    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .slick-prev{
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .slick-prev{
         z-index: 99 !important;
         left: 15px;
     }
-    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .slick-next{
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .slick-next{
         right: 15px;
     }
-    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .city-tab-logo-text{
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .city-tab-logo-text{
         z-index:10;
         top: 28px;
         left: 24px;
@@ -1907,67 +1908,69 @@ header.header .navbar .dropdown .dropdown-btn{
         border: 1px solid #6FCF97;
         box-shadow: 0px 0px 8px #6FCF97;
     }
-    /* / ------------ SUB TITLE SWIPER ---------- / */
-    .pwm-rest-main .pwm-title-swiper .sub-category p {
-        margin-bottom: 0px;
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-container {
-        position: relative;
-        width: 100%;
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-container > .swiper-slide__content {
-        position: absolute;
-        top: 0;
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-slide {
-        width: 190px !important;
+    /* / ------------ SUB TITLE SWIPER START---------- / */
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-slide {
+        text-align: center;
+        font-size: 16px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
-        font-size: 21px;
-        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
         justify-content: center;
-        white-space: nowrap;
-        transition: all 200ms linear;
-        transform: scale(0.8);
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-slide.swiper-slide-active {
-        transform: scale(0.8);
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-slide__content {
-        height: 300px;
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-button-next {
-            right: -47px;
-            top: 9px;
-            background-size: 10px;
-            left: auto;
-            transform: translateX(0px);
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-button-prev {
-            left: auto;
-            top: 9px;
-            background-size: 10px;
-            right: 24px;
-        }
-        .pwm-rest-main .pwm-title-swiper [class^="swiper-button-"]{
-            width: 8%;
-            opacity: 1;
-            visibility: visible;
-        }
-        .pwm-rest-main .pwm-title-swiper  .swiper-container-3d .swiper-slide-shadow-right{
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-        }
-        .pwm-rest-main .pwm-title-swiper  .swiper-container-3d .swiper-slide-shadow-left{
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-        }
-        .pwm-rest-main .pwm-title-swiper .form-check-input:checked{
-            background-color: #6FCF97;
-            border-color: #6FCF97;
-        }
-        .pwm-rest-main .pwm-title-swiper label.form-check-label,
-        .pwm-rest-main .pwm-rest-price  label.form-check-label{
-            font-size: 16px;
-            line-height: 32px;
-        }
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-slide .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next::after {
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 30px;
+        color: #B0BEC5;
+    }
+
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-prev::after {
+        content: "\f104";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 30px;
+        color: #B0BEC5;
+    }
+
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next,
+    .swiper-button-prev {
+        top: 24%;
+    }
+
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next {
+        right: 10px;
+        left: auto;
+    }
+
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-prev {
+        left: auto;
+        right: 36px;
+    }
+
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .form-check-input:checked,
+    .pwm-rest-main .pwm-museums-inner .pwm-rest-price .form-check-input:checked {
+        background-color: #6FCF97;
+        border-color: #6FCF97;
+    }
+    /* / ------------ SUB TITLE SWIPER END---------- / */
+
     /*******pwm-rest-main end ********/
 
 /********* place with map fourth page end ********/

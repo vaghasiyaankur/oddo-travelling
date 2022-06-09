@@ -6,43 +6,24 @@ $(document).ready(function () {
 });
 
 // hide navbar when click outside 
-$(document).on('click', function () {
-  $('.collapse').collapse('hide');
+// $(document).on('click', function () {
+//   $('.collapse').collapse('hide');
+// });
+
+// <!------ Js for select2 option ------->
+function formatText(icon) {
+  return $('<span><i class="fas ' + $(icon.element).data('icon') + '"></i> ' + icon.text + '</span>');
+};
+$('.select2-icon').select2({
+  width: "50%",
+  templateSelection: formatText,
+  templateResult: formatText,
+  placeholder: "Placeholder",
 });
-
-
-
-  // <!------ Js for select2 option ------->
-
-  function formatText (icon) {
-    return $('<span><i class="fas ' + $(icon.element).data('icon') + '"></i> ' + icon.text + '</span>');
-    };
-    $('.select2-icon').select2({
-      width: "50%",
-      templateSelection: formatText,
-      templateResult: formatText,
-      placeholder : "Placeholder",
-      });
-
-
-  //----  clander js checkin check-out start ----//
-  jQuery(document).ready(function () {
-    jQuery('#date_checkin').datepicker({
-        dateFormat: 'mm-dd-yy',
-        startDate: '+1d'
-    });
-});
-jQuery(document).ready(function () {
-    jQuery('#date_checkout').datepicker({
-        dateFormat: 'mm-dd-yy',
-        startDate: '+1d'
-    });
-});
-  //----  clander js checkin check-out  end----//
 
 // js for tooltip (hotelresult)
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
 });
 
 // js for multiselect datepiker calender start (hotelresult page)
@@ -56,8 +37,6 @@ var separator = ' - ', dateFormat = 'MM/DD/YYYY';
   },
   opens: "right"
 };
-
-
   $('[data-datepicker=separateRange]')
       .daterangepicker(options)
       .on('apply.daterangepicker' ,function(ev, picker) {

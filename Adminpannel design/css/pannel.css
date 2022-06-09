@@ -194,7 +194,7 @@
     padding: 3em;
     margin: auto;
 }
-.pannel-form .property-photos .drop-box-main .imgUploader .button {
+.pannel-form .property-photos .drop-box-main .imguplode-btn .button {
     display: inline-block;
     padding: .5em 1em;
     background: #6a78c7;
@@ -204,9 +204,17 @@
     color: #fff;
     transition: .4s;
 }
-.pannel-form .property-photos .drop-box-main .imgUploader .button:hover {
+.pannel-form .property-photos .drop-box-main .imguplode-btn .button:hover {
     background: #6a78c7d9;
     border-color: #6a78c7d9;
+}
+.pannel-form .property-photos .drop-box-main .uploader-opacity{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
 }
 .pannel-form .property-photos .drop-box-main .imgUploader  #imgUpload {
     display: none;

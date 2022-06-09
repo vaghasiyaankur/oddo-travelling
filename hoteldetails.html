@@ -13,55 +13,64 @@
     <!------- Font Family Link ------->
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <!-------Swiper css cdn -------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.css">
+
     <!------- slick cdn ---------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+    <!------- select2 css link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
+    <!------ Datepiker cdn ------->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.css" />
     <!------- Timepiker css Link------->
     <link rel="stylesheet" href="assets/css/timepiker.css">
     <!-------- Custom CSS Link -------->
     <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/reponsive.css">  
+    <link rel="stylesheet" href="assets/css/reponsive.css">
 </head>
+
 <body>
     <!------- Header start  -------->
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">Odda</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto" >
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Hotels </a>
+                            <a class="nav-link active" aria-current="page" href="#">Hotels </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Cities</a>
+                            <a class="nav-link" href="#">Cities</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Search</a>
+                            <a class="nav-link" href="#">Search</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link position-relative" href="#">Planner
-                        <span class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
-                        </a>
+                            <a class="nav-link position-relative" href="#">Planner
+                                <span
+                                    class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                            </a>
                         </li>
                         <li class="nav-item ps-lg-3">
-                        <a class="nav-link" href="#" >Seaved</a>
+                            <a class="nav-link" href="#">Seaved</a>
                         </li>
                     </ul>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Hi, Daniela!
+                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi, Daniela!
                         </button>
                         <ul class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item active" href="#">My Account</a></li>
-                        <li><a class="dropdown-item" href="#">Order History</a></li>
-                        <li><a class="dropdown-item" href="#">Upcoming Trips</a></li>
-                        <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
+                            <li><a class="dropdown-item active" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Order History</a></li>
+                            <li><a class="dropdown-item" href="#">Upcoming Trips</a></li>
+                            <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
                         </ul>
                     </div>
                 </div>
@@ -73,22 +82,23 @@
     <section class="h-details-title pt-3">
         <div class="container">
             <div class="h-details-title-box">
-            <div class="h-details-heading">
-                <h2>Holiday Inn Madrid</h2>
-            </div>
-            <div class="h-title-box-inner d-flex justify-content-between align-items-center mt-3">
-                <div class="h-rating">
-                    <span class="rating-text bg-green ">9/10</span>
-                    <span><img src="assets/images/icons/start.png"></span>
-                    <span><img src="assets/images/icons/start.png"></span>
-                    <span><img src="assets/images/icons/start.png"></span>
-                    <span><img src="assets/images/icons/start.png"></span>
-                    <span class="h-rating-location para-fs-14"><img src="assets/images/icons/loaction-purple.png" class="me-3 ms-5">Madrid, Spain. 1,36 km to the center</span>
+                <div class="h-details-heading">
+                    <h2>Holiday Inn Madrid</h2>
                 </div>
-                <div class="h-rating-btn">
-                    <a href="#" class="btn reserve-btn bg-purple para-d-l-p">Reserve a Room</a>
+                <div class="h-title-box-inner d-flex flex-wrap justify-content-between align-items-center mt-3">
+                    <div class="h-rating">
+                        <span class="rating-text bg-green ">9/10</span>
+                        <span><img src="assets/images/icons/start.png"></span>
+                        <span><img src="assets/images/icons/start.png"></span>
+                        <span><img src="assets/images/icons/start.png"></span>
+                        <span><img src="assets/images/icons/start.png"></span>
+                        <span class="h-rating-location para-fs-14"><img src="assets/images/icons/loaction-purple.png"
+                                class="me-3 ms-5">Madrid, Spain. 1,36 km to the center</span>
+                    </div>
+                    <div class="h-rating-btn mt-md-0 mt-3">
+                        <a href="#" class="btn reserve-btn bg-purple para-d-l-p">Reserve a Room</a>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -103,15 +113,18 @@
                             <h5 class="heading-fs-16 mb-3 purple-dark">Lobby</h5>
                             <div class="gallery-single-img">
                                 <div class="swiper-s-img">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img src="assets/images/h-details-1.png" class="img-fluid img-wrapper"></a> 
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img
+                                            src="assets/images/h-details-1.png" class="img-fluid img-wrapper"></a>
                                 </div>
                                 <!------- img slider popup start -------->
-                                <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
                                         <div class="modal-content">
-                                        <div class="modal-header justify-content-end">
-                                            <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-                                        </div>
+                                            <div class="modal-header justify-content-end">
+                                                <button type="button" data-bs-dismiss="modal" class="modal-close"
+                                                    aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                            </div>
                                             <div class="modal-body d-flex justify-content-center align-items-center">
                                                 <div class="img-swiper">
                                                     <div class="slider slider-single mb-5">
@@ -143,7 +156,7 @@
                                                         <img src="assets/images/nav-img9.png" class="me-2" alt="">
                                                         <img src="assets/images/nav-img10.png" class="me-2" alt="">
                                                         <img src="assets/images/nav-img11.png" class="me-2" alt="">
-                                                        <img src="assets/images/nav-img12.png" class="me-2" alt="">  
+                                                        <img src="assets/images/nav-img12.png" class="me-2" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -159,14 +172,17 @@
                             <h5 class="heading-fs-16 mb-3 purple-dark">Rooms</h5>
                             <div class="gallery-single-img">
                                 <div class="swiper-s-img">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img src="assets/images/h-details-2.png" class="img-fluid img-wrapper"></a> 
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img
+                                            src="assets/images/h-details-2.png" class="img-fluid img-wrapper"></a>
                                 </div>
                                 <!------- img slider popup start -------->
-                                <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header justify-content-end">
-                                                <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                                <button type="button" data-bs-dismiss="modal" class="modal-close"
+                                                    aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                                             </div>
                                             <div class="modal-body d-flex justify-content-center align-items-center">
                                                 <div class="img-swiper">
@@ -199,7 +215,7 @@
                                                         <img src="assets/images/nav-img9.png" class="me-2" alt="">
                                                         <img src="assets/images/nav-img10.png" class="me-2" alt="">
                                                         <img src="assets/images/nav-img11.png" class="me-2" alt="">
-                                                        <img src="assets/images/nav-img12.png" class="me-2" alt="">  
+                                                        <img src="assets/images/nav-img12.png" class="me-2" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -215,14 +231,17 @@
                             <h5 class="heading-fs-16 mb-3 purple-dark">Amenities</h5>
                             <div class="gallery-single-img">
                                 <div class="swiper-s-img">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img src="assets/images/h-details-3.png" class="img-fluid img-wrapper"></a> 
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img
+                                            src="assets/images/h-details-3.png" class="img-fluid img-wrapper"></a>
                                 </div>
                                 <!------- img slider popup start -------->
-                                <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header justify-content-end">
-                                                <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                                <button type="button" data-bs-dismiss="modal" class="modal-close"
+                                                    aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                                             </div>
                                             <div class="modal-body d-flex justify-content-center align-items-center">
                                                 <div class="img-swiper">
@@ -255,7 +274,7 @@
                                                         <img src="assets/images/nav-img9.png" class="me-2" alt="">
                                                         <img src="assets/images/nav-img10.png" class="me-2" alt="">
                                                         <img src="assets/images/nav-img11.png" class="me-2" alt="">
-                                                        <img src="assets/images/nav-img12.png" class="me-2" alt="">  
+                                                        <img src="assets/images/nav-img12.png" class="me-2" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -267,57 +286,60 @@
                     </div>
                     <div class="col-3">
                         <div class="h-gallery-single">
-                        <h5 class="heading-fs-16 mb-3 purple-dark">Restaurant</h5>
-                        <div class="gallery-single-img">
-                            <div class="swiper-s-img">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img src="assets/images/h-details-4.png" class="img-fluid img-wrapper"></a> 
-                            </div>
-                            <!------- img slider popup start -------->
-                            <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                    <div class="modal-header justify-content-end">
-                                        <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-                                    </div>
-                                    <div class="modal-body d-flex justify-content-center align-items-center">
-                                        <div class="img-swiper">
-                                            <div class="slider slider-single mb-5">
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                            <h5 class="heading-fs-16 mb-3 purple-dark">Restaurant</h5>
+                            <div class="gallery-single-img">
+                                <div class="swiper-s-img">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"><img
+                                            src="assets/images/h-details-4.png" class="img-fluid img-wrapper"></a>
+                                </div>
+                                <!------- img slider popup start -------->
+                                <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header justify-content-end">
+                                                <button type="button" data-bs-dismiss="modal" class="modal-close"
+                                                    aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                                             </div>
-                                            <div class="slider slider-nav">
-                                                <img src="assets/images/nav-img1.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img2.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img3.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img4.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img5.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img6.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img7.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img8.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img9.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img10.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img11.png" class="me-2" alt="">
-                                                <img src="assets/images/nav-img12.png" class="me-2" alt="">  
+                                            <div class="modal-body d-flex justify-content-center align-items-center">
+                                                <div class="img-swiper">
+                                                    <div class="slider slider-single mb-5">
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                        <div><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                    </div>
+                                                    <div class="slider slider-nav">
+                                                        <img src="assets/images/nav-img1.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img2.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img3.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img4.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img5.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img6.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img7.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img8.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img9.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img10.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img11.png" class="me-2" alt="">
+                                                        <img src="assets/images/nav-img12.png" class="me-2" alt="">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -329,53 +351,53 @@
     <section class="h-d-amenities pt-4 pb-4">
         <div class="container">
             <div class="h-d-amenities-inner border--bottom">
-                    <h5 class="heading-fs-16  purple-dark">Amenities</h5>
-                    <div class="amenities-card d-flex flex-wrap">
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d-a-1.png " class="pe-3">
-                            <span class="para-fs-14">Air Conditioning</span>
-                        </div>
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d-a-2.png " class="pe-3">
-                            <span class="para-fs-14">Pool</span>
-                        </div>
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d--a3.png " class="pe-3">
-                            <span class="para-fs-14">Gym</span>
-                        </div>
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d--a3.png " class="pe-3">
-                            <span class="para-fs-14">Pet Friendly</span>
-                        </div>
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d-a-1.png" class="pe-3">
-                            <span class="para-fs-14">Air Conditioning</span>
-                        </div>
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d-a-4.png" class="pe-3">
-                            <span class="para-fs-14">Washer</span>
-                        </div>
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d-a-5.png" class="pe-3">
-                            <span class="para-fs-14">Spa</span>
-                        </div>
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d-a-6.png" class="pe-3">
-                            <span class="para-fs-14">Free Wi-Fi</span>
-                        </div>
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d-a-2.png " class="pe-3">
-                            <span class="para-fs-14">Pool</span>
-                        </div>
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d--a3.png " class="pe-3">
-                            <span class="para-fs-14">Gym</span>
-                        </div>
-                        <div class="amenities-single-card me-2 mb-3">
-                            <img src="assets/images/icons/h-d-a-5.png" class="pe-3">
-                            <span class="para-fs-14">Spa</span>
-                        </div>
+                <h5 class="heading-fs-16  purple-dark">Amenities</h5>
+                <div class="amenities-card d-flex flex-wrap">
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d-a-1.png " class="pe-3">
+                        <span class="para-fs-14">Air Conditioning</span>
                     </div>
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d-a-2.png " class="pe-3">
+                        <span class="para-fs-14">Pool</span>
+                    </div>
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d--a3.png " class="pe-3">
+                        <span class="para-fs-14">Gym</span>
+                    </div>
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d--a3.png " class="pe-3">
+                        <span class="para-fs-14">Pet Friendly</span>
+                    </div>
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d-a-1.png" class="pe-3">
+                        <span class="para-fs-14">Air Conditioning</span>
+                    </div>
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d-a-4.png" class="pe-3">
+                        <span class="para-fs-14">Washer</span>
+                    </div>
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d-a-5.png" class="pe-3">
+                        <span class="para-fs-14">Spa</span>
+                    </div>
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d-a-6.png" class="pe-3">
+                        <span class="para-fs-14">Free Wi-Fi</span>
+                    </div>
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d-a-2.png " class="pe-3">
+                        <span class="para-fs-14">Pool</span>
+                    </div>
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d--a3.png " class="pe-3">
+                        <span class="para-fs-14">Gym</span>
+                    </div>
+                    <div class="amenities-single-card me-2 mb-3">
+                        <img src="assets/images/icons/h-d-a-5.png" class="pe-3">
+                        <span class="para-fs-14">Spa</span>
+                    </div>
+                </div>
                 <div class="amenities-link ">
                     <a href="#" class="amenities-d-link purple">See all Amenities details</a>
                 </div>
@@ -395,195 +417,206 @@
                         <p class="para-d-l-p m-0">Pick the places you want to visit.</p>
                     </div>
                     <div class="show-map">
-                        <span class="purple">Show Map <img src="assets/images/icons/h-d-showmap.png" class="ps-2"></span>
+                        <span class="purple">Show Map <img src="assets/images/icons/h-d-showmap.png"
+                                class="ps-2"></span>
                     </div>
                 </div>
                 <div class="h-d-nearby-loaction overflow-auto">
                     <div class="small-box-main d-flex mb-3">
                         <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
-                        <div class="small-box-single-img ">
-                            <img src="assets/images/icons/location-popup-1.png">
-                        </div>
-                        <div class="small-box-text ps-2 pe-3">
-                            <span>Museums</span> 
-                        </div>
-                        </div>
-                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
-                        <div class="small-box-single-img">
-                            <img src="assets/images/icons/location-popup-2.png">
-                        </div>
-                        <div class="small-box-text ps-2 pe-3">
-                            <span>Plazas</span> 
-                        </div>
+                            <div class="small-box-single-img ">
+                                <img src="assets/images/icons/location-popup-1.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span>Museums</span>
+                            </div>
                         </div>
                         <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
-                        <div class="small-box-single-img">
-                            <img src="assets/images/icons/location-popup-3.png">
-                        </div>
-                        <div class="small-box-text ps-2 pe-3">
-                            <span> Parks </span>
-                        </div>
-                        </div>
-                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
-                        <div class="small-box-single-img">
-                            <img src="assets/images/icons/location-popup-4.png">
-                        </div>
-                        <div class="small-box-text ps-2 pe-3">
-                            <span> Markets </span>
-                        </div>
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-2.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span>Plazas</span>
+                            </div>
                         </div>
                         <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
-                        <div class="small-box-single-img">
-                            <img src="assets/images/icons/locaion-5.png">
-                        </div>
-                        <div class="small-box-text ps-2 pe-3">
-                            <span> Cathedrals </span>
-                        </div>
-                        </div>
-                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
-                        <div class="small-box-single-img">
-                            <img src="assets/images/icons/location-popup-6.png">
-                        </div>
-                        <div class="small-box-text ps-2 pe-3">
-                            <span> Restaurants </span>
-                        </div>
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-3.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span> Parks </span>
+                            </div>
                         </div>
                         <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
-                        <div class="small-box-single-img">
-                            <img src="assets/images/icons/location-popup-7.png">
-                        </div>
-                        <div class="small-box-text ps-2 pe-3">
-                            <span> Transportation </span>
-                        </div>
-                        </div>
-                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
-                        <div class="small-box-single-img">
-                            <img src="assets/images/icons/location-popup-7.png">
-                        </div>
-                        <div class="small-box-text ps-2 pe-3">
-                            <span> Transportation </span>
-                        </div>
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-4.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span> Markets </span>
+                            </div>
                         </div>
                         <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
-                        <div class="small-box-single-img">
-                            <img src="assets/images/icons/location-popup-4.png">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/locaion-5.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span> Cathedrals </span>
+                            </div>
                         </div>
-                        <div class="small-box-text ps-2 pe-3">
-                            <span> Markets </span>
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-6.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span> Restaurants </span>
+                            </div>
                         </div>
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-7.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span> Transportation </span>
+                            </div>
+                        </div>
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-7.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span> Transportation </span>
+                            </div>
+                        </div>
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center me-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-4.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span> Markets </span>
+                            </div>
                         </div>
                     </div>
                     <div class="nearby-location-main">
                         <div class="location-popup nearby-loaction">
-                        <div class="location-popup-inner">
-                            <div class="location-popup-locat position-relative">
-                                <div class="loaction-popup-gmap">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d788790.9018211137!2d-3.794533563867567!3d39.44188449494803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2sin!4v1651900367722!5m2!1sen!2sin" width="100%" height="381" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                                <div class="location-popup-hilton">
-                                    <img src="assets/images/icons/location-popup-L.png">
-                                </div>
-                                <div class="loaction-dist-radius">
-                                    <div class="dist-radius-innner">
-                                    <div class="dist-radius-content">
-                                        <h5 class="mt-4 text-center">Distance Radius</h5>
-                                        <div class="dist-radius-total">
-                                            <p class="m-0">1.5</p>
-                                        </div>
-                                        <div class="dist-radius-mile-text text-center">
-                                            <p>Miles</p>
-                                        </div>
-                                        <div class="dist-radius-rang pe-3 ps-3">
-                                            <input type="range" class="form-range" id="customRange1">
-                                        </div>
-                                        <div class="dist-radius-mile d-flex justify-content-between">
-                                            <span>0.5mi</span><span>5mi</span>
+                            <div class="location-popup-inner">
+                                <div class="location-popup-locat position-relative">
+                                    <div class="loaction-popup-gmap">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d788790.9018211137!2d-3.794533563867567!3d39.44188449494803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2sin!4v1651900367722!5m2!1sen!2sin"
+                                            width="100%" height="381" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="location-popup-hilton">
+                                        <img src="assets/images/icons/location-popup-L.png">
+                                    </div>
+                                    <div class="loaction-dist-radius">
+                                        <div class="dist-radius-innner">
+                                            <div class="dist-radius-content">
+                                                <h5 class="mt-4 text-center">Distance Radius</h5>
+                                                <div class="dist-radius-total">
+                                                    <p class="m-0">1.5</p>
+                                                </div>
+                                                <div class="dist-radius-mile-text text-center">
+                                                    <p>Miles</p>
+                                                </div>
+                                                <div class="dist-radius-rang pe-3 ps-3">
+                                                    <input type="range" class="form-range" id="customRange1">
+                                                </div>
+                                                <div class="dist-radius-mile d-flex justify-content-between">
+                                                    <span>0.5mi</span><span>5mi</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="loaction-popup-content-box nearby-content-box">
+                                    <div class="loaction-popup-box-main  position-relative">
+                                        <div class="loaction-popup-card d-flex mb-4">
+                                            <div class="location-popup-card-single nearby-single-card ms-3 mt-4">
+                                                <div class="card-single-head d-flex align-items-center bg-purple">
+                                                    <div class="card-head-img pe-3"><img
+                                                            src="assets/images/icons/locationpopup-card1.png"></div>
+                                                    <div class="card-head-text">Museums</div>
+                                                </div>
+                                                <div class="card-content nearby-card-content">
+                                                    <p class="mb-2">Museo del Prado </p>
+                                                    <p class="mb-2">Thyssen-Bornemisza Museum</p>
+                                                    <p class="mb-2">Museo Nacional Centro de Arte </p>
+                                                    <p class="mb-2">Atocha Headquarters (Sabatini and Nouvel buildings)
+                                                    </p>
+                                                    <p class="mb-2">Palacio de Velázquez (Retiro Park) </p>
+                                                    <p class="mb-2">Palacio de Cristal (Retiro Park) </p>
+                                                </div>
+                                            </div>
+                                            <div class="location-popup-card-single nearby-single-card mt-4">
+                                                <div class="card-single-head d-flex align-items-center bg-green">
+                                                    <div class="card-head-img pe-3"><img
+                                                            src="assets/images/icons/locationpopup-card2.png"></div>
+                                                    <div class="card-head-text">Parks</div>
+                                                </div>
+                                                <div class="card-content nearby-card-content">
+                                                    <p class="mb-2">Museum of Entomology (UCM) </p>
+                                                    <p class="mb-2">Hispanic Pharmacy Museum (UCM)</p>
+                                                    <p class="mb-2">Museum of Geology (UCM)</p>
+                                                    <p class="mb-2">Museum of Dentistry "Luis de Macorra" UCM</p>
+                                                </div>
+                                            </div>
+                                            <div class="location-popup-card-single mt-4 nearby-single-card">
+                                                <div class="card-single-head d-flex align-items-center bg-green-two">
+                                                    <div class="card-head-img pe-3"><img
+                                                            src="assets/images/icons/locationpopup-card3.png"></div>
+                                                    <div class="card-head-text">Markets</div>
+                                                </div>
+                                                <div class="card-content nearby-card-content">
+                                                    <p class="mb-2">Museum of Entomology (UCM) </p>
+                                                    <p class="mb-2">Hispanic Pharmacy Museum (UCM)</p>
+                                                    <p class="mb-2">Museum of Geology (UCM)</p>
+                                                    <p class="mb-2">Museum of Dentistry "Luis de Macorra" UCM</p>
+                                                </div>
+                                            </div>
+                                            <div class="location-popup-card-single mt-4 nearby-single-card">
+                                                <div class="card-single-head d-flex align-items-center bg-purple-2">
+                                                    <div class="card-head-img pe-3"><img
+                                                            src="assets/images/icons/locationpopup-card4.png"></div>
+                                                    <div class="card-head-text">Beaches</div>
+                                                </div>
+                                                <div class="card-content nearby-card-content">
+                                                    <p class="mb-2">Museum of Entomology (UCM) </p>
+                                                    <p class="mb-2">Hispanic Pharmacy Museum (UCM)</p>
+                                                    <p class="mb-2">Museum of Geology (UCM)</p>
+                                                    <p class="mb-2">Museum of Dentistry "Luis de Macorra" UCM</p>
+                                                </div>
+                                            </div>
+                                            <div class="location-popup-card-single mt-4 nearby-single-card">
+                                                <div class="card-single-head d-flex align-items-center bg-purple-2">
+                                                    <div class="card-head-img pe-3"><img
+                                                            src="assets/images/icons/locationpopup-card4.png"></div>
+                                                    <div class="card-head-text">Beaches</div>
+                                                </div>
+                                                <div class="card-content nearby-card-content">
+                                                    <p class="mb-2">Museum of Entomology (UCM) </p>
+                                                    <p class="mb-2">Hispanic Pharmacy Museum (UCM)</p>
+                                                    <p class="mb-2">Museum of Geology (UCM)</p>
+                                                    <p class="mb-2">Museum of Dentistry "Luis de Macorra" UCM</p>
+                                                </div>
+                                            </div>
+                                            <div class="location-popup-card-single nearby-single-card mt-4">
+                                                <div class="card-single-head d-flex align-items-center bg-green">
+                                                    <div class="card-head-img pe-3"><img
+                                                            src="assets/images/icons/locationpopup-card2.png"></div>
+                                                    <div class="card-head-text">Parks</div>
+                                                </div>
+                                                <div class="card-content nearby-card-content">
+                                                    <p class="mb-2">Museum of Entomology (UCM) </p>
+                                                    <p class="mb-2">Hispanic Pharmacy Museum (UCM)</p>
+                                                    <p class="mb-2">Museum of Geology (UCM)</p>
+                                                    <p class="mb-2">Museum of Dentistry "Luis de Macorra" UCM</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="loaction-popup-content-box nearby-content-box">
-                                <div class="loaction-popup-box-main  position-relative">
-                                    <div class="loaction-popup-card d-flex mb-4">
-                                    <div class="location-popup-card-single nearby-single-card ms-3 mt-4">
-                                        <div class="card-single-head d-flex align-items-center bg-purple">
-                                            <div class="card-head-img pe-3"><img src="assets/images/icons/locationpopup-card1.png"></div>
-                                            <div class="card-head-text">Museums</div>
-                                        </div>
-                                        <div class="card-content nearby-card-content">
-                                            <p class="mb-2">Museo del Prado </p>
-                                            <p class="mb-2">Thyssen-Bornemisza Museum</p>
-                                            <p class="mb-2">Museo Nacional Centro de Arte   </p>
-                                            <p class="mb-2">Atocha Headquarters (Sabatini and Nouvel buildings)</p>
-                                            <p class="mb-2">Palacio de Velázquez (Retiro Park) </p>
-                                            <p class="mb-2">Palacio de Cristal (Retiro Park)  </p>
-                                        </div>
-                                    </div>
-                                    <div class="location-popup-card-single nearby-single-card mt-4">
-                                        <div class="card-single-head d-flex align-items-center bg-green">
-                                            <div class="card-head-img pe-3"><img src="assets/images/icons/locationpopup-card2.png"></div>
-                                            <div class="card-head-text">Parks</div>
-                                        </div>
-                                        <div class="card-content nearby-card-content">
-                                            <p class="mb-2">Museum of Entomology (UCM) </p>
-                                            <p class="mb-2">Hispanic Pharmacy Museum (UCM)</p>
-                                            <p class="mb-2">Museum of Geology (UCM)</p>
-                                            <p class="mb-2">Museum of Dentistry "Luis de Macorra" UCM</p>
-                                        </div>
-                                    </div>
-                                    <div class="location-popup-card-single mt-4 nearby-single-card">
-                                        <div class="card-single-head d-flex align-items-center bg-green-two">
-                                            <div class="card-head-img pe-3"><img src="assets/images/icons/locationpopup-card3.png"></div>
-                                            <div class="card-head-text">Markets</div>
-                                        </div>
-                                        <div class="card-content nearby-card-content">
-                                            <p class="mb-2">Museum of Entomology (UCM) </p>
-                                            <p class="mb-2">Hispanic Pharmacy Museum (UCM)</p>
-                                            <p class="mb-2">Museum of Geology (UCM)</p>
-                                            <p class="mb-2">Museum of Dentistry "Luis de Macorra" UCM</p>
-                                        </div>
-                                    </div>
-                                    <div class="location-popup-card-single mt-4 nearby-single-card">
-                                        <div class="card-single-head d-flex align-items-center bg-purple-2">
-                                            <div class="card-head-img pe-3"><img src="assets/images/icons/locationpopup-card4.png"></div>
-                                            <div class="card-head-text">Beaches</div>
-                                        </div>
-                                        <div class="card-content nearby-card-content">
-                                            <p class="mb-2">Museum of Entomology (UCM) </p>
-                                            <p class="mb-2">Hispanic Pharmacy Museum (UCM)</p>
-                                            <p class="mb-2">Museum of Geology (UCM)</p>
-                                            <p class="mb-2">Museum of Dentistry "Luis de Macorra" UCM</p>
-                                        </div>
-                                    </div>
-                                    <div class="location-popup-card-single mt-4 nearby-single-card">
-                                        <div class="card-single-head d-flex align-items-center bg-purple-2">
-                                            <div class="card-head-img pe-3"><img src="assets/images/icons/locationpopup-card4.png"></div>
-                                            <div class="card-head-text">Beaches</div>
-                                        </div>
-                                        <div class="card-content nearby-card-content">
-                                            <p class="mb-2">Museum of Entomology (UCM) </p>
-                                            <p class="mb-2">Hispanic Pharmacy Museum (UCM)</p>
-                                            <p class="mb-2">Museum of Geology (UCM)</p>
-                                            <p class="mb-2">Museum of Dentistry "Luis de Macorra" UCM</p>
-                                        </div>
-                                    </div>
-                                    <div class="location-popup-card-single nearby-single-card mt-4">
-                                        <div class="card-single-head d-flex align-items-center bg-green">
-                                            <div class="card-head-img pe-3"><img src="assets/images/icons/locationpopup-card2.png"></div>
-                                            <div class="card-head-text">Parks</div>
-                                        </div>
-                                        <div class="card-content nearby-card-content">
-                                            <p class="mb-2">Museum of Entomology (UCM) </p>
-                                            <p class="mb-2">Hispanic Pharmacy Museum (UCM)</p>
-                                            <p class="mb-2">Museum of Geology (UCM)</p>
-                                            <p class="mb-2">Museum of Dentistry "Luis de Macorra" UCM</p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -598,17 +631,17 @@
                 <h5 class="heading-fs-16 purple-dark">Policies</h5>
                 <div class="h-policies-inner d-flex align-items-end flex-wrap">
                     <div class="h-check-in-out border-green me-3 mb-5 mb-lg-0">
-                        <div class="timepicker_div "> 
-                        <img src="assets/images/icons/cal-icon.png" class="pe-2">
-                        <span class="check-text text--green">check-in-time</span>
-                        <input type="text"  class="form-control timepicker text-center" placeholder=" Time">
+                        <div class="timepicker_div ">
+                            <img src="assets/images/icons/cal-icon.png" class="pe-2">
+                            <span class="check-text text--green">check-in-time</span>
+                            <input type="text" class="form-control timepicker text-center" placeholder=" Time">
                         </div>
                     </div>
                     <div class="h-check-in-out border-red me-5 mb-5 mb-lg-0">
-                        <div class="timepicker_div "> 
-                        <img src="assets/images/icons/check-close.png" class="pe-2">
-                        <span class="check-text text--red">check-in-out</span>
-                        <input type="text"  class="form-control timepicker text-center" placeholder=" Time">
+                        <div class="timepicker_div ">
+                            <img src="assets/images/icons/check-close.png" class="pe-2">
+                            <span class="check-text text--red">check-in-out</span>
+                            <input type="text" class="form-control timepicker text-center" placeholder=" Time">
                         </div>
                     </div>
                     <div class="policies-extra ms-5 me-2">
@@ -619,11 +652,12 @@
                         <p><a href="javascript:;" class=" policies-text purple">Valet Parking</a></p>
                     </div>
                     <div class="policies-extra me-2">
-                        <p><a href="javascript:;" class=" policies-text purple">Pet Allowed <span class="ps-2 purple">$45</span></a></p>
+                        <p><a href="javascript:;" class=" policies-text purple">Pet Allowed <span
+                                    class="ps-2 purple">$45</span></a></p>
                     </div>
                 </div>
                 <div class="policies-link pt-4 pb-3">
-                    <a href="#" class="purple">See all Policies details</a> 
+                    <a href="#" class="purple">See all Policies details</a>
                 </div>
             </div>
         </div>
@@ -632,7 +666,7 @@
     <!-------- Hotel Room section start -------->
     <section class="hotel-room">
         <div class="container">
-        <div class="hotel-room-inner">
+            <div class="hotel-room-inner">
                 <div class="hotel-room-heading pb-4">
                     <h5>Pick your room for <span class="purple">Orlando, Florida</span></h5>
                 </div>
@@ -641,46 +675,90 @@
                         <div class="col-3">
                             <div class="room-single-card p-3">
                                 <div class="single-card-img">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"> <img src="assets/images/room-img1.png" class="img-fluid img-wrapper"></a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"> <img
+                                            src="assets/images/room-img1.png" class="img-fluid img-wrapper"></a>
                                     <!------- img slider popup start -------->
-                                    <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
+                                    <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen modal-dialog-centered"
+                                            role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header justify-content-end">
-                                                    <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                                    <button type="button" data-bs-dismiss="modal" class="modal-close"
+                                                        aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                                                 </div>
-                                                <div class="modal-body d-flex justify-content-center align-items-center">
+                                                <div
+                                                    class="modal-body d-flex justify-content-center align-items-center">
                                                     <div class="img-swiper">
                                                         <div class="slider slider-single mb-5">
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
                                                         </div>
                                                         <div class="slider slider-nav">
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img1.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img2.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img3.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img4.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img5.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img6.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img7.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img8.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img9.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img10.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img11.png" class="me-2" alt=""></div>
-                                                            <div class="silder-nav-img"><img src="assets/images/nav-img12.png" class="me-2" alt="">  </div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img1.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img2.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img3.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img4.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img5.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img6.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img7.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img8.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img9.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img10.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img11.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="silder-nav-img"><img
+                                                                    src="assets/images/nav-img12.png" class="me-2"
+                                                                    alt=""> </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -699,7 +777,7 @@
                                     </div>
                                     <div class="single-small-title">
                                         <h5 class="heading-fs-16 purple-dark">
-                                        <img src="assets/images/icons/room-m.png" class="pe-2">12 Nights</p>
+                                            <img src="assets/images/icons/room-m.png" class="pe-2">12 Nights</p>
                                     </div>
                                 </div>
                                 <div class="h-room-info-main">
@@ -707,18 +785,25 @@
                                         <div class="col-6">
                                             <h5 class="para-fs-14">Overview</h5>
                                             <div class="room-overview">
-                                            <p class="mb-2"><img src="assets/images/icons/h-room1.png"><span class="para-fs-14 ps-3"> 1 Double Bed</span> </p>
-                                            <p class="mb-2"><img src="assets/images/icons/h-room2.png"><span  class="para-fs-14 ps-3">$450 per night</span> </p>
-                                            <p class="mb-2"><img src="assets/images/icons/h-room3.png"><span  class="para-fs-14 ps-3">2 Adults</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room1.png"><span
+                                                        class="para-fs-14 ps-3"> 1 Double Bed</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room2.png"><span
+                                                        class="para-fs-14 ps-3">$450 per night</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room3.png"><span
+                                                        class="para-fs-14 ps-3">2 Adults</span> </p>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <h5 class="para-fs-14">Amenities</h5>
                                             <div class="room-overview">
-                                                <p class="mb-2"><img src="assets/images/icons/search-i-2.png"><span  class="para-fs-14 ps-3">Breakfast</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room4.png"><span  class="para-fs-14 ps-3">Dinner</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room5.png"><span  class="para-fs-14 ps-3">Lunch</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room6.png"><span  class="para-fs-14 ps-3">Hot Tub</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/search-i-2.png"><span
+                                                        class="para-fs-14 ps-3">Breakfast</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room4.png"><span
+                                                        class="para-fs-14 ps-3">Dinner</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room5.png"><span
+                                                        class="para-fs-14 ps-3">Lunch</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room6.png"><span
+                                                        class="para-fs-14 ps-3">Hot Tub</span> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -728,9 +813,12 @@
                         <div class="col-3 border--left">
                             <div class="room-single-card py-4 ps-4 pe-4">
                                 <div class="single-card-price">
-                                    <p class="para-fs-14"><img src="assets/images/icons/right.png"><span class="text--green ps-3">Free Cancel</span> </p>
+                                    <p class="para-fs-14"><img src="assets/images/icons/right.png"><span
+                                            class="text--green ps-3">Free Cancel</span> </p>
                                     <p class="para-fs-14 pt-4 mb-2"><span class="text--red">2 Rooms Left</span> </p>
-                                    <h5 class="purple-dark"><span class="text-decoration-line-through para-fs-14 pe-3 d-l-Purple">$1,425.00</span>$2,134.00</h5>
+                                    <h5 class="purple-dark"><span
+                                            class="text-decoration-line-through para-fs-14 pe-3 d-l-Purple">$1,425.00</span>$2,134.00
+                                    </h5>
                                     <p class="mb-4 para-fs-14 d-l-Purple">For 12 Nights, Tax. Included</p>
                                     <a href="#" class="t-city-btn bg-purple mt-3">Add Room</a>
                                 </div>
@@ -743,46 +831,90 @@
                         <div class="col-3">
                             <div class="room-single-card p-3">
                                 <div class="single-card-img">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"> <img src="assets/images/room-img2.png" class="img-fluid img-wrapper"></a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"> <img
+                                            src="assets/images/room-img2.png" class="img-fluid img-wrapper"></a>
                                     <!------- img slider popup start -------->
-                                    <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
+                                    <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen modal-dialog-centered"
+                                            role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header justify-content-end">
-                                                    <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                                    <button type="button" data-bs-dismiss="modal" class="modal-close"
+                                                        aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                                                 </div>
-                                                <div class="modal-body d-flex justify-content-center align-items-center">
+                                                <div
+                                                    class="modal-body d-flex justify-content-center align-items-center">
                                                     <div class="img-swiper">
                                                         <div class="slider slider-single mb-5">
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
                                                         </div>
                                                         <div class="slider slider-nav">
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img1.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img2.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img3.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img4.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img5.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img6.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img7.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img8.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img9.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img10.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img11.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img12.png" class="me-2" alt="">  </div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img1.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img2.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img3.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img4.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img5.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img6.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img7.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img8.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img9.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img10.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img11.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img12.png" class="me-2"
+                                                                    alt=""> </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -801,7 +933,7 @@
                                     </div>
                                     <div class="single-small-title">
                                         <h5 class="heading-fs-16 purple-dark">
-                                        <img src="assets/images/icons/room-m.png" class="pe-2">12 Nights</p>
+                                            <img src="assets/images/icons/room-m.png" class="pe-2">12 Nights</p>
                                     </div>
                                 </div>
                                 <div class="h-room-info-main">
@@ -809,18 +941,25 @@
                                         <div class="col-6">
                                             <h5 class="para-fs-14">Overview</h5>
                                             <div class="room-overview">
-                                                <p class="mb-2"><img src="assets/images/icons/h-room1.png"><span class="para-fs-14 ps-3"> 1 Double Bed</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room2.png"><span  class="para-fs-14 ps-3">$450 per night</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room3.png"><span  class="para-fs-14 ps-3">2 Adults</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room1.png"><span
+                                                        class="para-fs-14 ps-3"> 1 Double Bed</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room2.png"><span
+                                                        class="para-fs-14 ps-3">$450 per night</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room3.png"><span
+                                                        class="para-fs-14 ps-3">2 Adults</span> </p>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <h5 class="para-fs-14">Amenities</h5>
                                             <div class="room-overview">
-                                                <p class="mb-2"><img src="assets/images/icons/search-i-2.png"><span  class="para-fs-14 ps-3">Breakfast</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room4.png"><span  class="para-fs-14 ps-3">Dinner</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room5.png"><span  class="para-fs-14 ps-3">Lunch</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room6.png"><span  class="para-fs-14 ps-3">Hot Tub</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/search-i-2.png"><span
+                                                        class="para-fs-14 ps-3">Breakfast</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room4.png"><span
+                                                        class="para-fs-14 ps-3">Dinner</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room5.png"><span
+                                                        class="para-fs-14 ps-3">Lunch</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room6.png"><span
+                                                        class="para-fs-14 ps-3">Hot Tub</span> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -830,9 +969,12 @@
                         <div class="col-3 border--left">
                             <div class="room-single-card py-4 ps-4 pe-4">
                                 <div class="single-card-price">
-                                    <p class="para-fs-14"><img src="assets/images/icons/room-ex.png"><span class="ps-3">No Refundable</span> </p>
+                                    <p class="para-fs-14"><img src="assets/images/icons/room-ex.png"><span
+                                            class="ps-3">No Refundable</span> </p>
                                     <p class="para-fs-14 pt-4 mb-2"><span class="text--red">2 Rooms Left</span> </p>
-                                    <h5 class="purple-dark"><span class="text-decoration-line-through para-fs-14 pe-3 d-l-Purple">$1,425.00</span>$1,037.00</h5>
+                                    <h5 class="purple-dark"><span
+                                            class="text-decoration-line-through para-fs-14 pe-3 d-l-Purple">$1,425.00</span>$1,037.00
+                                    </h5>
                                     <p class="mb-4 para-fs-14 d-l-Purple">For 12 Nights, Tax. Included</p>
                                     <a href="#" class="t-city-btn bg-purple mt-3">Add Room</a>
                                 </div>
@@ -845,46 +987,90 @@
                         <div class="col-3">
                             <div class="room-single-card p-3">
                                 <div class="single-card-img">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"> <img src="assets/images/room-img-3.png" class="img-fluid img-wrapper"></a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imgPopup"> <img
+                                            src="assets/images/room-img-3.png" class="img-fluid img-wrapper"></a>
                                     <!------- img slider popup start -------->
-                                    <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-fullscreen modal-dialog-centered" role="document">
+                                    <div class="modal fade img-popup-slider" id="imgPopup" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen modal-dialog-centered"
+                                            role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header justify-content-end">
-                                                    <button type="button" data-bs-dismiss="modal" class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                                    <button type="button" data-bs-dismiss="modal" class="modal-close"
+                                                        aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                                                 </div>
-                                                <div class="modal-body d-flex justify-content-center align-items-center">
+                                                <div
+                                                    class="modal-body d-flex justify-content-center align-items-center">
                                                     <div class="img-swiper">
                                                         <div class="slider slider-single mb-5">
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
-                                                            <div class="slider-single-img"><img src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
+                                                            <div class="slider-single-img"><img
+                                                                    src="assets/images/img-popup-bg.png" alt=""></div>
                                                         </div>
                                                         <div class="slider slider-nav">
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img1.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img2.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img3.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img4.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img5.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img6.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img7.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img8.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img9.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img10.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img11.png" class="me-2" alt=""></div>
-                                                            <div class="slider-nav-img"><img src="assets/images/nav-img12.png" class="me-2" alt="">  </div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img1.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img2.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img3.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img4.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img5.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img6.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img7.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img8.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img9.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img10.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img11.png" class="me-2"
+                                                                    alt=""></div>
+                                                            <div class="slider-nav-img"><img
+                                                                    src="assets/images/nav-img12.png" class="me-2"
+                                                                    alt=""> </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -903,7 +1089,7 @@
                                     </div>
                                     <div class="single-small-title">
                                         <h5 class="heading-fs-16 purple-dark">
-                                        <img src="assets/images/icons/room-m.png" class="pe-2">12 Nights</p>
+                                            <img src="assets/images/icons/room-m.png" class="pe-2">12 Nights</p>
                                     </div>
                                 </div>
                                 <div class="h-room-info-main">
@@ -911,18 +1097,25 @@
                                         <div class="col-6">
                                             <h5 class="para-fs-14">Overview</h5>
                                             <div class="room-overview">
-                                                <p class="mb-2"><img src="assets/images/icons/h-room1.png"><span class="para-fs-14 ps-3"> 1 Double Bed</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room2.png"><span  class="para-fs-14 ps-3">$450 per night</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room3.png"><span  class="para-fs-14 ps-3">2 Adults</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room1.png"><span
+                                                        class="para-fs-14 ps-3"> 1 Double Bed</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room2.png"><span
+                                                        class="para-fs-14 ps-3">$450 per night</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room3.png"><span
+                                                        class="para-fs-14 ps-3">2 Adults</span> </p>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <h5 class="para-fs-14">Amenities</h5>
                                             <div class="room-overview">
-                                                <p class="mb-2"><img src="assets/images/icons/search-i-2.png"><span  class="para-fs-14 ps-3">Breakfast</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room4.png"><span  class="para-fs-14 ps-3">Dinner</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room5.png"><span  class="para-fs-14 ps-3">Lunch</span> </p>
-                                                <p class="mb-2"><img src="assets/images/icons/h-room6.png"><span  class="para-fs-14 ps-3">Hot Tub</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/search-i-2.png"><span
+                                                        class="para-fs-14 ps-3">Breakfast</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room4.png"><span
+                                                        class="para-fs-14 ps-3">Dinner</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room5.png"><span
+                                                        class="para-fs-14 ps-3">Lunch</span> </p>
+                                                <p class="mb-2"><img src="assets/images/icons/h-room6.png"><span
+                                                        class="para-fs-14 ps-3">Hot Tub</span> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -932,9 +1125,12 @@
                         <div class="col-3 border--left">
                             <div class="room-single-card py-4 ps-4 pe-4">
                                 <div class="single-card-price">
-                                    <p class="para-fs-14"><img src="assets/images/icons/room-ex.png"><span class="ps-3">No Refundable</span> </p>
+                                    <p class="para-fs-14"><img src="assets/images/icons/room-ex.png"><span
+                                            class="ps-3">No Refundable</span> </p>
                                     <p class="para-fs-14 pt-4 mb-2"><span class="text--red">2 Rooms Left</span> </p>
-                                    <h5 class="purple-dark"><span class="text-decoration-line-through para-fs-14 pe-3 d-l-Purple">$1,425.00</span>$915.00</h5>
+                                    <h5 class="purple-dark"><span
+                                            class="text-decoration-line-through para-fs-14 pe-3 d-l-Purple">$1,425.00</span>$915.00
+                                    </h5>
                                     <p class="mb-4 para-fs-14 d-l-Purple">For 12 Nights, Tax. Included</p>
                                     <a href="#" class="t-city-btn bg-purple mt-3">Add Room</a>
                                 </div>
@@ -942,7 +1138,7 @@
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
         </div>
     </section>
     <!-------- Hotel Room section end -------->
@@ -1019,22 +1215,22 @@
                     </div>
                     <div class="col-lg-2 col-md-6 mb-3">
                         <div class="footer-link">
-                        <h5 class="purple">Resources</h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link ps-0 active" href="#">Support</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ps-0" href="#"> Contact</a>
-                            </li>
-                            <h5 class="text-black">Legal</h5>
-                            <li class="nav-item">
-                                <a class="nav-link ps-0" href="#">Privacy & Terms</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ps-0" href="#">Legal Agreement</a>
-                            </li>
-                        </ul>
+                            <h5 class="purple">Resources</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Contact</a>
+                                </li>
+                                <h5 class="text-black">Legal</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Legal Agreement</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -1053,39 +1249,44 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!------- Bootstrap JS Link ------->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<!------- Slick js  -------->
+<!------- Slick js link -------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<!------- datetimepiker js link ---------->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+<!-------- select2 js link ------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<!------- Timepiker js link ---------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 <script src="assets/js/timepiker.js"></script>
 <!------- Custom JS Link ----- -->
 <script src="assets/js/custom.js"></script>
 
 <!------ script for time piker -------->
 <script>
-    $(document).ready(function(){
-     $('.timepicker').mdtimepicker();
- });
+    $(document).ready(function () {
+        $('.timepicker').mdtimepicker();
+    });
 </script>
 <!-------- image popup slider image js------>
 <script>
     $('.slider-single').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    draggable:false,
-    fade: true,
-    asNavFor: '.slider-nav'
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        draggable: false,
+        fade: true,
+        asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
-      slidesToShow: 10,
-      slidesToScroll: 1,
-      asNavFor: '.slider-single',
-      dots: false,
-      draggable:false,
-      centerMode: true,
-      focusOnSelect: true
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        asNavFor: '.slider-single',
+        dots: false,
+        draggable: false,
+        centerMode: true,
+        focusOnSelect: true
     });
     $('.modal').on('shown.bs.modal', function (e) {
         $('.slider-single').slick('setPosition');
@@ -1095,5 +1296,6 @@
         $('.slider-nav').slick('setPosition');
         $('.swiper').addClass('open');
     })
-   </script>
+</script>
+
 </html>

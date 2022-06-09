@@ -1,7 +1,4 @@
 @media screen and (max-width:991px) {
-    .m-view-img{
-        max-width: 30px;
-    }
     .s-top-city .container{
         max-width:720px;
     }
@@ -50,6 +47,9 @@
         font-size: 18px;
         line-height: 28px;
     }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content{
+        padding: 53px 32px 23px;
+    }
 }
 @media screen and (max-width:767px) {
     .travel-planning .travel-planning-inner .travel-planning-heading h1{
@@ -84,9 +84,7 @@
     .hotel-result.search-result .side-content .mypreferences-popup .hotel-sort-popup{
         padding: 22px;
     }
-    .pwm-accordion .pwm-accordion-inner .pwm-accordion-title{
-        padding: 22px;
-    }
+   
 }
 
 @media screen and (max-width:1399px) {
@@ -137,6 +135,9 @@
     .hotel-result.check-in-out .check-in-out-form .custom-calender-piker .check-text-label .input--text{
         padding: 6px 0;
     }
+    .pwm-card-body{
+        padding: 13px;
+    }
     
 }
 @media screen and (min-width:576px) and (max-width:655px) {
@@ -146,8 +147,9 @@
 }
 @media screen and (max-width:576px) {
     .t-hotels-main .t-hotels-inner .top-hotels-wraper .top-hotels-card .top-hotels-card-inner{
-        max-height: 156px;
-        padding: 37px 37px;
+        max-height: 134px;
+        padding: 26px 37px;
+        max-width: 206px;
     }
     .check-in-out{
         padding: 45px 0;
@@ -200,23 +202,49 @@
         font-size: 26px;
         line-height: 26px;
     }
+    .pwm-accordion .pwm-accordion-inner .pwm-accordion-title{
+        padding: 25px 15px; 
+    }
+    .m-view-img{
+        max-width: 30px;
+    }
+    .t-hotels-main .t-hotels-inner .top-hotels-wraper{
+        margin-top: -43px;
+    }
+    .pwm-transport-heading h2{
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content{
+        padding: 23px 32px;
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content .city-tab-input{
+        padding: 13px 20px;
+        max-width: 240px;
+    }
+    .pwm-transport .pwm-trans-card .pwm-trans-card-inner{
+        max-width: 100%;
+        min-height: 159px;
+        padding: 32px;
+    }
 }
 @media screen and (max-width:480px) {
     .hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-wrapper{
         padding: 32px 12px;
     }
     .pwm-accordion .pwm-accordion-inner .pwm-accordion-title .pwm-accordion-text .accordion-text {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 18px;
     }
 
 }
 @media screen and (max-width:420px){
     .s-top-city .s-top-city-inner .s-top-city-main .slick-prev{
-        display: none !important;
+      left: 10%;
+      z-index: 99;
     }
     .s-top-city .s-top-city-inner .s-top-city-main .slick-next{
-        display: none !important;
+        right: 10%;
     }
     .explore-city .explore-city-map-img img{
         width: 200px;
@@ -274,6 +302,17 @@
     }
     .pwm-accordion .pwm-accordion-inner .rest-accordion .rest-accordion-body{
         padding: 20px;
+    }
+    .pwm-map .pwm-map-inner .pwm-heading h2{
+        font-size: 16px;
+    }
+    .pwm-card-inner{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .pwm-museums-check{
+        flex-direction: column;
+        width: 100%;
     }
 }
 @media screen and (max-width:320px) {

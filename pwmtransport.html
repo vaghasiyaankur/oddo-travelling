@@ -14,9 +14,11 @@
     <!------- Font Family Link ------->
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <!-- slick cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <!------- select2 css link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
+    <!------ Datepiker cdn ------->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.css" />
     <!-------- Custom CSS Link -------->
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/reponsive.css">
@@ -59,10 +61,11 @@
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Hi, Daniela!
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item active" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Order History</a></li>
+                            <li><a class="dropdown-item" href="#">Upcoming Trips</a></li>
+                            <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
                         </ul>
                     </div>
                 </div>
@@ -81,7 +84,7 @@
                 <div class="pwm-hero-wraper w-100 text-center">
                     <h2 class="hero-text">Madrid</h2>
                     <div class="hero-logo mb-4 d-flex justify-content-center align-content-center">
-                        <span><img src="assets/images/icons/Spain.png"></span>
+                        <span><img src="assets/images/icons/Spain.png" class="m-view-img"></span>
                         <span class="ps-2 logo-text">Spain</span>
                     </div>
                     <div class="input-group align-items-center pwd-search-input">
@@ -100,7 +103,8 @@
             <div class="small-box-main pwm-small-box">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center  mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center  mb-2">
                             <div class="small-box-single-img ">
                                 <img src="assets/images/icons/location-popup-1.png">
                             </div>
@@ -110,7 +114,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-popup-2.png">
                             </div>
@@ -120,7 +125,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/locaion-5.png">
                             </div>
@@ -130,7 +136,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-9.png">
                             </div>
@@ -140,7 +147,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-popup-3.png">
                             </div>
@@ -150,7 +158,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-popup-4.png">
                             </div>
@@ -160,7 +169,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-popup-6.png">
                             </div>
@@ -170,7 +180,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center active mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center active mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-10.png">
                             </div>
@@ -180,7 +191,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-popup-7.png">
                             </div>
@@ -190,7 +202,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/loaction-11.png">
                             </div>
@@ -200,7 +213,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-12.png">
                             </div>
@@ -210,7 +224,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-blue2 d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-12.png">
                             </div>
@@ -224,6 +239,7 @@
         </div>
     </section>
     <!------- pwm info box section end ------>
+    <!------ pwm-transport section start  ------->
     <section class="pwm-transport pt-5 ">
         <div class="container">
             <div class="pwm-transport-inner">
@@ -234,78 +250,84 @@
                 <div class="pwm-transport-wrapper">
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="pwm-trans-card mb-5 text-center">
-                                <div class="pwm-trans-card-head mb-4">
+                            <div class="pwm-trans-card mb-sm-5 mb-3 text-center">
+                                <div class="pwm-trans-card-head mb-sm-4">
                                     <h5 class="heading-fs-16">Ride Hailing</h5>
                                 </div>
-                                <div class="pwm-trans-card-inner d-flex justify-content-center align-items-center pb-4">
+                                <div
+                                    class="pwm-trans-card-inner d-flex justify-content-center align-items-center pb-sm-4">
                                     <div class="pwm-trans-card-content text-center">
                                         <img src="assets/images/icons/trans-1.png">
-                                        <p class="pt-3">Get Uber credits at a <span class="green">10% discount </span> when you book a room</p>
-                                    </div>        
+                                        <p class="pt-3">Get Uber credits at a <span class="green">10% discount </span>
+                                            when you book a room</p>
+                                    </div>
                                 </div>
-                                <div class="trans-btn mt-4">
-                                    <a href="#" class="filter-btn btn btn-outline-primary purple">Add </a>
+                                <div class="trans-btn mt-sm-4 mt-3">
+                                    <a href="javascript:;" class="filter-btn btn btn-outline-primary purple">Add </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="pwm-trans-card mb-5 text-center">
-                                <div class="pwm-trans-card-head mb-4">
+                            <div class="pwm-trans-card mb-sm-5 mb-3 text-center">
+                                <div class="pwm-trans-card-head mb-sm-4">
                                     <h5 class="heading-fs-16">Self-service car</h5>
                                 </div>
                                 <div class="pwm-trans-card-inner d-flex justify-content-center align-items-center">
                                     <div class="pwm-trans-card-content text-center">
                                         <img src="assets/images/icons/trans-2.png">
-                                    </div>        
+                                    </div>
                                 </div>
-                                <div class="trans-btn mt-4">
-                                    <a href="#" class="filter-btn btn btn-outline-primary purple">Visit Site </a>
+                                <div class="trans-btn mt-sm-4 mt-3">
+                                    <a href="javascript:;" class="filter-btn btn btn-outline-primary purple">Visit Site
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="pwm-trans-card mb-5 text-center">
-                                <div class="pwm-trans-card-head mb-4">
+                            <div class="pwm-trans-card mb-sm-5 mb-3 text-center">
+                                <div class="pwm-trans-card-head mb-sm-4">
                                     <h5 class="heading-fs-16">Public Transportation</h5>
                                 </div>
                                 <div class="pwm-trans-card-inner d-flex justify-content-center align-items-center">
                                     <div class="pwm-trans-card-content text-center">
                                         <img src="assets/images/icons/trans-3.png">
-                                    </div>        
+                                    </div>
                                 </div>
-                                <div class="trans-btn mt-4">
-                                    <a href="#" class="filter-btn btn btn-outline-primary purple">Visit Site </a>
+                                <div class="trans-btn mt-sm-4 mt-3">
+                                    <a href="javascript:;" class="filter-btn btn btn-outline-primary purple">Visit Site
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="pwm-trans-card mb-5 text-center">
-                                <div class="pwm-trans-card-head mb-4">
+                            <div class="pwm-trans-card mb-sm-5 mb-3 text-center">
+                                <div class="pwm-trans-card-head mb-sm-4">
                                     <h5 class="heading-fs-16">Train</h5>
                                 </div>
                                 <div class="pwm-trans-card-inner d-flex justify-content-center align-items-center">
                                     <div class="pwm-trans-card-content text-center">
                                         <img src="assets/images/icons/trans-4.png">
-                                    </div>        
+                                    </div>
                                 </div>
-                                <div class="trans-btn mt-4">
-                                    <a href="#" class="filter-btn btn btn-outline-primary purple">Visit Site </a>
+                                <div class="trans-btn mt-sm-4 mt-3">
+                                    <a href="javascript:;" class="filter-btn btn btn-outline-primary purple">Visit Site
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="pwm-trans-card mb-5 text-center">
-                                <div class="pwm-trans-card-head mb-4">
+                            <div class="pwm-trans-card mb-sm-5 mb-3 text-center">
+                                <div class="pwm-trans-card-head mb-sm-4">
                                     <h5 class="heading-fs-16">Bus</h5>
                                 </div>
                                 <div class="pwm-trans-card-inner d-flex justify-content-center align-items-center">
                                     <div class="pwm-trans-card-content text-center">
                                         <img src="assets/images/icons/trans-5.png">
-                                    </div>        
+                                    </div>
                                 </div>
-                                <div class="trans-btn mt-4">
-                                    <a href="#" class="filter-btn btn btn-outline-primary purple">Visit Site </a>
+                                <div class="trans-btn mt-sm-4 mt-3">
+                                    <a href="javascriprt:;" class="filter-btn btn btn-outline-primary purple">Visit Site
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -314,6 +336,7 @@
             </div>
         </div>
     </section>
+    <!------ pwm-transport section end  ------->
 
 
     <!-------- Footer start -------->
@@ -423,8 +446,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!------- Bootstrap JS Link ------->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<!------- Swiper js cdn------->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+<!-------- select2 js link ------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<!------Datepiker js cdn ------->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/moment.min.js"></script>
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.js"></script>
 <!------- Custom JS Link ----- -->
 <script src="assets/js/custom.js"></script>
 

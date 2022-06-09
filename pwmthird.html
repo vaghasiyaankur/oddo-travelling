@@ -14,9 +14,11 @@
     <!------- Font Family Link ------->
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <!-- slick cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <!------- select2 css link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
+    <!------ Datepiker cdn ------->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.css" />
     <!-------- Custom CSS Link -------->
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/reponsive.css">
@@ -59,10 +61,11 @@
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Hi, Daniela!
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item active" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Order History</a></li>
+                            <li><a class="dropdown-item" href="#">Upcoming Trips</a></li>
+                            <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
                         </ul>
                     </div>
                 </div>
@@ -100,7 +103,8 @@
             <div class="small-box-main pwm-small-box">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center  mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center  mb-2">
                             <div class="small-box-single-img ">
                                 <img src="assets/images/icons/location-popup-1.png">
                             </div>
@@ -110,7 +114,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-popup-2.png">
                             </div>
@@ -120,7 +125,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/locaion-5.png">
                             </div>
@@ -130,7 +136,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-9.png">
                             </div>
@@ -140,7 +147,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-popup-3.png">
                             </div>
@@ -150,7 +158,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-popup-4.png">
                             </div>
@@ -161,7 +170,8 @@
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-popup-6.png">
                             </div>
@@ -171,7 +181,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center active mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center active mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-10.png">
                             </div>
@@ -181,7 +192,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-popup-7.png">
                             </div>
@@ -191,7 +203,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/loaction-11.png">
                             </div>
@@ -201,7 +214,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-12.png">
                             </div>
@@ -211,7 +225,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
+                        <div
+                            class="small-box-wrapper small-box-wrapper-yellow d-flex jstify-content-between align-items-center mb-2">
                             <div class="small-box-single-img">
                                 <img src="assets/images/icons/location-12.png">
                             </div>
@@ -226,128 +241,147 @@
     </section>
     <!------- pwm info box section end ------>
     <!------- pwm-shop section start  -------->
-        <section class="pwm-museums pwm-shop pt-5">
-            <div class="container">
-                <div class="pwm-museums-inner">
-                    <div class="pwm-museums-header d-flex justify-content-between align-items-center">
-                        <div class="pwm-transport-heading">
-                            <h2 class="m-0">Shops in Madrid</h2>
-                            <h5 class=" d-l-Purple heading-fs-16">Feel the magic of Madrid.</h5>
+    <section class="pwm-museums pwm-shop pt-5">
+        <div class="container">
+            <div class="pwm-museums-inner">
+                <div class="pwm-museums-header d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="pwm-transport-heading">
+                        <h2 class="m-0">Shops in Madrid</h2>
+                        <h5 class=" d-l-Purple heading-fs-16">Feel the magic of Madrid.</h5>
+                    </div>
+                    <div class="pwm-museums-check pwm-shop-check d-flex flex-wrap">
+                        <div class="form-check me-lg-3 me-2 align-self-sm-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Historic
+                            </label>
                         </div>
-                        <div class="pwm-museums-check  pwm-shop-check d-flex">
-                            <div class="form-check me-3 align-self-center">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Historic
-                                </label>
-                            </div>
-                            <div class="form-check me-3 align-self-center">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    Contemporary
-                                </label>
-                            </div>
-                            <div class="form-check me-5 align-self-center">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    Parks
-                                </label>
-                            </div>
-                            <div class="pwm-museums-btn">
-                                <a href="#" class="filter-btn bg-yellow text-white btn">Filter</a>
-                            </div>
+                        <div class="form-check me-lg-3 me-2 align-self-sm-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Contemporary
+                            </label>
+                        </div>
+                        <div class="form-check me-lg-5 me-2 align-self-sm-center">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Parks
+                            </label>
+                        </div>
+                        <div class="pwm-museums-btn">
+                            <a href="javascript:;" class="filter-btn bg-yellow text-white btn">Filter</a>
                         </div>
                     </div>
-                    <div class="pwm-museums-main pt-3">
-                        <div class="row">
-                            <div class="col-5 pwm-museums-card-main">
-                                <div class="pwm-museums-card">
-                                    <div class="row">
-                                        <div class="col-6 mb-3 pwm-card-inner">
-                                            <div class="card pwm-card">
-                                                <img src="assets/images/pwm-mus-1.png" class="card-img-top">
-                                                <div class="card-body pwm-card-body">
-                                                  <h5 class="card-title ">Nature <br>
+                </div>
+                <div class="pwm-museums-main pt-3">
+                    <div class="row">
+                        <div class="col-lg-5 pwm-museums-card-main">
+                            <div class="pwm-museums-card">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-4 col-6 mb-3 pwm-card-inner">
+                                        <div class="card pwm-card">
+                                            <img src="assets/images/pwm-mus-1.png" class="card-img-top">
+                                            <div class="card-body pwm-card-body">
+                                                <h5 class="card-title ">Nature <br>
                                                     Museum</h5>
-                                                  <p class="card-text para-fs-14 "><span><img src="assets/images/icons/search-h-loaction.png"  class="mb-1"></span> Madrid</p>
-                                                    <div class="pwm-card-button d-flex justify-content-between align-items-center">
-                                                        <div class="pwm-card-explore"> 
-                                                            <a href="#" class="btn bg-yellow filter-btn text-white">Explore</a>
-                                                        </div>
-                                                        <div class="pwm-card-pluse">
-                                                            <img src="assets/images/icons/yellowpluse.png">
-                                                        </div>
+                                                <p class="card-text para-fs-14 "><span><img
+                                                            src="assets/images/icons/search-h-loaction.png"
+                                                            class="mb-1"></span> Madrid</p>
+                                                <div
+                                                    class="pwm-card-button d-flex justify-content-between align-items-center">
+                                                    <div class="pwm-card-explore">
+                                                        <a href="javascript:;"
+                                                            class="btn bg-yellow filter-btn text-white">Explore</a>
                                                     </div>
-                                                </div> 
+                                                    <div class="pwm-card-pluse">
+                                                        <img src="assets/images/icons/yellowpluse.png">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 mb-3 pwm-card-inner">
-                                            <div class="card pwm-card">
-                                                <img src="assets/images/pwm-mus-2.png" class="card-img-top">
-                                                <div class="card-body pwm-card-body">
-                                                  <h5 class="card-title ">Cerralbo <br>
+                                    </div>
+                                    <div class="col-lg-6 col-md-4 col-6 mb-3 pwm-card-inner">
+                                        <div class="card pwm-card">
+                                            <img src="assets/images/pwm-mus-2.png" class="card-img-top">
+                                            <div class="card-body pwm-card-body">
+                                                <h5 class="card-title ">Cerralbo <br>
                                                     Museum</h5>
-                                                  <p class="card-text para-fs-14 "><span><img src="assets/images/icons/search-h-loaction.png"  class="mb-1"></span> Madrid</p>
-                                                    <div class="pwm-card-button d-flex justify-content-between align-items-center">
-                                                        <div class="pwm-card-explore"> 
-                                                            <a href="#" class="btn bg-yellow filter-btn text-white">Explore</a>
-                                                        </div>
-                                                        <div class="pwm-card-pluse">
-                                                            <img src="assets/images/icons/yellowpluse.png">
-                                                        </div>
+                                                <p class="card-text para-fs-14 "><span><img
+                                                            src="assets/images/icons/search-h-loaction.png"
+                                                            class="mb-1"></span> Madrid</p>
+                                                <div
+                                                    class="pwm-card-button d-flex justify-content-between align-items-center">
+                                                    <div class="pwm-card-explore">
+                                                        <a href="javascript:;"
+                                                            class="btn bg-yellow filter-btn text-white">Explore</a>
                                                     </div>
-                                                </div> 
+                                                    <div class="pwm-card-pluse">
+                                                        <img src="assets/images/icons/yellowpluse.png">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 mb-3 pwm-card-inner">
-                                            <div class="card pwm-card">
-                                                <img src="assets/images/pwm-mus-3.png " class="card-img-top">
-                                                <div class="card-body pwm-card-body">
-                                                  <h5 class="card-title ">Lazaro Galdiano <br> Museum</h5>
-                                                  <p class="card-text para-fs-14 "><span><img src="assets/images/icons/search-h-loaction.png"  class="mb-1"></span> Madrid</p>
-                                                    <div class="pwm-card-button d-flex justify-content-between align-items-center">
-                                                        <div class="pwm-card-explore"> 
-                                                            <a href="#" class="btn bg-yellow filter-btn text-white">Explore</a>
-                                                        </div>
-                                                        <div class="pwm-card-pluse">
-                                                            <img src="assets/images/icons/yellowpluse.png">
-                                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-4 col-6 mb-3 pwm-card-inner">
+                                        <div class="card pwm-card">
+                                            <img src="assets/images/pwm-mus-3.png " class="card-img-top">
+                                            <div class="card-body pwm-card-body">
+                                                <h5 class="card-title ">Lazaro Galdiano <br> Museum</h5>
+                                                <p class="card-text para-fs-14 "><span><img
+                                                            src="assets/images/icons/search-h-loaction.png"
+                                                            class="mb-1"></span> Madrid</p>
+                                                <div
+                                                    class="pwm-card-button d-flex justify-content-between align-items-center">
+                                                    <div class="pwm-card-explore">
+                                                        <a href="javascript:;"
+                                                            class="btn bg-yellow filter-btn text-white">Explore</a>
                                                     </div>
-                                                </div> 
+                                                    <div class="pwm-card-pluse">
+                                                        <img src="assets/images/icons/yellowpluse.png">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-6 mb-3 pwm-card-inner">
-                                            <div class="card pwm-card">
-                                                <img src="assets/images/pwm-mus-4.png" class="card-img-top">
-                                                <div class="card-body pwm-card-body">
-                                                  <h5 class="card-title ">Modern Art <br> Museum</h5>
-                                                  <p class="card-text para-fs-14 "><span><img src="assets/images/icons/search-h-loaction.png"  class="mb-1"></span> Madrid</p>
-                                                    <div class="pwm-card-button d-flex justify-content-between align-items-center">
-                                                        <div class="pwm-card-explore"> 
-                                                            <a href="#" class="btn bg-yellow filter-btn text-white">Explore</a>
-                                                        </div>
-                                                        <div class="pwm-card-pluse">
-                                                            <img src="assets/images/icons/yellowpluse.png">
-                                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-4 col-6 mb-3 pwm-card-inner">
+                                        <div class="card pwm-card">
+                                            <img src="assets/images/pwm-mus-4.png" class="card-img-top">
+                                            <div class="card-body pwm-card-body">
+                                                <h5 class="card-title ">Modern Art <br> Museum</h5>
+                                                <p class="card-text para-fs-14 "><span><img
+                                                            src="assets/images/icons/search-h-loaction.png"
+                                                            class="mb-1"></span> Madrid</p>
+                                                <div
+                                                    class="pwm-card-button d-flex justify-content-between align-items-center">
+                                                    <div class="pwm-card-explore">
+                                                        <a href="javascript:;"
+                                                            class="btn bg-yellow filter-btn text-white">Explore</a>
                                                     </div>
-                                                </div> 
+                                                    <div class="pwm-card-pluse">
+                                                        <img src="assets/images/icons/yellowpluse.png">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-7">
-                                <div class="pwm-museums-map">
-                                    <div class="pwm-gmap overflow-hidden h-100">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463081.43252067344!2d-3.4872597865933366!3d40.31538629590688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2sin!4v1651553036245!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="pwm-museums-map mt-lg-0 mt-4">
+                                <div class="pwm-gmap overflow-hidden h-100">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463081.43252067344!2d-3.4872597865933366!3d40.31538629590688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2sSpain!5e0!3m2!1sen!2sin!4v1651553036245!5m2!1sen!2sin"
+                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!------- pwm-shop section end  -------->
 
     <!-------- Footer start -------->
@@ -457,9 +491,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!------- Bootstrap JS Link ------->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<!------- Swiper js cdn------->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-<!------- Custom JS Link ----- -->
+<!-------- select2 js link ------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<!------Datepiker js cdn ------->
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/moment.min.js"></script>
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.js"></script>
+<!-------custom js link ------>
 <script src="assets/js/custom.js"></script>
 
 </html>
