@@ -50,6 +50,15 @@
     .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-side-content{
         padding: 53px 32px 23px;
     }
+    .hotel-policies .h-policies-main .h-check-in-out{
+        max-width: 240px;
+    }
+    .hotel-room .hotel-room-inner .room-card-main .border--left{
+        border: none;
+    }
+    .pwm-museums{
+        padding-bottom: 90px;
+    }
 }
 @media screen and (max-width:767px) {
     .travel-planning .travel-planning-inner .travel-planning-heading h1{
@@ -84,7 +93,10 @@
     .hotel-result.search-result .side-content .mypreferences-popup .hotel-sort-popup{
         padding: 22px;
     }
-   
+    .h-details-title .h-details-title-box .h-details-heading h2{
+        font-size: 32px;
+        line-height: 32px;
+    }
 }
 
 @media screen and (max-width:1399px) {
@@ -227,6 +239,27 @@
         min-height: 159px;
         padding: 32px;
     }
+    .hotel-policies .h-policies-main .h-check-in-out{
+        padding: 7px;
+    }
+  
+}
+@media screen and (max-width:520px) {
+    section.h-details-title .h-title-box-inner .h-rating span.h-rating-location{
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
+    section.h-details-title .h-title-box-inner .h-rating span.h-rating-location img{
+        margin-left: 0px !important;
+    }
+    .h-details-title .h-details-title-box{
+        padding: 24px;
+    }
+    section.h-details-title .h-title-box-inner .h-rating-btn{
+        display: block;
+        width: 100%;
+    }
 }
 @media screen and (max-width:480px) {
     .hotel-result.search-result .search-result-inner .result-main-content .price-comparision-main .price-comparison-wrapper{
@@ -235,6 +268,16 @@
     .pwm-accordion .pwm-accordion-inner .pwm-accordion-title .pwm-accordion-text .accordion-text {
         font-size: 15px;
         line-height: 18px;
+    }
+    .hotel-room{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .reserve-btn{
+        padding: 7px 16px;
+    }
+    .hotel-room .room-card-main .h-room-info-main .room-overview p{
+        white-space: nowrap;
     }
 
 }
@@ -261,6 +304,11 @@
     .pwm-map .pwm-map-inner .pwm-heading h2{
         font-size: 18px;
         line-height: 20px;
+    }
+    section.h-deatils-gallery.hotel-result .h-gallery--flex{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center!important;
     }
 }
 @media screen and (max-width:380px) {
@@ -314,9 +362,25 @@
         flex-direction: column;
         width: 100%;
     }
+    .h-details-title .h-details-title-box{
+        padding: 15px;
+    }
+    .h-details-title .h-details-title-box .h-details-heading h2{
+        font-size:25px ;
+        line-height: 25px;
+    }
+    .hotel-room .hotel-room-inner .hotel-room-heading h5{
+        font-size: 16px;
+        line-height: 10px;
+    }
+    .pwm-transport-heading h2{
+        font-size: 22px;
+        line-height: 22px;
+    }
 }
 @media screen and (max-width:320px) {
     section.explore-city .explore-city-check{
         margin-left: 0px !important;
     }
+   
 }

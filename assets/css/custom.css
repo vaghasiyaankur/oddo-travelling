@@ -1916,65 +1916,23 @@ header.header .navbar .dropdown .dropdown-btn{
         box-shadow: 0px 0px 8px #6FCF97;
     }
     /* / ------------ SUB TITLE SWIPER START---------- / */
-    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-slide {
-        text-align: center;
-        font-size: 16px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        white-space: nowrap;
-        transition: all 200ms linear;
-        transform: scale(0.8);
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-slide.swiper-slide-active {
-        transform: scale(0.8);
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-slide__content {
-        height: 300px;
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-button-next::after,
-        .pwm-rest-main .pwm-title-swiper .swiper-button-prev::after{
-            font-size: 18px;
-        }
-
-        .pwm-rest-main .pwm-title-swiper .swiper-button-next {
-            right: -8px;
-            top: 9px;
-            left: auto;
-            transform: translateX(0px);
-            color: #777c7e !important;
-        }
-        .pwm-rest-main .pwm-title-swiper .swiper-button-prev {
-            left: auto;
-            top: 9px;
-            right: 18px;
-            color: #9487878c !important;
-        }
-        .pwm-rest-main .pwm-title-swiper [class^="swiper-button-"]{
-            width: 8%;
-            opacity: 1;
-            visibility: visible;
-        }
-        .pwm-rest-main .pwm-title-swiper  .swiper-container-3d .swiper-slide-shadow-right{
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-        }
-        .pwm-rest-main .pwm-title-swiper  .swiper-container-3d .swiper-slide-shadow-left{
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-        }
-        .pwm-rest-main .pwm-title-swiper .form-check-input:checked{
-            background-color: #6FCF97;
-            border-color: #6FCF97;
-        }
-        .pwm-rest-main .pwm-title-swiper label.form-check-label,
-        .pwm-rest-main .pwm-rest-price  label.form-check-label{
-            font-size: 16px;
-            line-height: 32px;
-        }
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next{
+        right: 0;
+        left: auto;
+    }
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-prev{
+        right: 45px;
+        left: auto;
+    }
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next:after, .swiper-button-prev:after{
+        color: #B0BEC5;
+        font-size: 18px;
+    }
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next, .swiper-button-prev{
+        top: 30%;
+    }
+    /* / ------------ SUB TITLE SWIPER END---------- / */
+    
     /*******pwm-rest-main end ********/
 
 /********* place with map fourth page end ********/
@@ -2074,8 +2032,9 @@ header.header .navbar .dropdown .dropdown-btn{
     }
     .hotel-policies .h-policies-main .policies-extra .policies-text{
         border: 1px solid #6A78C7;
-        padding: 17px 44px;
+        padding: 17px;
         border-radius: 5px;
+        text-align: center;
     }
     .hotel-policies .h-policies-main .policies-extra a,
     .hotel-policies .h-policies-main{
@@ -2088,6 +2047,11 @@ header.header .navbar .dropdown .dropdown-btn{
         background-color: #F8F8FA;
         padding-top: 50px;
         padding-bottom: 90px;
+    }
+    .hotel-room .hotel-room-inner .hotel-room-heading h5{
+        font-size: 20px;
+        line-height: 24px;
+        color: #393C52;
     }
     .hotel-room .hotel-room-inner .room-card-main{
         background-color: #fff;
@@ -2106,6 +2070,10 @@ header.header .navbar .dropdown .dropdown-btn{
     }
     .hotel-room .hotel-room-inner .room-card-main .room-single-card .single-card-price img{
         vertical-align: sub;
+    }
+    section.hotel-room .room-card-main .single-card-img img{
+        min-height: 230px;
+        object-fit: cover;
     }
 
     /********** Hotel Room section end *********/
