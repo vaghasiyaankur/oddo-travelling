@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Design</title>
+
+    <!------- Bootstrap CSS Link------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-------- SLICK SLIDER CDN ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+
+    <!-- Select2 input link -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!------- Fontawsomee cdn link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!------- Font Family Link ------->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+    <!-------- Custom CSS Link -------->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-responsive.css">
+
+</head>
+<style>
+   .rateing_stars .checked {
+        color: gold;
+    }
+    .rateing_stars span{
+        color: lightgray;
+    }
+</style>
+
+<body>
+    <!------- Header start  -------->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Odda</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="hoteldetails.html">Hotels </a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="explorecity.html">Cities</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="multi-search.html">Search</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link position-relative" href="planner.html">Planner
+                               <span
+                                  class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                            </a>
+                         </li>
+                         <li class="nav-item ps-lg-3">
+                            <a class="nav-link" href="save.html">Seaved</a>
+                         </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi, Daniela!
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!------- Header End ------->
+    <!-------MULTI-SEARCH SECTION START-------->
+
+    <section class="multi-search-section">
+        <div class="container">
+            <div class="multi-s-title text-center">
+                <h5>Customize your trip</h5>
+                <p>Tell us what you like and we will build it for you</p>
+            </div>
+            <div class="city_search mx-auto ">
+                <div class="city_search_title d-flex align-items-center mb-3 mb-md-0">
+                    <p class="m-0 multi_s_pera mx-auto">What city are you travelling to?</p><img
+                        src="assets/images/icons/succes-pass-reset.png" alt="">
+                </div>
+                <!-- <div class="inputWithIcon text-center">
+                    <input type="text" class="flag_search_box" placeholder="Madrid, Spain">
+                    <i><img src="assets/images/icons/Spain.png" class="inpt-icon" alt=""></i>
+                    <img src="assets/images/icons/search-icon.png" class="flag_search_i_" alt="">
+                </div> -->
+                <div class="inputWithIcon d-flex align-items-center mx-auto ">
+                    <i><img src="assets/images/icons/Spain.png" class="inpt-icon" alt=""></i>
+                    <input type="text" class="form-control p-0 bg-transparent border-0 para-fs-14"
+                        placeholder="Search place">
+                    <i class="fa-solid fa-magnifying-glass ps-2 bg-transparent"></i>
+                </div>
+            </div>
+            <div class="visiting_dates mx-auto mt-2">
+                <div class="city_search_title d-flex align-items-center mb-3 mb-md-0">
+                    <p class="m-0 multi_s_pera mx-auto">What dates are you visiting?</p><img
+                        src="assets/images/icons/succes-pass-reset.png" alt="">
+                </div>
+                <div class="p-a-calender d-flex justify-content-center align-items-center">
+                    <div class="p-a-checkin pe-3">
+                        <label class="mb-2">From</label>
+                        <div class="calender_input_box d-flex align-items-center position-relative">
+                            <div class="cal-icon"><img src="assets/images/icons/cal-1.png" class="trip_icon pe-2"></div>
+                            <div class="cal-placeholder w-100"><input type="text" id="p_a_from"
+                                    class="calendar border-0" placeholder="08/19/2020" autocomplete="off"> </div>
+                        </div>
+                    </div>
+                    <div class="p-a-checkout ps-3">
+                        <label class="mb-2">To</label>
+                        <div class="calender_input_box d-flex align-items-center position-relative">
+                            <div class="cal-icon"><img src="assets/images/icons/cal-1.png" class="trip_icon pe-2"></div>
+                            <div class="cal-placeholder w-100"><input placeholder="08/19/2020" type="text"
+                                    class="calendar border-0" id="p_a_to"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="multi_calender_box_">
+                    <div class="calender_box d-flex flex-wrap justify-content-center">
+                        <div class="mt-2">
+                            <label class="m-0">Form
+                                <img src="assets/images/icons/trip-date.png" class="trip_icon" alt="">
+                                <input placeholder="08/19/2020" type="text" name="checkIn" id="datepicker_multi"
+                                    value="" class="calendar mt-2">
+                            </label>
+                        </div>
+                        <div class="mt-2">
+                            <label class="m-0">To
+                                <img src="assets/images/icons/trip-c-date.png" class="trip_c_icon" alt="">
+                                <input placeholder="08/19/2020" type="text" name="checkIn" id="datepicker_search"
+                                    value="" class="calendar mt-2">
+                            </label>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!--  -->
+            <div class="view_select mx-auto mt-2">
+                <div class="city_search_title d-flex align-items-center mb-3 mb-md-0">
+                    <p class="m-0 multi_s_pera mx-auto">What are you interested in doing?</p><img
+                        src="assets/images/icons/succes-pass-reset.png" alt="">
+                </div>
+                <p class="text-center">Select all the ones you want</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center  mb-2">
+                            <div class="small-box-single-img ">
+                                <img src="assets/images/icons/location-popup-1.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14">Museums</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-2.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14">Plazas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/locaion-5.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Cathedrals </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-9.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Shops </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-3.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Parks </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-4.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Markets </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-6.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Restaurants </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center active mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-10.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Nearby Towns </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-popup-7.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Transportation </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/loaction-11.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Beaches </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-12.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14"> Bars </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="small-box-wrapper d-flex jstify-content-between align-items-center mb-2">
+                            <div class="small-box-single-img">
+                                <img src="assets/images/icons/location-12.png">
+                            </div>
+                            <div class="small-box-text ps-2 pe-3">
+                                <span class="para-fs-14">Nature </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uber-discount city_search_title mx-auto">
+                <div class="text-center mb-3">
+                    <img src="assets/images/icons/uber-i.png" alt="">
+                </div>
+                <p class="m-0 multi_s_pera text-center">Do you want to add Uber credits at a<span
+                        style="color: #39e66e;"> 10% discount</span> to your trip?</p>
+                <div class="checkbox d-flex justify-content-center align-items-center mt-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-5" for="flexCheckDefault"> Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-5" for="flexCheckDefault"> No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="restorant-view mx-auto">
+                <div class="text-center mb-4">
+                    <img src="assets/images/icons/restorant-icon.png" alt="">
+                </div>
+                <div class="city_search_title">
+                    <p class="m-0 multi_s_pera text-center">What are your restaurant preferences?</p>
+                </div>
+                <div class="r-light-pera">
+                    <p>Cousines</p>
+                    <!-- SWIPER START -->
+                    <div class="restorant_swiper mb-3">
+                        <div class="card">
+                            <img src="assets/images/restorant-s-card1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/restorant-s-card2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/restorant-s-card3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/restorant-s-card4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/restorant-s-card5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/restorant-s-card1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/restorant-s-card2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SWIPER END -->
+                    <div class="price-check-b">
+                        <p class="m-0">Price</p>
+                        <div class="price_check d-flex align-items-center flex-wrap">
+                            <div class="form-check">
+                                <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label me-sm-5 me-2" for="flexCheckDefault"
+                                    style="color: #39e66e;">$$$</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label me-sm-5 me-2" for="flexCheckDefault"
+                                    style="color: #39e66e;">$$</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label me-sm-5" for="flexCheckDefault"
+                                    style="color: #39e66e;">$</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="restorant-rate mx-auto p-sm-4 p-2 overflow-auto">
+                <div class="text-center mb-4">
+                    <img src="assets/images/icons/restorant-bed-i.png" alt="">
+                </div>
+                <div class="city_search_title mb-5">
+                    <p class="m-0 multi_s_pera text-center">What are your restaurant preferences?</p>
+                </div>
+                <div class="raesto-check-book d-sm-flex align-items-center">
+                    <div class="form-check">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-sm-5 me-2" for="flexCheckDefault">Top Location</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-5" for="flexCheckDefault">Breakfast Included</label>
+                    </div>
+                </div>
+                <div class="raesto-check-book d-sm-flex  align-items-center mt-3">
+                    <div class="form-check">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-3" for="flexCheckDefault">Flexible Check-In</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label me-2" for="flexCheckDefault">Flexible Check-Out</label>
+                    </div>
+                </div>
+                <div class="restoro_input_rate d-flex align-items-center justify-content-center mt-3 mb-5 flex-wrap">
+                    <div class="rsto_input text-center me-3">
+                        <p class="mb-2 resto_in_pera_">Maximum price per night</p>
+                        <input type="number" placeholder="Enter amount" class="ms-3">
+                        <img src="assets/images/icons/$.png" class="dollericon" alt="">
+                    </div>
+                    <div class="rsto_input">
+                        <p class="resto_in_pera_">Property Class</p>
+                        <div class="rateing_stars mb-3">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="restoro_input_rate d-flex align-items-center justify-content-center mt-3 mb-5 flex-wrap">
+                    <div class="rsto_input text-center me-3">
+                        <p class="mb-2 resto_in_pera_">Maximum price per night</p>
+                        <input type="number
+                        " placeholder="Enter amount" class="ms-3">
+                        <img src="assets/images/icons/$.png" class="dollericon" alt="">
+                    </div>
+                    <div class="rsto_input ">
+                        <p class="resto_in_pera_">Property Class</p>
+                        <div class="rateing_stars mb-3">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="account-section text-center m_b_5 mt-3">
+                <a href="multisearchresult.html"><button class="account-pass-btn mt-3">Search</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-------MULTI-SEARCH SECTION START-------->
+
+    <!-------- Footer start -------->
+    <footer class="footer hotel-result">
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-title mb-3">
+                            <a href="#">Odda</a>
+                        </div>
+                        <div class="footer-icon d-flex">
+                            <div class="icon-inner me-2"><i class="fa-brands fa-facebook-f text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-youtube text-white"></i></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-instagram text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-twitter text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-linkedin text-white"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Products</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Hotels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Places</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Transportation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Customers</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Reviews</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Company</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Job</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Newsroom</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Terms of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Resources</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Contact</a>
+                                </li>
+                                <h5 class="text-black">Legal</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Legal Agreement</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p class="mb-0">© Inc. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------- Footer end -------->
+
+
+
+    <!-------Jquery Cdn Link ------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!--------SELECT2 JS--------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!------- Bootstrap JS Link ------->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        // star rateing js //
+        $(".js-example-tags").select2({
+            tags: true
+        });
+        // RESTORANT SWIPER JS //
+        $('.restorant_swiper').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            spaceBetween: 2,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 776,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 567,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ],
+        });
+    </script>
+    <script>
+        //---- select date js ----//
+
+        jQuery(document).ready(function () {
+            jQuery('#p_a_from').datepicker({
+                dateFormat: 'dd-mm-yy',
+                startDate: '+1d'
+            });
+        });
+        jQuery(document).ready(function () {
+            jQuery('#p_a_to').datepicker({
+                dateFormat: 'dd-mm-yy',
+                startDate: '+1d'
+            });
+        });
+    </script>
+</body>
+
+</html>

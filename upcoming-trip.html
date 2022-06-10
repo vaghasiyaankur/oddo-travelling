@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Design</title>
+
+    <!------- Bootstrap CSS Link------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!------- Fontawsomee cdn link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+ 
+    <!------- Font Family Link ------->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+ 
+    <!-------- Custom CSS Link -------->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-responsive.css">
+</head>
+
+<body>
+    <!------- Header start  -------->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Odda</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="hoteldetails.html">Hotels </a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="explorecity.html">Cities</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="multi-search.html">Search</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link position-relative" href="planner.html">Planner
+                               <span
+                                  class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                            </a>
+                         </li>
+                         <li class="nav-item ps-lg-3">
+                            <a class="nav-link" href="save.html">Seaved</a>
+                         </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi, Daniela!
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!------- Header End ------->
+
+    <!-------- UPCOMING TRIP SECTION SECTION START ---------->
+    <section class="upcoming-trip-section order-history">
+        <div class="container">
+            <div class="upcoming-trip-title text-center">
+                <h4>Upcoming Trips</h4>
+                <div class="flag-with-text d-flex flex-wrap align-items-center justify-content-center">
+                    <img src="assets/images/icons/n-logo-1.png" alt="">
+                    <p class="m-0 spain-i-text ms-3">Your trip to United States</p>
+                </div>
+            </div>
+            <div class="upcoming-trip-details order-history-details">
+                <!------ ACCORDION START ----->
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-collapse">
+                            <div class="accordion-body a-bx-shadow p-0">
+                                <div class="order-id d-flex flex-wrap align-items-center justify-content-evenly">
+                                    <p class="mb-0 or-id">Order Id: 1020657781</p>
+                                    <p class="mb-0 or-total">Total: $2,550.00</p>
+                                    <div class="purches-date d-flex flex-wrap align-items-center justify-content-center ms-sm-3">
+                                        <img src="assets/images/icons/order-right-icon.png" class="pe-1" alt="">
+                                        <span class="ps-1">Purchesed on </span><span class="ps-1">24 Aug 19, 12:44pm</span>
+                                    </div>
+                                </div>
+                                <div class="order-id-inner">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 left-order-list mt-4">
+                                            <span class="h-btn">Hotels</span>
+                                            <div class="holiday-details">
+                                                <h5 class="h--title ms-2">Hotel Holiday Inn</h5>
+                                                <div class="h-date d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon.png" alt="">
+                                                    <p class="m-0 pe-2">Mar 23, 2020</p>
+                                                    <img src="assets/images/icons/order-h-eroow.png" alt="">
+                                                    <p class="m-0 ps-2">Jun 12, 2020</p>
+                                                </div>
+                                                <div class="h-pepl d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon2.png" alt="">
+                                                    <p class="m-0">2 Guests, 1 Infant</p>
+                                                </div>
+                                                <div class="h-room d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon3.png" alt="">
+                                                    <p class="m-0">2 Rooms, 1 King, 2 Queen</p>
+                                                </div>
+                                                <div class="h-totl d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <p class="m-0 h--totl ms-2 mt-2">Total</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <p class="m-0 pe-2 h-amount">$1,245.00</p><span
+                                                            class="h--totl text-muted">for 8 nights</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="holiday-details mb-3">
+                                                <h5 class="h--title ms-2">Hotel Holiday Inn</h5>
+                                                <div class="h-date d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon.png" alt="">
+                                                    <p class="m-0 pe-2">Mar 23, 2020</p>
+                                                    <img src="assets/images/icons/order-h-eroow.png" alt="">
+                                                    <p class="m-0 ps-2">Jun 12, 2020</p>
+                                                </div>
+                                                <div class="h-pepl d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon2.png" alt="">
+                                                    <p class="m-0">2 Guests, 1 Infant</p>
+                                                </div>
+                                                <div class="h-room d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon3.png" alt="">
+                                                    <p class="m-0">2 Rooms, 1 King, 2 Queen</p>
+                                                </div>
+                                                <div class="h-totl d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <p class="m-0 h--totl ms-2 mt-2">Total</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <p class="m-0 pe-2 h-amount">$1,245.00</p><span
+                                                            class="h--totl text-muted">for 8 nights</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 right-order-list mt-4">
+                                            <span class="h-btn">Transportation</span>
+                                            <div class="transpot-details p-sm-3 p-2">
+                                                <img src="assets/images/icons/order-transpot-icon.png" alt="">
+                                                <div class="h-totl d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <p class="m-0 h--totl ms-2 mt-2">Total</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <p class="m-0 pe-2 h-amount">$1,245.00</p><span
+                                                            class="h--totl text-muted">for 10 rides</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------ ACCORDION END ----->
+                <div class="cansel-Reservation text-center">
+                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#cansel_reservation"><span>Cancel
+                            Reservation</span></a>
+
+                    <!------ CANSEL TRIP POPUP MODAL START ------->
+                    <div class="modal fade" id="cansel_reservation" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-end">
+                                    <button type="button" class="modal-close" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center justify-content-center">
+                                    <div class="modal-body-trip text-center">
+                                        <div class="modal-title mx-auto mb-4">
+                                            <img src="assets/images/icons/upcoming-Alert.png" alt="">
+                                        </div>
+                                        <div class="modal-form">
+                                            <p class="trip-pera mx-auto">Are you sure you want to cancel the following
+                                                reservation?</p>
+                                            <div
+                                                class="spain-text d-flex justify-content-center align-items-center mb-4 ">
+                                                <img src="assets/images/icons/Spain.png" alt="">
+                                                <p class="m-0 spain-i-text ms-3">Madrid, Spain</p>
+                                            </div>
+                                            <div class="holiday-details">
+                                                <h5 class="h--title text-start ms-2">Hotel Holiday Inn</h5>
+                                                <div class="h-date d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon.png" alt="">
+                                                    <p class="m-0 pe-2">Mar 23, 2020</p>
+                                                    <img src="assets/images/icons/order-h-eroow.png" alt="">
+                                                    <p class="m-0 ps-2">Jun 12, 2020</p>
+                                                </div>
+                                                <div class="h-pepl d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon2.png" alt="">
+                                                    <p class="m-0">2 Guests, 1 Infant</p>
+                                                </div>
+                                                <div class="h-room d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon3.png" alt="">
+                                                    <p class="m-0">2 Rooms, 1 King, 2 Queen</p>
+                                                </div>
+                                                <div class="h-totl d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <p class="m-0 h--totl ms-2 mt-2">Total</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <p class="m-0 pe-2 h-amount">$1,245.00</p><span
+                                                            class="h--totl text-muted">for 8 nights</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="tript-p-text">Free cancelation until 19/08/2020</p>
+                                            <div class="cansel-Reservation text-center mb-0">
+                                                <a href="javascript:;" data-bs-toggle="modal"
+                                                    data-bs-target="#conformation_c_trip"><span>Confirm Cancelation</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----------CANSEL TRIP POPUP END--------------->
+
+                    <!------CONFORMATION CANSEL TRIP POPUP MODAL START ------->
+                    <div class="modal fade" id="conformation_c_trip" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-end">
+                                    <button type="button" class="modal-close" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center justify-content-center">
+                                    <div class="modal-body-cansel-trip text-center">
+                                        <div class="modal-title mx-auto mb-4">
+                                            <p class="cansel-t-pera mx-auto">You’ve succesfully cancelled reservation<span class="text-danger"> # 10280</span></p>
+                                        </div>
+                                        <div class="modal-form"> 
+                                            <div class="spain-text d-flex justify-content-center align-items-center mb-5">
+                                                <img src="assets/images/icons/Spain.png" alt="">
+                                                <p class="m-0 spain-i-text ms-3">Madrid, Spain</p>
+                                            </div>
+                                            <div class="holiday-details opacity-50">
+                                                <h5 class="h--title text-start ms-2">Hotel Holiday Inn</h5>
+                                                <div class="h-date d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon.png" alt="">
+                                                    <p class="m-0 pe-2">Mar 23, 2020</p>
+                                                    <img src="assets/images/icons/order-h-eroow.png" alt="">
+                                                    <p class="m-0 ps-2">Jun 12, 2020</p>
+                                                </div>
+                                                <div class="h-pepl d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon2.png" alt="">
+                                                    <p class="m-0">2 Guests, 1 Infant</p>
+                                                </div>
+                                                <div class="h-room d-flex align-items-center">
+                                                    <img src="assets/images/icons/order-hotel-icon3.png" alt="">
+                                                    <p class="m-0">2 Rooms, 1 King, 2 Queen</p>
+                                                </div>
+                                                <div class="h-totl d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <p class="m-0 h--totl ms-2 mt-2">Total</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <p class="m-0 pe-2 h-amount">$1,245.00</p><span
+                                                            class="h--totl text-muted">for 8 nights</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="tript-p-text">We are sorry that you had to cancel.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----------CONFORMATION CANSEL TRIP POPUP END--------------->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------- UPCOMING TRIP SECTION END ---------->
+
+    <!-------- Footer start -------->
+    <footer class="footer hotel-result">
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-title mb-3">
+                            <a href="#">Odda</a>
+                        </div>
+                        <div class="footer-icon d-flex">
+                            <div class="icon-inner me-2"><i class="fa-brands fa-facebook-f text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-youtube text-white"></i></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-instagram text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-twitter text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-linkedin text-white"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Products</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Hotels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Places</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Transportation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Customers</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Reviews</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Company</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Job</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Newsroom</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Terms of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Resources</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Contact</a>
+                                </li>
+                                <h5 class="text-black">Legal</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Legal Agreement</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p class="mb-0">© Inc. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------- Footer end -------->
+
+
+    <!-------Jquery Cdn Link ------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!------- Bootstrap JS Link ------->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    
+</body>
+
+</html>

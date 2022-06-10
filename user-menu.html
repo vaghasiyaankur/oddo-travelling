@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Design</title>
+
+    <!------- Bootstrap CSS Link------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-------- SLICK SLIDER CDN ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+
+    <!------- Fontawsomee cdn link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!------- select2 css link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
+
+    <!------- Font Family Link ------->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+    <!-------- Custom CSS Link -------->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-responsive.css">
+
+    <style>
+        /* Css for select2  */
+        .select2 {
+            width: 100% !important;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 38px;
+        }
+
+        .select2-container .select2-selection--single {
+            height: 38px;
+        }
+
+        .select2-container--default .select2-selection--single {
+            border: 1px solid #878996;
+            border-radius: 5px;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: #6A78C7;
+            line-height: 35px;
+        }
+
+        .select2-dropdown.select2-dropdown--below {
+            width: 211px !important;
+            height: 200px !important;
+            border: 1px solid #878996;
+            top: 10px !important;
+        }
+
+        .select2-search--dropdown {
+            display: none;
+        }
+
+        .select2-results__option {
+            padding-right: 20px;
+            vertical-align: middle;
+        }
+
+        .select2-results__option:before {
+            content: "";
+            display: inline-block;
+            position: relative;
+            height: 20px;
+            width: 20px;
+            border: 2px solid #e9e9e9;
+            border-radius: 4px;
+            background-color: #fff;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+
+        .select2-results__option[aria-selected=true]:before {
+            font-family: fontAwesome;
+            content: "\f00c";
+            color: #fff;
+            background-color: #f77750;
+            border: 0;
+            display: inline-block;
+            padding-left: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!------- Header start  -------->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Odda</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="hoteldetails.html">Hotels </a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="explorecity.html">Cities</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="multi-search.html">Search</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link position-relative" href="planner.html">Planner
+                               <span
+                                  class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                            </a>
+                         </li>
+                         <li class="nav-item ps-lg-3">
+                            <a class="nav-link" href="save.html">Seaved</a>
+                         </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi, Daniela!
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Order History</a></li>
+                            <li><a class="dropdown-item" href="#">Upcoming Trips</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!------- Header End ------->
+
+    <!----------USER MENU SECTION START------------>
+
+    <section class="user-menu-section">
+        <div class="container">
+            <div class="user-menu">
+                <div class="user-menu-title mt-5 mb-4">
+                    <h5>Hotels</h5>
+                    <p><span class="purpel-text">Search over 1,000+ hotels,</span> and complete your trip now ! </p>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-6 ">
+                        <div class="result-main-img result-swpier-img overflow-hidden">
+                            <div class="swiper-s-img position-relative">
+                                <img src="assets/images/user-drop-img.png" class="img-wrapper w-100">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="content">
+                                        <h3 class="text-white">Praga</h3>
+                                        <div class="d-flex  justify-content-center align-items-center">
+                                            <span><img src="assets/images/icons/n-logo-1.png"></span>
+                                            <span class="text-white ps-2">United States</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-s-img position-relative">
+                                <img src="assets/images/user-drop-img.png" class="img-wrapper w-100">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="content">
+                                        <h3 class="text-white">Praga</h3>
+                                        <div class="d-flex  justify-content-center align-items-center">
+                                            <span><img src="assets/images/icons/n-logo-1.png"></span>
+                                            <span class="text-white ps-2">United States</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-s-img position-relative">
+                                <img src="assets/images/user-drop-img.png" class="img-wrapper w-100">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="content">
+                                        <h3 class="text-white">Praga</h3>
+                                        <div class="d-flex  justify-content-center align-items-center">
+                                            <span><img src="assets/images/icons/n-logo-1.png"></span>
+                                            <span class="text-white ps-2">United States</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-s-img position-relative">
+                                <img src="assets/images/user-drop-img.png" class="img-wrapper w-100">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="content">
+                                        <h3 class="text-white">Praga</h3>
+                                        <div class="d-flex  justify-content-center align-items-center">
+                                            <span><img src="assets/images/icons/n-logo-1.png"></span>
+                                            <span class="text-white ps-2">United States</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-s-img position-relative">
+                                <img src="assets/images/user-drop-img.png" class="img-wrapper w-100">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <div class="content">
+                                        <h3 class="text-white">Praga</h3>
+                                        <div class="d-flex  justify-content-center align-items-center">
+                                            <span><img src="assets/images/icons/n-logo-1.png"></span>
+                                            <span class="text-white ps-2">United States</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="user-menu-right mt-5 mt-lg-0">
+                            <div class="right-user-title mb-xl-5 mb-4">
+                                <h5>What city are you travelling to?</h5>
+                            </div>
+                            <div class="input-group align-items-center pwd-search-input rounded-0 m-0 mb-xl-4 mb-2"
+                                style="max-width: 100%;">
+                                <input type="text" class="form-control p-0 bg-transparent border-0 para-fs-14 "
+                                    placeholder="Search place">
+                                <i class="fa-solid fa-magnifying-glass ps-2 bg-transparent"></i>
+                            </div>
+                            <div class="check-in-out-bottom">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-lg-3 col-md-4 select-option pe-lg-0 mt-2">
+                                        <label class="control-label mb-xl-3 mb-1">Guests</label>
+                                        <div class="geust--input position-relative">
+                                            <select class="form-control" id="select2-single-box"
+                                                name="select2-single-box" data-placeholder="Pick your choice"
+                                                data-tabindex="1">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                            <i class="fa-solid fa-user-group position-absolute"
+                                                style="top:11px;left:16px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 select-option pe-lg-0 mt-2">
+                                        <label class="control-label mb-xl-3">Room</label>
+                                        <div class="geust--input position-relative">
+                                            <select class="form-control" id="select2-single-box"
+                                                name="select2-single-box" data-placeholder="Pick your choice"
+                                                data-tabindex="1">
+                                                <option>-</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                            <i class="fa-solid fa-phone position-absolute"
+                                                style="top:11px;left:16px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 select-option mt-2">
+                                        <label class="mb-xl-3">Bed</label>
+                                        <select class="select2-icon" value="fa-bed" data-icon="fa-bed" name="icon"
+                                            multiple="multiple">
+                                            <option value="fa-bed" data-icon="fa-bed">2</option>
+                                            <option value="fa-bed" data-icon="fa-bed">1</option>
+                                            <option value="fa-bed" data-icon="fa-bed">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!------ Calender ------>
+                            <div class="p-a-calender d-flex flex-wrap mt-4 mb-5 mb-lg-0">
+                                <div class="p-a-checkin pe-1 mb-2 mb-lg-0">
+                                    <label class="mb-2">From</label>
+                                    <div class="calender_input_box d-flex align-items-center position-relative ps-1">
+                                        <div class="cal-icon"><img src="assets/images/icons/cal-1.png"
+                                                class="trip_icon pe-2"></div>
+                                        <div class="cal-placeholder w-100"><input type="text" id="p_a_from"
+                                                class="calendar border-0" placeholder="08/19/2020" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-a-checkout ps-1 mb-2 mb-lg-0">
+                                    <label class="mb-2">To</label>
+                                    <div class="calender_input_box d-flex align-items-center position-relative ps-1">
+                                        <div class="cal-icon"><img src="assets/images/icons/cal-1.png"
+                                                class="trip_icon pe-2"></div>
+                                        <div class="cal-placeholder w-100"><input placeholder="08/19/2020" type="text"
+                                                class="calendar border-0" id="p_a_to"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="multi_calender_box_ mt-4 mb-5">
+                                <div class="calender_box pb-2 position-relative">
+                                    <div class="mt-2">
+                                        <label class="m-0">Check In
+                                            <img src="assets/images/icons/trip-date.png" class="trip_icon" alt="">
+                                            <input placeholder="08/10/2020" type="text" name="checkIn"
+                                                id="datepicker_Visit" value="" class="calendar w-100 mt-2 ">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="search-result-price-tag position-relative ">
+                            <button class="price-btn">Show me Hotels</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="available-city mb-5">
+                <h4 class="text-center mb-5">Available In</h4>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 text-center text-md-start mb-5 mb-sm-0">
+                        <h5 class="d-l-Purple">North America</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item d-flex justify-content-center justify-content-md-start">
+                                <a href="javascript:;" class="m-0 me-1"><img src="assets/images/icons/n-logo-1.png"
+                                        class="me-2 mt-1" style="max-width:24px;" alt=""></a>
+                                <a class="nav-link fw-bold ps-0 ms-0 purple-dark" href="#">United States</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#"> New York</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Miami</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Chicago</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">New York</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Miami</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Chicago</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 text-center text-md-start mb-5 mb-sm-5 mb-lg-0">
+                        <h5 class="d-l-Purple">Europe</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item d-flex justify-content-center justify-content-md-start">
+                                <a href="javascript:;" class="m-0 me-1"><img src="assets/images/icons/Spain.png"
+                                        class="me-2 mt-1" style="max-width:24px;" alt=""></a>
+                                <a class="nav-link ps-0 fw-bold purple-dark m-0" href="#">Spain</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#"> Barcelona</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Madrid</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Bilbao</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-center justify-content-md-start">
+                                <a href="javascript:;" class="m-0 me-1"><img src="assets/images/icons/p-logo-2.png"
+                                        class="me-2 mt-1" style="max-width:24px;" alt=""></a>
+                                <a class="nav-link ps-0 fw-bold purple-dark m-0" href="#">France</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Paris</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Lyon</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-center justify-content-md-start">
+                                <a href="javascript:;" class="m-0 me-1"><img src="assets/images/icons/italy-flag.png"
+                                        class="me-2 mt-1" style="max-width:24px;" alt=""></a>
+                                <a class="nav-link ps-0 fw-bold purple-dark m-0" href="#">Italy</a>
+                                <span class="a-badge purple" style="background: #6A78C7;">SOON</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Roma</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Venice</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 text-center text-md-start mb-5 mb-sm-0">
+                        <h5 class="d-l-Purple">Asia</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item d-flex justify-content-center justify-content-md-start">
+                                <a href="javascript:;" class="m-0 me-1"><img src="assets/images/icons/japan-flag.png"
+                                        class="me-2 mt-1" style="max-width:24px;" alt=""></a>
+                                <a class="nav-link ps-0 fw-bold purple-dark m-0" href="#">Japan</a>
+                                <span class="a-badge purple" style="background: #fff;color:#DC4946;">SOON</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#"> Tokio</a>
+                            </li>
+                            <li class="nav-item d-flex justify-content-center justify-content-md-start">
+                                <a href="javascript:;" class="m-0 me-1"><img src="assets/images/icons/thailend-flag.png"
+                                        class="me-2 mt-1" style="max-width:24px;" alt=""></a>
+                                <a class="nav-link ps-0 fw-bold purple-dark m-0" href="#">Thailand</a>
+                                <span class="a-badge purple" style="background: #fff;color:#DC4946;">SOON</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Tokio</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 text-center text-md-start">
+                        <h5 class="d-l-Purple">Latin America</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item d-flex justify-content-center justify-content-md-start">
+                                <a href="javascript:;" class="m-0 me-1"><img src="assets/images/icons/mexico-flag.png"
+                                        class="me-2 mt-1" style="max-width:24px;" alt=""></a>
+                                <a class="nav-link ps-0 fw-bold purple-dark m-0" href="#">Mexico</a>
+                                <span class="a-badge purple" style="background: #DC4946">SOON</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#"> Barcelona</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Madrid</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Bilbao</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Barcelona</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Madrid</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0 purple-dark" href="#">Bilbao</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------USER MENU SECTION END------------>
+
+
+    <!-------- Footer start -------->
+    <footer class="footer hotel-result">
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-title mb-3">
+                            <a href="#">Odda</a>
+                        </div>
+                        <div class="footer-icon d-flex">
+                            <div class="icon-inner me-2"><i class="fa-brands fa-facebook-f text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-youtube text-white"></i></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-instagram text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-twitter text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-linkedin text-white"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Products</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Hotels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Places</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Transportation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Customers</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Reviews</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Company</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Job</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Newsroom</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Terms of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Resources</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Contact</a>
+                                </li>
+                                <h5 class="text-black">Legal</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Legal Agreement</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p class="mb-0">© Inc. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------- Footer end -------->
+
+
+    <!-------Jquery Cdn Link ------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!--------SLICK CDN JS--------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-------- select2 js link ------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <!------- Bootstrap JS Link ------->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>       
+
+    <script>
+        // Hotel result swiper js
+        $('.result-swpier-img').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+
+            arrows: true,
+            autoplay: false,
+            autoplaySpeed: 2000,
+        });
+    </script>
+    <script>
+        function formatText(icon) {
+            return $('<span><i class="fas ' + $(icon.element).data('icon') + '"></i> ' + icon.text + '</span>');
+        };
+        $('.select2-icon').select2({
+            width: "50%",
+            templateSelection: formatText,
+            templateResult: formatText,
+            closeOnSelect: false,
+            // allowHtml: true,
+            allowClear: true,
+            tags: true // создает новые опции на лету
+        }); 
+    </script>
+    <script>
+        //---- select date js ----//
+        jQuery(document).ready(function () {
+            jQuery('#p_a_from').datepicker({
+                dateFormat: 'dd-mm-yy',
+                startDate: '+1d'
+            });
+        });
+        jQuery(document).ready(function () {
+            jQuery('#p_a_to').datepicker({
+                dateFormat: 'dd-mm-yy',
+                startDate: '+1d'
+            });
+        });
+    </script>
+</body>
+
+</html>

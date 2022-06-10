@@ -445,7 +445,7 @@
 /*------------- CALENDER CSS ------------*/
 .calendar {
   padding-bottom: 6px;
-  padding-left: 44px;
+  padding-left: 10px;
   padding-top: 6px;
   background: #ffffff;
   border-radius: 4px;
@@ -558,6 +558,23 @@
   color: #eee;
   border: 2px solid transparent;
 }
+:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px !important;
+}
+.calender_input_box .cal-icon {
+  line-height: 0;
+}
+.calender_input_box .calendar:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px !important;
+} 
+.calender_input_box {
+  border: 1px solid #878996;
+  border-radius: 5px;
+  padding-left: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+/* .calender_box .icon {
 
 .calender_box .icon {
   margin-left: -30px;
@@ -568,7 +585,8 @@
   color: #31639c;
   width: 100%;
   max-width: 20px;
-}
+} */
+
 /* --------CALENDER INPUT END--------- */
 .send_mail {
   max-width: 680px;
@@ -829,7 +847,7 @@
   font-weight: 900;
 }
 .restorant_swiper .slick-prev:before,
-.slick-next:before {
+.restorant_swiper .slick-next:before {
   opacity: 1;
   z-index: 99;
   color: #b0bec5;
@@ -1081,6 +1099,7 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: #fff;
+  white-space: nowrap;
 }
 .search-result-price-tag {
   margin-top: -30px;
@@ -1155,6 +1174,7 @@
   background: #6a78c7;
   border-radius: 100px;
   padding: 10px 40px;
+  white-space: nowrap;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1181,6 +1201,7 @@
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
+  white-space: nowrap;
 }
 .place-box {
   /* max-width: 280px; */
@@ -1335,6 +1356,7 @@
 }
 .planner-section .planner-acording .p-a-body .slick-next {
   right: -9px !important;
+  color: #b0bec5;
 }
 .planner-section .planner-acording .p-a-body .slick-prev::before {
   content: "\f053";
@@ -1346,6 +1368,7 @@
   content: "\f054";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  color: #b0bec5;
 }
 .planner-section .planner-acording .p-a-body .p-a-place-box {
   max-width: 240px !important;

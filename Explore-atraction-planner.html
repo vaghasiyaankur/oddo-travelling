@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Design</title>
+
+    <!------- Bootstrap CSS Link------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-------- SLICK SLIDER CDN ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
+
+    <!------- Fontawsomee cdn link ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!------- Font Family Link ------->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+    <!-------- Custom CSS Link -------->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+</head>
+
+<body>
+    <!------- Header start  -------->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Odda</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="hoteldetails.html">Hotels </a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="explorecity.html">Cities</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="multi-search.html">Search</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link position-relative" href="planner.html">Planner
+                               <span
+                                  class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                            </a>
+                         </li>
+                         <li class="nav-item ps-lg-3">
+                            <a class="nav-link" href="save.html">Seaved</a>
+                         </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" id="dropdownMenuButton1"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                           Hi, Daniela!
+                        </button>
+                        <ul class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton1">
+                           <li><a class="dropdown-item active" href="account.html">My Account</a></li>
+                           <li><a class="dropdown-item" href="order-history.html">Order History</a></li>
+                           <li><a class="dropdown-item" href="upcoming-trip.html">Upcoming Trips</a></li>
+                           <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!------- Header End ------->
+
+    <!---------ATRACTION PLANNER SECTION START----------->
+    <section class="atribute-planenr-section">
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-7 mb-5">
+                    <a href="javascript:;" class="swiper_back">Go Back</a>
+                    <div class="ei-corte-swiper overflow-x-hidden">
+                        <div class="slider slider-for">
+                            <img src="assets/images/ei-core-swiper.png" class="img-fluid" style="height:600px;" alt="">
+                            <img src="assets/images/ei-core-swiper.png" class="img-fluid" style="height:600px;" alt="">
+                            <img src="assets/images/ei-core-swiper.png" class="img-fluid" style="height:600px;" alt="">
+                            <img src="assets/images/ei-core-swiper.png" class="img-fluid" style="height:600px;" alt="">
+                            <img src="assets/images/ei-core-swiper.png" class="img-fluid" style="height:600px;" alt="">
+                            <img src="assets/images/ei-core-swiper.png" class="img-fluid" style="height:600px;" alt="">
+                        </div>
+                        <div class="slider slider-nav">
+                            <img src="assets/images/ei-nav-swiper1.png" class="img-fluid"
+                                style="max-width:100px !important;" alt="">
+                            <img src="assets/images/ei-nav-swiper6.png" class="img-fluid "
+                                style="max-width:100px !important;" alt="">
+                            <img src="assets/images/ei-nav-swiper3.png" class="img-fluid "
+                                style="max-width:100px !important;" alt="">
+                            <img src="assets/images/ei-nav-swiper4.png" class="img-fluid "
+                                style="max-width:100px !important;" alt="">
+                            <img src="assets/images/ei-nav-swiper5.png" class="img-fluid "
+                                style="max-width:100px !important;" alt="">
+                            <img src="assets/images/ei-nav-swiper6.png" class="img-fluid "
+                                style="max-width:100px !important;" alt="">
+                        </div>
+                    </div>
+                    <!---------------SWIPER SLIERD END---------------->
+                </div>
+                <div class="col-lg-5 mt-4">
+                    <div class="ei-corte-details">
+                        <div class="ei-btn d-flex flex-wrap justify-content-between align-items-center mb-5">
+                            <a href="javascript:;"><img src="assets/images/icons/ei-cart.png" alt=""></a>
+                            <a href="javascript:;" class="ei-addnew">Added</a>
+                        </div>
+                        <div class="ei-title">
+                            <h5>El Corte Ingles</h5>
+                            <p class="mb-1">Trebbiner Str. 9, 10963, Madrid - Spain </p>
+                            <p>$<span class="text-muted">$$$</span>. Shopping</p>
+                        </div>
+                        <div class="ingles-details mt-5">
+                            <h5 class="mb-4 ingle-title">Details</h5>
+                            <div class="ingles_box d-flex align-items-center ms-4 mb-2">
+                                <img src="assets/images/icons/ei-location.png" alt="" class="me-3"
+                                    style="width: 12px;height: 16px;">
+                                <div class="flag_text d-flex align-items-center">
+                                    <img src="assets/images/icons/ei-Spain.png" alt="" class="me-1"
+                                        style="max-width:16px;height:11px;">
+                                    <p class="m-0 d-ing-pera">Madrid, Spain</p>
+                                </div>
+                            </div>
+                            <div class="ingles_box d-flex align-items-center ms-3 mb-2">
+                                <img src="assets/images/icons/ei-Time.png" alt="" class="me-2"
+                                    style="max-width:100%;height:29px;">
+                                <p class="m-0 d-ing-pera" style="color: #40CC6D;">Open Now ( 09:00 - 17:30 )</p>
+                            </div>
+                            <div class="ingles_box d-flex align-items-center ms-3 mb-2">
+                                <img src="assets/images/icons/ei-Phone.png" alt="" class="me-2"
+                                    style="max-width:100%;height:29px;">
+                                <p class="m-0 d-ing-pera">+49 30 902540</p>
+                            </div>
+                            <div class="ingles_box d-flex align-items-center ms-3 mb-2">
+                                <img src="assets/images/icons/ei-Web.png" alt="" class="me-2"
+                                    style="max-width:100%;height:29px;">
+                                <p class="m-0 d-ing-pera">www.elcorteingles.es</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="discription_section mb-5">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h5 class="map_title">Description</h5>
+                        <p class="map_pera">El Corte Inglés' flagship store is located in Madrid at 79 Calle Raimundo
+                            Fernández Villaverde. The complex encompasses several buildings and carries the most
+                            comprehensive collection of designers of any large store in Spain. Designer boutiques in
+                            this store include: Hermès, Louis Vuitton, Cartier, Armani, Armani Jeans, Armani Collezioni,
+                            Gucci, Loewe, Dockers, Ralph Lauren, Bulgari, Dior, Dior Homme, Georges Rech, Versace, Hugo
+                            Boss, Boss Woman, Ermenegildo Zegna, Tommy Hilfiger, Dolce&Gabbana, Burberry (men/women),
+                            Façonnable, Pal Zileri, Paul & Shark, Lacoste, Pavillon Christofle, CH by Carolina Herrera,
+                            Escada Sport, James Purdey and Sons, Lloyd's, Purificación Garcia, Calvin Klein, Caroll
+                            Paris, Amitie, Episode, store brands (Emidio Tucci, Dustin) and many others. Also included
+                            is a branch of the Madrid-based Aldeo jewelers, carrying such jewellery designers as
+                            Boucheron, Blancpain and Hamilton.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.422907803209!2d72.88796587063412!3d21.21507218059544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f5e4856408f%3A0xba4af4a5fd5d2320!2sJio%20fiber!5e0!3m2!1sen!2sin!4v1652738970671!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brand_store">
+                <div class="row mb-5">
+                    <div class="col-lg-6">
+                        <h5 class="map_title"> Principal Stores </h5>
+                        <div class="brand_logo_box p-5 ">
+                            <div class="row ">
+                                <div class="col">
+                                    <div class="brand-box d-flex justify-content-center align-items-center p-3 mb-3">
+                                        <img src="assets/images/icons/tomy-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-box d-flex justify-content-center align-items-center p-3 mb-3">
+                                        <img src="assets/images/icons/samsung-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-box d-flex justify-content-center align-items-center p-3 mb-3">
+                                        <img src="assets/images/icons/apple-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-box d-flex justify-content-center align-items-center p-3 mb-3">
+                                        <img src="assets/images/icons/addidas-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-box d-flex justify-content-center align-items-center p-3 mb-3">
+                                        <img src="assets/images/icons/nike-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-box d-flex justify-content-center align-items-center p-3 mb-3">
+                                        <img src="assets/images/icons/north-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-box d-flex justify-content-center align-items-center p-3 mb-3">
+                                        <img src="assets/images/icons/reebok-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-box d-flex justify-content-center align-items-center p-3 mb-3">
+                                        <img src="assets/images/icons/nautki-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brand-box d-flex justify-content-center align-items-center p-3 mb-3">
+                                        <img src="assets/images/icons/primark-icon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="map_title"> All Stores</h5>
+                        <div class="brand_logo_box p-5">
+                            <div class="btn-group w-100">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    All Stores
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group w-100">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Store Opening
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group w-100">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Accessories
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group w-100">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Children's Clothing
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group w-100">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Department Stores
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group w-100">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Electronics & Entertainment
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group w-100">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Food
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group w-100">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Health & Beauty
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group w-100 mb-5">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Home & Housewares
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group w-100">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Children's Clothing
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exploer_cars mb-5">
+                <div class="map_title">Similar Atractions</div>
+                <div class="row pe-lg-5 me-lg-4">
+                    <div class="col-sm-6 col-lg-3 mb-3 ">
+                        <div class="pwm-card-inner">
+                            <div class="card pwm-card">
+                                <img src="assets/images/similer-card-1.png" class="card-img-top">
+                                <div class="card-body pwm-card-body">
+                                    <h5 class="card-title ">Lazaro Galdiano Museum</h5>
+                                    <p class="card-text para-fs-14 "><span><img class="mb-1 me-1" src="assets/images/icons/search-h-loaction.png"></span>
+                                        Madrid</p>
+                                    <div class="pwm-card-button d-flex justify-content-between align-items-center">
+                                        <div class="pwm-card-explore">
+                                            <a href="javascript:;" class="btn bg-purple filter-btn text-white">Explore</a>
+                                        </div>
+                                        <div class="pwm-card-pluse">
+                                           <a href="javasdcript:;"><img src="assets/images/icons/pwm-white-pluse.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-3 ">
+                        <div class="pwm-card-inner">
+                            <div class="card pwm-card">
+                                <img src="assets/images/similer-card-2.png" class="card-img-top">
+                                <div class="card-body pwm-card-body">
+                                    <h5 class="card-title ">Cerralbo<br>
+                                        Museum</h5>
+                                    <p class="card-text para-fs-14 "><span><img class="mb-1 me-1" src="assets/images/icons/search-h-loaction.png"></span>
+                                        Madrid</p>
+                                    <div class="pwm-card-button d-flex justify-content-between align-items-center">
+                                        <div class="pwm-card-explore">
+                                            <a href="javascript:;" class="btn bg-purple filter-btn text-white">Explore</a>
+                                        </div>
+                                        <div class="pwm-card-pluse">
+                                            <a href="javasdcript:;"><img src="assets/images/icons/pwm-white-pluse.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-3 ">
+                        <div class="pwm-card-inner">
+                            <div class="card pwm-card">
+                                <img src="assets/images/similer-card-3.png" class="card-img-top">
+                                <div class="card-body pwm-card-body">
+                                    <h5 class="card-title ">Archeology <br>
+                                        Museum</h5>
+                                    <p class="card-text para-fs-14 "><span><img class="mb-1 me-1" src="assets/images/icons/search-h-loaction.png"></span>
+                                        Madrid</p>
+                                    <div class="pwm-card-button d-flex justify-content-between align-items-center">
+                                        <div class="pwm-card-explore">
+                                            <a href="javascript:;" class="btn bg-purple filter-btn text-white">Explore</a>
+                                        </div>
+                                        <div class="pwm-card-pluse">
+                                            <a href="javasdcript:;"><img src="assets/images/icons/pwm-white-pluse.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-3 ">
+                        <div class="pwm-card-inner">
+                            <div class="card pwm-card">
+                                <img src="assets/images/similer-card-4.png" class="card-img-top">
+                                <div class="card-body pwm-card-body">
+                                    <h5 class="card-title ">Sorolla  <br>
+                                        Museum</h5>
+                                    <p class="card-text para-fs-14 "><span><img class="mb-1 me-1" src="assets/images/icons/search-h-loaction.png"></span>
+                                        Madrid</p>
+                                    <div class="pwm-card-button d-flex justify-content-between align-items-center">
+                                        <div class="pwm-card-explore">
+                                            <a href="javascript:;" class="btn bg-purple filter-btn text-white">Explore</a>
+                                        </div>
+                                        <div class="pwm-card-pluse">
+                                            <a href="javasdcript:;"><img src="assets/images/icons/pwm-white-pluse.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------ATRACTION PLANNER SECTION END----------->
+
+    <!-------- Footer start -------->
+    <footer class="footer hotel-result">
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-title mb-3">
+                            <a href="#">Odda</a>
+                        </div>
+                        <div class="footer-icon d-flex">
+                            <div class="icon-inner me-2"><i class="fa-brands fa-facebook-f text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-youtube text-white"></i></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-instagram text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-twitter text-white"></i></div>
+                            <div class="icon-inner me-2"><i class="fa-brands fa-linkedin text-white"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Products</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Hotels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Places</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Transportation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Customers</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Reviews</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Company</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Hotel Partners</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Job</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Newsroom</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Terms of Use</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-3">
+                        <div class="footer-link">
+                            <h5 class="purple">Resources</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0 active" href="#">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#"> Contact</a>
+                                </li>
+                                <h5 class="text-black">Legal</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Privacy & Terms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ps-0" href="#">Legal Agreement</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p class="mb-0">© Inc. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------- Footer end -------->
+
+
+    <!-------Jquery Cdn Link ------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!------- Bootstrap JS Link ------->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            draggable: false,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            infinite: true,
+            draggable: false,
+            arrows: false,
+            centerMode: false,
+            focusOnSelect: false
+        });
+        
+
+
+    </script>
+</body>
+
+</html>

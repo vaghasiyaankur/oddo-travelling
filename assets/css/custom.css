@@ -1806,18 +1806,23 @@ header.header .navbar .dropdown .dropdown-btn{
         border-radius: 8px;
         background-color: #fff;
     }
+    /* .pwm-museums .pwm-museums-inner .city-tab-popup-main  .tab-popup-content { */
     /* .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-popup-content {
+>>>>>>> ea690e8a56e18b61a96c79c70787b4b49c58583a
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .slick-next:before{
+=======
     } */
     .pwm-museums .pwm-museums-inner .city-tab-popup-main .slick-next:before{
         content: "\f061";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
     }
-    .pwm-museums .pwm-museums-inner .city-tab-popup-main .slick-prev::before{
+  .pwm-museums .pwm-museums-inner .city-tab-popup-main .slick-prev::before{
         content: "\f060";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
@@ -1920,57 +1925,54 @@ header.header .navbar .dropdown .dropdown-btn{
         -ms-flex-pack: center;
         -webkit-justify-content: center;
         justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
+        white-space: nowrap;
+        transition: all 200ms linear;
+        transform: scale(0.8);
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-slide.swiper-slide-active {
+        transform: scale(0.8);
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-slide__content {
+        height: 300px;
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-button-next::after,
+        .pwm-rest-main .pwm-title-swiper .swiper-button-prev::after{
+            font-size: 18px;
+        }
 
-    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-slide .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next::after {
-        content: "\f105";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 30px;
-        color: #B0BEC5;
-    }
-
-    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-prev::after {
-        content: "\f104";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 30px;
-        color: #B0BEC5;
-    }
-
-    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next,
-    .swiper-button-prev {
-        top: 24%;
-    }
-
-    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next {
-        right: 10px;
-        left: auto;
-    }
-
-    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-prev {
-        left: auto;
-        right: 36px;
-    }
-
-    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .form-check-input:checked,
-    .pwm-rest-main .pwm-museums-inner .pwm-rest-price .form-check-input:checked {
-        background-color: #6FCF97;
-        border-color: #6FCF97;
-    }
-    /* / ------------ SUB TITLE SWIPER END---------- / */
-
+        .pwm-rest-main .pwm-title-swiper .swiper-button-next {
+            right: -8px;
+            top: 9px;
+            left: auto;
+            transform: translateX(0px);
+            color: #777c7e !important;
+        }
+        .pwm-rest-main .pwm-title-swiper .swiper-button-prev {
+            left: auto;
+            top: 9px;
+            right: 18px;
+            color: #9487878c !important;
+        }
+        .pwm-rest-main .pwm-title-swiper [class^="swiper-button-"]{
+            width: 8%;
+            opacity: 1;
+            visibility: visible;
+        }
+        .pwm-rest-main .pwm-title-swiper  .swiper-container-3d .swiper-slide-shadow-right{
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+        }
+        .pwm-rest-main .pwm-title-swiper  .swiper-container-3d .swiper-slide-shadow-left{
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+        }
+        .pwm-rest-main .pwm-title-swiper .form-check-input:checked{
+            background-color: #6FCF97;
+            border-color: #6FCF97;
+        }
+        .pwm-rest-main .pwm-title-swiper label.form-check-label,
+        .pwm-rest-main .pwm-rest-price  label.form-check-label{
+            font-size: 16px;
+            line-height: 32px;
+        }
     /*******pwm-rest-main end ********/
 
 /********* place with map fourth page end ********/
