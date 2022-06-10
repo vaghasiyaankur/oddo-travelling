@@ -329,6 +329,32 @@
     margin-left: 22%;
   }
 }
-
-
 /* ============= USER-MENU PAGE CSS END ============== */
+
+/* ========== EXPLORE-ATTRECTION CSS START ========= */
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+  .atribute-planenr-section .ei-corte-details{
+    min-height: 544px;
+  }
+}
+@media screen and (max-width:992px) {
+  .atribute-planenr-section .ei-corte-details{
+    max-width: 90%;
+    margin: 0 auto;
+    min-height: 514px;
+  }
+}
+@media screen and (max-width:768px) {
+  .atribute-planenr-section .swiper_back{
+    padding: 3px 9px;
+    top: 43px;
+    left: 23px;
+  }
+  .atribute-planenr-section .ei-corte-details{
+    max-width: 100%;
+    min-height: 514px;
+  }
+}
+
+/* ========== EXPLORE-ATTRECTION CSS END ========= */
