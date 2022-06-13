@@ -355,6 +355,12 @@
     max-width: 100%;
     min-height: 514px;
   }
+  .atribute-planenr-section .discription_section .map_pera{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: scroll;
+    text-overflow: ellipsis;
+  }
 }
-
 /* ========== EXPLORE-ATTRECTION CSS END ========= */
