@@ -32,10 +32,11 @@
 
 </head>
 <style>
-   .rateing_stars .checked {
+    .rateing_stars .checked {
         color: gold;
     }
-    .rateing_stars span{
+
+    .rateing_stars span {
         color: lightgray;
     }
 </style>
@@ -55,32 +56,33 @@
                     <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="hoteldetails.html">Hotels </a>
-                         </li>
-                         <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="explorecity.html">Cities</a>
-                         </li>
-                         <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="multi-search.html">Search</a>
-                         </li>
-                         <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link position-relative" href="planner.html">Planner
-                               <span
-                                  class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                                <span
+                                    class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
                             </a>
-                         </li>
-                         <li class="nav-item ps-lg-3">
+                        </li>
+                        <li class="nav-item ps-lg-3">
                             <a class="nav-link" href="save.html">Seaved</a>
-                         </li>
+                        </li>
                     </ul>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button"
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Hi, Daniela!
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item active" href="account.html">My Account</a></li>
+                            <li><a class="dropdown-item" href="order-history.html">Order History</a></li>
+                            <li><a class="dropdown-item" href="upcoming-trip.html">Upcoming Trips</a></li>
+                            <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
                         </ul>
                     </div>
                 </div>
@@ -136,7 +138,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="multi_calender_box_">
+            </div>
+            <!-- <div class="multi_calender_box_">
                     <div class="calender_box d-flex flex-wrap justify-content-center">
                         <div class="mt-2">
                             <label class="m-0">Form
@@ -150,11 +153,11 @@
                                 <img src="assets/images/icons/trip-c-date.png" class="trip_c_icon" alt="">
                                 <input placeholder="08/19/2020" type="text" name="checkIn" id="datepicker_search"
                                     value="" class="calendar mt-2">
+                                    
                             </label>
                         </div>
                     </div>
                 </div> -->
-            </div>
             <!--  -->
             <div class="view_select mx-auto mt-2">
                 <div class="city_search_title d-flex align-items-center mb-3 mb-md-0">
@@ -294,12 +297,12 @@
                         style="color: #39e66e;"> 10% discount</span> to your trip?</p>
                 <div class="checkbox d-flex justify-content-center align-items-center mt-4">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label me-5" for="flexCheckDefault"> Yes</label>
+                        <input class="form-check-input" type="checkbox" value="" id="yes">
+                        <label class="form-check-label me-5" for="yes"> Yes</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label me-5" for="flexCheckDefault"> No</label>
+                        <input class="form-check-input" type="checkbox" value="" id="no">
+                        <label class="form-check-label me-5" for="no"> No</label>
                     </div>
                 </div>
             </div>
@@ -362,19 +365,19 @@
                         <p class="m-0">Price</p>
                         <div class="price_check d-flex align-items-center flex-wrap">
                             <div class="form-check">
-                                <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label me-sm-5 me-2" for="flexCheckDefault"
-                                    style="color: #39e66e;">$$$</label>
+                                <label class="form-check-label me-sm-5 me-2" style="color: #39e66e;">$$$
+                                    <input class="form-check-input mt-2" type="checkbox" value="">
+                                </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label me-sm-5 me-2" for="flexCheckDefault"
-                                    style="color: #39e66e;">$$</label>
+                                <label class="form-check-label me-sm-5 me-2" style="color: #39e66e;">$$
+                                    <input class="form-check-input mt-2" type="checkbox" value="">
+                                </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label me-sm-5" for="flexCheckDefault"
-                                    style="color: #39e66e;">$</label>
+                                <label class="form-check-label me-sm-5" style="color: #39e66e;">$
+                                    <input class="form-check-input mt-2" type="checkbox" value="">
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -389,22 +392,29 @@
                 </div>
                 <div class="raesto-check-book d-sm-flex align-items-center">
                     <div class="form-check">
-                        <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label me-sm-5 me-2" for="flexCheckDefault">Top Location</label>
+                        <label class="form-check-label me-sm-5 me-2">
+                            <input class="form-check-input mt-2" type="checkbox" value="">
+                            Top Location</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label me-5" for="flexCheckDefault">Breakfast Included</label>
+                        <label class="form-check-label me-5">
+                            Breakfast Included
+                            <input class="form-check-input mt-2" type="checkbox" value="">
+                        </label>
                     </div>
                 </div>
                 <div class="raesto-check-book d-sm-flex  align-items-center mt-3">
                     <div class="form-check">
-                        <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label me-3" for="flexCheckDefault">Flexible Check-In</label>
+                        <label class="form-check-label me-3">
+                            <input class="form-check-input mt-2" type="checkbox" value="">
+                            Flexible Check-In
+                        </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label me-2" for="flexCheckDefault">Flexible Check-Out</label>
+                        <label class="form-check-label me-2">
+                            <input class="form-check-input mt-2" type="checkbox" value="">
+                            Flexible Check-Out
+                        </label>
                     </div>
                 </div>
                 <div class="restoro_input_rate d-flex align-items-center justify-content-center mt-3 mb-5 flex-wrap">
@@ -427,8 +437,7 @@
                 <div class="restoro_input_rate d-flex align-items-center justify-content-center mt-3 mb-5 flex-wrap">
                     <div class="rsto_input text-center me-3">
                         <p class="mb-2 resto_in_pera_">Maximum price per night</p>
-                        <input type="number
-                        " placeholder="Enter amount" class="ms-3">
+                        <input type="number" placeholder="Enter amount" class="ms-3">
                         <img src="assets/images/icons/$.png" class="dollericon" alt="">
                     </div>
                     <div class="rsto_input ">

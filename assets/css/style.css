@@ -566,7 +566,7 @@
 }
 .calender_input_box .calendar:focus-visible {
   outline: -webkit-focus-ring-color auto 0px !important;
-} 
+}
 .calender_input_box {
   border: 1px solid #878996;
   border-radius: 5px;
@@ -950,7 +950,7 @@
   line-height: 22px;
 }
 
-.atribute-planenr-section .ei-corte-swiper {
+/* .atribute-planenr-section{
   position: relative;
 }
 .atribute-planenr-section .ei-corte-swiper .slider-nav {
@@ -964,6 +964,53 @@
 .slider-nav img:hover {
   filter: drop-shadow(0px 0px 9px #3b57f8);
   border-radius: 12px;
+} */
+.ei-corte-gallery {
+  width: 100%;
+  max-width: 620px;
+  margin: 0px auto;
+  position: relative;
+}
+.ei-corte-gallery .ei-gallery-slider {
+  width: 100%;
+  /* height: 600px; */
+  height: auto;
+  /* margin: 0 0 10px 0; */
+}
+.ei-corte-gallery .ei-gallery-slider .swiper-slide {
+  width: 100%;
+  /* height: 600px; */
+  height: auto;
+}
+.ei-corte-gallery .ei-gallery-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  max-height: 600px;
+  max-width: 746px;
+  /* height: 100%; */
+  margin: 0 auto;
+}
+.ei-corte-gallery .ei-gallery-thumbs {
+  width: 100%;
+  position: absolute;
+  top: 91%;
+  /* margin-top: -45px; */
+}
+.ei-corte-gallery .ei-gallery-thumbs .swiper-slide {
+  width: 100%;
+  max-width: 100px;
+  min-height: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+.ei-corte-gallery .ei-gallery-thumbs .swiper-slide-active {
+  filter: drop-shadow(0px 0px 9px #3b57f8);
+  border-radius: 12px;
+}
+.ei-corte-gallery .ei-gallery-thumbs .swiper-slide img {
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
 }
 .map_title {
   font-weight: 800;
@@ -1022,7 +1069,7 @@
   position: relative;
   z-index: 99;
   top: 71px;
-  left: 36px;
+  left: 92px;
 }
 /* ================ EXPLORE-ATRACTION-PLANNER SECTION PAGE END ============== */
 
@@ -1470,7 +1517,7 @@
 }
 .schedule-section .accordion-button:not(.collapsed) {
   color: #000;
-  background-color:transparent !important;
+  background-color: transparent !important;
   box-shadow: none;
 }
 .schedule-section .accordion-button:focus {
@@ -1479,10 +1526,10 @@
   outline: 0;
   box-shadow: none;
 }
-.Museums-inner span{
+.Museums-inner span {
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
-  color: #393C52;
+  color: #393c52;
 }
 /* =====================PLANNER SECTION PAGE End===================== */
