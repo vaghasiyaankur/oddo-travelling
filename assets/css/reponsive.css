@@ -59,13 +59,14 @@
     .pwm-museums{
         padding-bottom: 90px;
     }
-}
-@media screen and (max-width:767px) {
+    
     .travel-planning .travel-planning-inner .travel-planning-heading h1{
         font-size: 43px;
         line-height: 25px;
         margin-bottom: 31px;
     }
+}
+@media screen and (max-width:767px) {
     .s-top-city .s-top-city-inner .s-top-city-main .slick-prev{
         left: 4%;
     }
@@ -377,10 +378,26 @@
         font-size: 22px;
         line-height: 22px;
     }
+    .s-top-city .s-top-city-inner .s-top-city-head h2{
+        font-size: 26px;
+        line-height: 13px;
+    }
+    .pagination-main .list-group-main .pagination-list a{
+        font-size: 23px;
+        line-height: 37px;
+    }
 }
 @media screen and (max-width:320px) {
     section.explore-city .explore-city-check{
         margin-left: 0px !important;
     }
    
+}
+@media screen and (max-width:280px) {
+    .h-details-title .h-details-title-box .h-details-heading h2{
+            font-size: 23px;
+    }
+    section.h-details-title .h-title-box-inner .h-rating span.h-rating-location img{
+        margin-right: 5px !important;
+    }
 }

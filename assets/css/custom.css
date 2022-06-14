@@ -175,8 +175,10 @@ header.header .navbar .dropdown-custom .dropdown-item{
     line-height: 32px;
 }
 header.header .navbar .dropdown-custom .dropdown-item.active, 
-header.header .navbar .dropdown-custom .dropdown-item:active{
+header.header .navbar .dropdown-custom .dropdown-item:hover{
     background-color: #e9ecef;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
     /******Logo design *******/
 header.header .navbar a.navbar-brand{
@@ -302,8 +304,8 @@ header.header .navbar .dropdown .dropdown-btn{
    }
 }
 /****** Landing page section end ********/
-/****** Check-in-out section start *******/
 
+/****** Check-in-out section start *******/
 .check-in-out{
     padding: 80px 0;
 }
@@ -311,8 +313,6 @@ header.header .navbar .dropdown .dropdown-btn{
     border: 1px solid #6A78C7;
     border-radius: 12px;
     padding: 32px 24px 36px;
-    /* max-width: 1030px; */
-    margin: 0 auto;
 }
 .check-in-out .check-in-out-inner .check-in-out-form .search-input{
     border:1px solid #878996;
@@ -706,6 +706,20 @@ header.header .navbar .dropdown .dropdown-btn{
     padding: 6px 10px;
 }
 /****** Hotel Result Check-in-out section end *******/
+/********** Weather Section Start **********/
+.weather-main .weather-swiper .swiper-button-prev:after,
+.weather-main .weather-swiper .swiper-button-next:after {
+  font-size: 20px;
+  color: #878996;
+}
+
+.weather-main .weather-inner .weather-swiper .swiper-slide:hover,
+.weather-main .weather-inner .weather-swiper .swiper-slide.active {
+  background-color: #87899646;
+  border-radius: 5PX;
+}
+/********** Weather Section End **********/
+
 /*************** Search result Start **************/
     /******search result side bar start******/
 .hotel-result.search-result .search-result-inner .hotel-result-form .search-input{
@@ -789,7 +803,7 @@ header.header .navbar .dropdown .dropdown-btn{
 }
 /******search result side bar end ******/
 
-
+ 
 /****** Search result main start *******/
 .hotel-result.search-result main.result-main-content{
     border: 2px solid #6A78C7;
@@ -1806,17 +1820,6 @@ header.header .navbar .dropdown .dropdown-btn{
         border-radius: 8px;
         background-color: #fff;
     }
-    /* .pwm-museums .pwm-museums-inner .city-tab-popup-main  .tab-popup-content { */
-    /* .pwm-museums .pwm-museums-inner .city-tab-popup-main .tab-popup-content {
->>>>>>> ea690e8a56e18b61a96c79c70787b4b49c58583a
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .pwm-museums .pwm-museums-inner .city-tab-popup-main  .slick-next:before{
-=======
-    } */
     .pwm-museums .pwm-museums-inner .city-tab-popup-main .slick-next:before{
         content: "\f061";
         font-family: "Font Awesome 5 Free";
@@ -1926,7 +1929,8 @@ header.header .navbar .dropdown .dropdown-btn{
         color: #B0BEC5;
         font-size: 18px;
     }
-    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next, .swiper-button-prev{
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-next, 
+    .pwm-rest-main .pwm-museums-inner .pwm-title-swiper .swiper-button-prev{
         top: 30%;
     }
     /* / ------------ SUB TITLE SWIPER END---------- / */

@@ -17,6 +17,8 @@
   <!-------- Slick css cdn ------->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <!-------- Swiper Css Cdn --------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.3/swiper-bundle.css" />
   <!------- select2 css link ------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
   <!------ Datepiker cdn ------->
@@ -61,6 +63,11 @@
       height: 200px !important;
       border: 1px solid #878996;
       top: 0px !important;
+    }
+
+    .select2-container--default.select2-container--focus .select2-selection--multiple {
+      border: 1px solid #aaa;
+      ;
     }
 
     .select2-search--dropdown {
@@ -111,42 +118,42 @@
           <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="hoteldetails.html">Hotels </a>
-           </li>
-           <li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="explorecity.html">Cities</a>
-           </li>
-           <li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="multi-search.html">Search</a>
-           </li>
-           <li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a class="nav-link position-relative" href="planner.html">Planner
-                 <span
-                    class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
+                <span
+                  class="position-absolute top-10 start-lg-100 translate-middle badge rounded-pill bg-primary">25</span>
               </a>
-           </li>
-           <li class="nav-item ps-lg-3">
+            </li>
+            <li class="nav-item ps-lg-3">
               <a class="nav-link" href="save.html">Seaved</a>
-           </li>
+            </li>
           </ul>
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" id="dropdownMenuButton1"
-               data-bs-toggle="dropdown" aria-expanded="false">
-               Hi, Daniela!
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Hi, Daniela!
             </button>
             <ul class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton1">
-               <li><a class="dropdown-item active" href="account.html">My Account</a></li>
-               <li><a class="dropdown-item" href="order-history.html">Order History</a></li>
-               <li><a class="dropdown-item" href="upcoming-trip.html">Upcoming Trips</a></li>
-               <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
+              <li><a class="dropdown-item active" href="account.html">My Account</a></li>
+              <li><a class="dropdown-item" href="order-history.html">Order History</a></li>
+              <li><a class="dropdown-item" href="upcoming-trip.html">Upcoming Trips</a></li>
+              <li><a class="dropdown-item " href="#"><span class="text--red">Logout</span> </a></li>
             </ul>
-         </div>   
+          </div>
         </div>
       </div>
     </nav>
   </header>
   <!------- Header End ------->
   <!------- Hotel-result Check-in-out section start ------->
-  <section class="check-in-out hotel-result">
+  <section class="check-in-out hotel-result py-3">
     <div class="container">
       <div class="check-in-out-inner">
         <h4>Hotels</h4>
@@ -234,6 +241,82 @@
     </div>
   </section>
   <!------- Map Section end-------->
+  <!-------Weather Section Start ---------->
+  <section class="weather-main check-in-out pb-0 pt-3">
+    <div class="container">
+      <div class="weather-inner check-in-out-inner py-2">
+        <div class="row align-items-center">
+          <div class="col-2">
+            <div class="weather-text">
+              <h5 class="heading-fs-16 purple m-0">Weather in Medrid</h5>
+              <p class="m-0 para-d-l-p">8/9/2020 - 12/9/2020</p>
+            </div>
+          </div>
+          <div class="col-10">
+            <div class="weather-swiper">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide text-center">
+                    <div class="para-fs-14"><span class="purple fw-bold"> Mon 8</span> </div>
+                    <img src="assets/images/we-1.png">
+                    <div class="para-d-l-p">20 <sup>&deg;</sup></div>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <div class="para-fs-14"><span class="purple fw-bold"> Tue 9</span> </div>
+                    <img src="assets/images/we-2.png" alt="">
+                    <div class="para-d-l-p">29 <sup>&deg;</sup></div>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <div class="para-fs-14"><span class="purple fw-bold"> Wed 10 </span></div>
+                    <img src="assets/images/we-3.png" alt="">
+                    <div class="para-d-l-p">24 <sup>&deg;</sup></div>
+                  </div>
+                  <div class="swiper-slide text-center active">
+                    <div class="para-fs-14"><span class="purple fw-bold"> Thu 11 </span></div>
+                    <img src="assets/images/we-4.png" alt="">
+                    <div class="para-d-l-p">33 <sup>&deg;</sup></div>
+                  </div>
+                  <div class="swiper-slide text-center active">
+                    <div class="para-fs-14"><span class="purple fw-bold"> Fri 12 </span></div>
+                    <img src="assets/images/we-5.png">
+                    <div class="para-d-l-p">20 <sup>&deg;</sup></div>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <div class="para-fs-14"><span class="purple fw-bold"> Sat 13 </span></div>
+                    <img src="assets/images/we-1.png" alt="">
+                    <div class="para-d-l-p">20 <sup>&deg;</sup></div>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <div class="para-fs-14"><span class="purple fw-bold"> Sun 14 </span></div>
+                    <img src="assets/images/we-2.png" alt="">
+                    <div class="para-d-l-p">29 <sup>&deg;</sup></div>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <div class=" para-fs-14"><span class="purple fw-bold"> Mon 15 </span></div>
+                    <img src="assets/images/we-3.png">
+                    <div class="para-d-l-p">20 <sup>&deg;</sup></div>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <div class=" para-fs-14"><span class="purple fw-bold">Tue 16 </span> </div>
+                    <img src="assets/images/we-4.png" alt="">
+                    <div class="para-d-l-p">20 <sup>&deg;</sup></div>
+                  </div>
+                  <div class="swiper-slide text-center">
+                    <div class="purple"><span class="purple fw-bold">Wed 17 </span></div>
+                    <img src="assets/images/we-5.png" alt="">
+                    <div class="para-d-l-p">29 <sup>&deg;</sup></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-------Weather Section End ---------->
   <!------- Search result Start ------->
   <section class="hotel-result search-result pt-4 pb-5">
     <div class="container">
@@ -1060,13 +1143,13 @@
                                   </div>
                                   <div class="modal-body py-sm-5 display-flex-items">
                                     <div class="modal-body-img text-center">
-                                      <img src="assets/images/search-360.png" class="img-fluid">
+                                      <img src="assets/images/search-360.png" alt="">
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <!-------- view360 popup start --------->
+                            <!-------- view360 popup end --------->
                           </div>
                           <div class="middle-content-box-inner me-2">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-toggle="tooltip"
@@ -3880,10 +3963,13 @@
 
 <!-------Jquery Cdn Link ------->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <!------- Bootstrap JS Link ------->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <!------- Slick Cdn link -------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-------- Swiper Cdn Link -------->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <!-------- select2 js link ------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 <!------Datepiker js cdn ------->
@@ -3891,6 +3977,7 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/moment.min.js"></script>
 <script type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.24/daterangepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.js"></script>
 <!------- Custom JS Link ----- -->
 <script src="assets/js/custom.js"></script>
 
@@ -3906,6 +3993,29 @@
       });
       </script> -->
 
+<!-------- Weather swiper js start--------->
+<script>
+  const swiper = new Swiper(".swiper", {
+    slidesPerGroup: 1,
+    loop: false,
+    Infinity: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    speed: 400,
+    slidesPerView: 7,
+    spaceBetween: 7,
+    //     breakpoints: {
+    //         900: {
+    //             slidesPerView: 10,
+    //             spaceBetween: 10,
+    //             slidesOffsetAfter: 200,
+    //         },
+    // },
+  });        
+</script>
+<!-------- Weather swiper js end--------->
 
 <!-------- image popup (slider image js)------>
 <script>
